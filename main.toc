@@ -1,0 +1,53 @@
+\select@language {bahasa}
+\contentsline {chapter}{ABSTRAK}{iii}{Doc-Start}
+\contentsline {chapter}{ABSTRACT}{iv}{Doc-Start}
+\contentsline {chapter}{KATA PENGANTAR}{v}{chapter*.1}
+\contentsline {chapter}{DAFTAR ISI}{vii}{chapter*.2}
+\contentsline {chapter}{DAFTAR TABEL}{ix}{chapter*.3}
+\contentsline {chapter}{DAFTAR GAMBAR}{xi}{chapter*.4}
+\contentsline {chapter}{DAFTAR KODE SUMBER}{xiii}{chapter*.5}
+\contentsline {chapter}{\numberline {I}PENDAHULUAN}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Rumusan Masalah}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Batasan Masalah}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Tujuan}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}Metodologi}{3}{section.1.5}
+\contentsline {section}{\numberline {1.6}Sistematika Penulisan}{4}{section.1.6}
+\contentsline {chapter}{\numberline {II}LANDASAN TEORI}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Deskripsi Permasalahan}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Contoh Kasus Permasalahan}{10}{section.2.2}
+\contentsline {section}{\numberline {2.3}Definisi Umum}{12}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Polyalphabetic Cipher}{12}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Ciphertext}{13}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Plaintext}{13}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Secret Key}{13}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Kasiski Examination}{13}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Intersection}{14}{subsection.2.3.6}
+\contentsline {section}{\numberline {2.4}Penyelesaian Masalah The Bytelandian Cryptographer (Act IV)}{14}{section.2.4}
+\contentsline {chapter}{\numberline {III}DESAIN}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Desain Umum Sistem}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}Desain Algoritma}{17}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Desain fungsi SOLVE}{18}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Desain Fungsi VALIDITY}{20}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {IV}IMPLEMENTASI}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Lingkungan Implementasi}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}Rancangan Data}{21}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Data Masukan}{21}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Data Keluaran}{22}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Implementasi Algoritma}{22}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}\textit {Header} yang Diperlukan}{22}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}\textit {Preprocessor Directives}}{23}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Variabel Global}{23}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Implementasi Fungsi Main}{24}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Implementasi Fungsi SOLVE}{24}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}Implementasi Fungsi VALIDITY}{26}{subsection.4.3.6}
+\contentsline {chapter}{\numberline {V}UJI COBA DAN EVALUASI}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Lingkungan Uji Coba}{27}{section.5.1}
+\contentsline {section}{\numberline {5.2}Uji Coba Kebenaran}{27}{section.5.2}
+\contentsline {section}{\numberline {5.3}Analisa Kompleksitas Waktu}{29}{section.5.3}
+\contentsline {chapter}{\numberline {VI}PENUTUP}{31}{chapter.6}
+\contentsline {section}{\numberline {6.1}Kesimpulan}{31}{section.6.1}
+\contentsline {section}{\numberline {6.2}Saran}{31}{section.6.2}
+\contentsline {chapter}{DAFTAR PUSTAKA}{33}{chapter*.18}
+\contentsline {chapter}{\numberline {A}Hasil Uji Coba Kebenaran pada Situs SPOJ}{35}{appendix.A}
+\contentsline {chapter}{BIODATA PENULIS}{39}{appendix*.23}

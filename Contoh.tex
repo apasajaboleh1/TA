@@ -1,0 +1,44 @@
+\section{Struktur Dokumen \LaTeX{}}
+Dokumen \LaTeX{} terdiri dari struktur yang dibuat berdasarkan struktur dokumen sehari-hari. Sebagai penulis dokumen, Anda wajib menggunakan struktur ini sehingga \LaTeX{} dapat melakukan hal lain yang membantu Anda dalam mengorganisir dokumen seperti misalnya pembuatan Daftar Isi. Berikut adalah struktur dokumen yang ada di \LaTeX{} diurutkan berdasarkan hirarkinya.
+
+\begin{ltabulary}{|L|L|} % L = Rata kiri untuk setiap kolom, | = garis batas vertikal.
+
+% Kepala tabel, berulang di setiap halaman
+\caption{Struktur hirarki dokumen \LaTeX{}} \label{tabelStrukturDokumen} \\
+\hline
+\textbf{Nama} & \textbf{Peruntukkan} \\ \hline
+
+\endhead
+\endfoot
+\endlastfoot
+
+% Isi Tabel
+\textbf{\textbackslash{}part\{Judul Bagian\}} & \texttt{book} \\ \hline
+\textbf{\textbackslash{}chapter\{Judul Bab\}} & \texttt{book} dan \texttt{report} \\ \hline
+\textbf{\textbackslash{}section\{Judul Subbab\}} & semua kecuali \texttt{letter} \\ \hline
+\textbf{\textbackslash{}subsection\{Judul Subsubbab\}} & semua kecuali \texttt{letter} \\ \hline
+\textbf{\textbackslash{}subsubsection\{Judul Subsubsubbab\}} & semua kecuali \texttt{letter} \\ \hline
+\textbf{\textbackslash{}paragraph\{Judul Paragraf\}} & semua\\ \hline
+
+\end{ltabulary}
+
+\subsection{Pengujian Performa}
+      Pengujian 
+      \subsubsection{Pengujian Kecepatan Fitur A}
+      Pengujian fitur ini dilakukan pada lingkungan uji \ref{env_uji1}, dan untuk lebih lengkapnya dapat dilihat pada Tabel \ref{uji1}
+      \begin{table}[]
+      \centering
+      \caption{Pengujian Fitur B}
+      \label{uji2}
+      \begin{tabular}{llll}
+      \multicolumn{1}{c}{\textbf{ID}} & \multicolumn{3}{c}{\textbf{TA-UJI.Proses}}        \\
+      Referensi Proses Penggunaan     & \multicolumn{3}{l}{}                              \\
+      Nama                            & \multicolumn{3}{l}{}                              \\
+      Tujuan Pengujian                & \multicolumn{3}{l}{\multirow{2}{*}{}}             \\
+      \textbf{Skenario Pengujian}     & \multicolumn{3}{l}{}                              \\
+      Langkah Pengujian               & \multicolumn{3}{l}{}                              \\
+      Kecepatan Buka Halaman          & Halaman       & \multicolumn{2}{l}{Google Chrome} \\
+                                      & A             & 18 KB           & 0.987s         
+      \end{tabular}
+      \end{table}
+      

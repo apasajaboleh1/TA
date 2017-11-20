@@ -1,0 +1,101 @@
+\documentclass{ta-its}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{nameref}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{lmodern}  
+\usepackage{etoolbox}
+\usepackage{listings}
+%\usepackage{longtable}
+%\usepackage{algorithm} 
+\usepackage{float}
+\usepackage{slantsc}
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\usepackage[noend]{algpseudocode}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{ltxtable} %for long table
+% \usepackage{lon} %for long table
+\captionsetup[ltxtable]{position=bottom}
+\captionsetup[table]{position=bottom}
+
+\usepackage{lipsum} %for lorem ipsum
+\usepackage{blindtext} %for lorem ipsum
+
+\usepackage{xcolor} %start packages for colored code listing
+\usepackage{upquote} %start packages for colored code listing
+\def\plaintext{\textit{plain text }}
+\def\ciphertext{\textit{ciphertext }}
+\usepackage{enumitem} % for advanced enumerate numberings
+\usepackage{scrextend}
+% \usepackage{apacite} % for APA citing style
+
+\usepackage[autostyle]{csquotes}
+\usepackage{babel}
+\usepackage{wrapfig} %untuk wrapfigure?
+
+\usepackage{lscape} %untuk landscape di bagian-bagian tertentu
+
+\newcommand{\mychapter}[2]{
+    \setcounter{chapter}{#1}
+    \setcounter{section}{0}
+    \chapter*{#2}
+    \addcontentsline{toc}{chapter}{#2}
+}
+
+\newcommand{\mylipsum}
+{Dolore blandit mus ultricies justo ultrices, a vel wisi aenean integer lacus vitae, metus lorem nulla, tempor sed odio lacus sit nostra.}
+
+\newcommand{\indentenum}{
+    \hspace{\labelwidth}\phantom{\texttt{type}-}
+}
+
+
+\renewcommand{\lstlistingname}{Kode Sumber}
+\renewcommand{\lstlistlistingname}{DAFTAR KODE SUMBER}
+
+\include{languangeConf} %formatting code sources
+\include{enumitemConf} %enumerate?
+
+\makeatletter
+\def\l@lstlisting#1#2{\@dottedtocline{1}{1.5em}{3em}{#1}{#2}}
+\makeatother
+
+\raggedbottom
+\include{Metadata}
+\begin{document}
+    \maketitle
+%    \pagenumbering{}
+	\pagenumbering{roman}
+    \legalityPaper
+    \include{Chapters/Main/Bab0-Abstrak}
+    \include{Chapters/Main/Bab0-Abstract}
+    \include{Chapters/Main/Bab0-KataPengantar}
+    \tableofcontents % Daftar isi
+    \listoftables % Daftar tabel
+    \listoffigures % Daftar gambar
+    \lstlistoflistings % Daftar Kode Sumber
+
+  \mainmatter % Halaman utama, dengan judul BAB X
+    \include{Chapters/Main/Bab1-Pendahuluan}
+    \include{Chapters/Main/Bab2-DasarTeori}
+    \include{Chapters/Main/Bab3-DesainDanPerancangan}
+    \include{Chapters/Main/Bab4-Implementasi}
+    \include{Chapters/Main/Bab5-PengujianDanEvaluasi}
+    %\include{Contoh}
+    \include{Chapters/Main/Bab6-Penutup}
+
+    % Daftar Pustaka
+    \bibliography{Zotero1}
+    \bibliographystyle{ieeetran}
+    
+    \appendix % Halaman lampiran, dengan judul LAMPIRAN X
+    \include{Chapters/Auxiliary}
+  \backmatter % Lampiran tanpa judul LAMPIRAN X, untuk BIODATA PENULIS
+
+   \include{Chapters/Main/Bab7-Biodata}
+\end{document}

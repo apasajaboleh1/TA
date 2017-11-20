@@ -1,0 +1,77 @@
+\chapter{IMPLEMENTASI}
+  Pada bab ini menjelaskan implementasi yang sesuai dengan desain algoritma yang telah ditentukan sebelumnya.
+  
+  \section{Lingkungan Implementasi}
+  Lingkungan uji coba yang digunakan adalah sebagai berikut:
+  \begin{enumerate}
+  \item Perangkat Keras
+  	\begin{itemize}
+  		\item \textit{Processor} Intel(R) Core(TM)i7-5700 @ 2.7GHz.
+  		\item Memori 8 GB
+  	\end{itemize}
+  	\item Perangkat Lunak
+  		\begin{itemize}
+  		\item Sistem Operasi Windows 10 Home 64 bit
+  		\item \textit{Text editor} Bloodshed Dev-C++ 5.11.
+		\item \textit{Compiler} g++ (TDM-GCC 4.9.2 32-bit).
+  		\end{itemize}
+  \end{enumerate}
+  \section{Rancangan Data}
+Pada subbab ini dijelaskan mengenai desain data masukan yang
+diperlukan untuk melakukan proses algoritma, dan data keluaran
+yang dihasilkan oleh program.
+
+\subsection{Data Masukan}
+Data masukan adalah data yang akan diproses oleh program sebagai masukan menggunakan algoritma yang telah dirancang dalam tugas akhir ini.
+
+Data masukan berupa berkas teks yang berisi data dengan format yang telah ditentukan pada deskripsi \textit{The Bytelandian Cryptographer (Act IV)}. Pada masing-masing berkas data masukan, baris pertama berupa sebuah bilangan bulat yang merepresentasikan jumlah kasus uji yang ada pada berkas tersebut. Untuk setiap kasus uji, baris pertama berupa sebuah bilangan bulat yang merepresentasikan batas atas dari kunci. baris kedua berupa \textit{string} yang merepresentasikan \plaintext dan baris ketiga berupa \textit{string} yang merepresentasikan \ciphertext.
+
+
+\subsection{Data Keluaran}
+Data keluaran yang dihasilkan oleh program hanya berupa satu kalimat yang berisikan \plaintext yang bisa didapatkan.
+
+\section{Implementasi Algoritma}
+Pada subbab ini akan dijelaskan tentang implementasi proses
+algoritma secara keseluruhan berdasarkan desain yang telah
+dijelaskan pada bab \ref{chapter:design}.
+
+\subsection{\textit{Header} yang Diperlukan}
+Implementasi algoritma dengan teknik \textit{Kasiski Examination} untuk menyelesaikan \textit{The Bytelandian Cryptographer (Act IV)} untuk membutuhkan 4 \textit{header} yaitu cstdio, cstring, algorithm, dan $unordered\_map$. Seperti yang terdapat pada kode sumber
+
+\lstinputlisting[language=C++, firstline=1, lastline=4, caption=\textit{Header} yang diperlukan, label=source:implementasi_header]{Chapters/Details/bab4/crypto4.cpp}
+
+\textit{Header} cstdio berisi modul untuk menerima masukan dan
+memberikan keluaran. \textit{Header} \textit{algorithm} berisi modul yang memiliki fungsi-fungsi yang sangat berguna dalam membantu mengimplementasi algortima yang telah dibangun. Contohnya adalah fungsi \textit{max} dan \textit{sort}. \textit{Header} cstring berisi modul yang memiliki fungsi-fungsi untuk melakukan pemrosesan \textit{string}. Contoh fungsi yang membantu mengimplementasikan algoritma yang dibangun adalah fungsi \textit{memset}. \textit{Header} \textit{$unordered\_map$} berisi modul-modul untuk membuat suatu tempat penyimpanan data yang dapat diisi, dihapus untuk setiap elementnya, tetapi hanya dapat menyimpan data dalam bentuk seperti array 1 dimensi, akan tetapi media penyimpanannya seperti memetakan suatu elemen himpunan kedalam elemen lainnya. Pengindeksan yang ada menggunakan \textit{hashing function}.
+
+\subsection{\textit{Preprocessor Directives}}
+\textit{Preprocessor directives} digunakan untuk memudahkan dalam menyingkat kode-kode yang akan dibuat dan biasanya berupa fungsi ataupun suatu konstanta yang akan digunakan dalam proses perhitungan, yang nantinya akan diterjemahkan terlebih dahulu sebelum mengeksekusi kode. Kode Sumber implementasi constanta variabel dapat dilihat pada Kode Sumber \ref{source:const_variable}.
+
+\begin{minipage}{\linewidth}
+\lstinputlisting[language=C++, firstline=5, lastline=8, caption=Preprocessor Directives, label=source:const_variable]{Chapters/Details/bab4/crypto4.cpp}
+\end{minipage}
+
+\subsection{Variabel Global}
+Variabel global digunakan untuk memudahkan dalam mengakses data yang digunakan lintas fungsi. Kode sumber implementasi variabel global dapat dilihat pada Kode Sumber \ref{source:variabel_global}.
+
+\begin{minipage}{\linewidth}
+\lstinputlisting[language=C++, firstline=10, lastline=12, caption=Variabel Global, label=source:variabel_global]{Chapters/Details/bab4/crypto4.cpp}
+\end{minipage} 
+
+\subsection{Implementasi Fungsi Main}
+Fungsi Main adalah implementasi algoritma yang dirancang pada Gambar \ref{fig:mainfx}. Implementasi fungsi Main dapat dilihat pada Kode Sumber \ref{source:fungsi_main}.
+
+\lstinputlisting[language=C++, firstline=69, lastline=79, caption=Fungsi main, label=source:fungsi_main]{Chapters/Details/bab4/crypto4.cpp}
+
+\subsection{Implementasi Fungsi SOLVE}
+Fungsi SOLVE adalah implementasi algoritma yang dirancang pada Gambar \ref{fig:solvefx}. Implementasi fungsi SOLVE dapat dilihat pada Kode Sumber \ref{source:fungsi_SOLVE}. 
+
+\begin{minipage}{\linewidth}
+\lstinputlisting[language=C++, firstline=26, lastline=66, caption=Fungsi SOLVE, label=source:fungsi_SOLVE]{Chapters/Details/bab4/crypto4.cpp}
+\end{minipage} 
+
+\subsection{Implementasi Fungsi VALIDITY}
+Fungsi VALIDITY adalah inplementasi algoritma yang dirancang pada Gambar \ref{fig:validity}. Implementasi fungsi VALIDITY dapat dilihat pada Kode Sumber \ref{source:fungsi_VALIDATY}.
+
+%\begin{minipage}{\linewidth}
+\lstinputlisting[language=C++, firstline=13, lastline=25, caption=Fungsi VALIDITY, label=source:fungsi_VALIDATY]{Chapters/Details/bab4/crypto4.cpp}
+%\end{minipage} 

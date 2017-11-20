@@ -1,0 +1,89 @@
+%\documentclass[conference]{IEEEtran}
+\documentclass[11pt]{article}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algpseudocode}  
+\usepackage[margin=1in]{geometry}
+\begin{document}
+
+\begin{algorithm}[H]
+    \caption{Gambar Fungsi Main}
+    \begin{algorithmic}[1]
+        \Function{MAIN}{}
+			\State $T \leftarrow INPUT$
+			\While{$T \neq 0 $}
+				\State $T=T-1$
+				\State $m \gets input$      \Comment{masukkan batas atas dari kunci}
+				\State $message [\textrm{ }] \gets input$    \Comment{masukkan \textit{plaintext}}
+				\State $cipher [\textrm{ }] \gets input$     \Comment{masukkan \textit{ciphertext}}
+				\State SOLVE($message$,$chiper$,$m$)
+            \EndWhile
+        \EndFunction
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[H]
+	\centering
+    \caption{Gambar Fungsi SOLVE}
+    \begin{algorithmic}[1]
+        \Function{SOLVE}{$message$,$chiper$,$m$}
+			\State $counter\_diketahui \gets 0 $            
+            \State $counter\_yang\_ingin\_diketahui \gets 0$
+            \State $diketahui [\textrm{ }]$
+            \State $Selisih\_diketahui [\textrm{ }]$
+            \State $ingin\_diketahui [\textrm{ }]$
+            \State $Key [\textrm{ }]$
+            \For{$i=0$ to $message[i]\neq 0$ ; $i+=1$}
+                \If{$message[i] \neq '*' \textrm{ dan } cipher[i] \neq '*'$}
+                    \State $diketahui[counter\_diketahui]=i$
+                    \State $Selisih\_diketahui[i]=(message[i]-cipher[i]+26)\%26$
+                    \State $counter\_diketahui = counter\_diketahui+1$
+                \ElsIf{$message[i] = '*'$ dan $cipher[i]\neq '*'$}
+                	\State $ingin\_diketahui[counter\_yang\_ingin\_diketahui]=i$
+                	\State $counter\_yang\_ingin\_diketahui + 1 $
+                \EndIf
+            \EndFor
+            \State $m=min(m,panjang \textrm{ } message)$
+            \For{$n=\frac{m}{2}+1$ to $n\leq m$;$n+=1$}
+            	\If{$VALIDITY(Key,counter\_diketahui,diketahui,Selisih\_diketahui,n)=True$}
+					\State $counter \gets 0$
+					\While{$counter\neq sizeof(ingin\_diketahui)$}
+						\If{$Key[ingin\_diketahui[counter]\%n]=null$}
+							\State $message[ingin\_diketahui[counter]] ='*'$
+							\State \textit{remove element index i in }$ingin\_diketahui$
+						\ElsIf{$message[ingin\_diketahui[counter]]='*'$}
+							\State $message[ingin\_diketahui[counter]]=(ciphertext[ingin\_diketahui[counter]]-Key[ingin\_diketahui[counter] + 26) \% 26$
+							\State $counter=counter+1$
+						\ElsIf{$message[ingin\_diketahui[counter]] \neq \textrm{ } (ciphertext[ingin\_diketahui[counter]]\textrm{ } -Key[ingin\_diketahui[counter] + 26)\textrm{ } \% 26$)}
+							\State $message[ingin\_diketahui[counter]] ='*'$
+							\State \textit{remove element index i in }$ingin\_diketahui$
+						\Else
+							\State $counter=counter+1$
+						\EndIf
+					\EndWhile
+            	\EndIf
+            \EndFor
+        \EndFunction
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[H]
+    \caption{Gambar Fungsi VALIDITY}
+    \begin{algorithmic}[1]
+        \Function{VALIDITY}{$Key$,$counter\_diketahui$,$diketahui$,$Selisih\_diketahui$,$n$}
+			\State $Intialize(Key,-1)$                  
+			\For{$i=0$ to $i<counter\_diketahui$; i+=1}
+				\State $temp=diketahui[i]$
+				\If{$Key[temp\%n]=-1$}
+					\State $Key[temp\%n]=Selisih\_diketahui[temp]$
+				\ElsIf{$Key[temp\%n]\neq Selisih\_diketahui[temp]$}
+					\Return False
+				\EndIf
+			\EndFor
+			\State \Return True
+        \EndFunction
+    \end{algorithmic}
+\end{algorithm}
+
+\end{document}
