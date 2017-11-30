@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  20 NOV 2017 14:09
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  30 NOV 2017 08:24
 entering extended mode
 **./main.tex
 (main.tex
@@ -1855,7 +1855,7 @@ Overfull \hbox (11.30946pt too wide) in paragraph at lines 68--71
  []
 
 [24]
-Overfull \vbox (43.92749pt too high) has occurred while \output is active []
+Overfull \vbox (54.92749pt too high) has occurred while \output is active []
 
 
 [25] (Chapters/Details/bab4/crypto4.cpp)) [26]
