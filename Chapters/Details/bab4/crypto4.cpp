@@ -51,7 +51,7 @@ inline void SOLVE(int m)noexcept
 			 		else if(plaintext[it->second]=='*'){
 						plaintext[it->second]=
 						(ciphertext[it->second]-'A'
-						-key[(it->second)%n]+26)%26 + 'A';
+					-key[(it->second)%n]+26)%26 + 'A';
 						it++;
 					}
 					else if(plaintext[it->second] != 
