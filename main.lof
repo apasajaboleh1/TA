@@ -1,19 +1,21 @@
 \select@language {bahasa}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Deskripsi Permasalahan pada SPOJ \textit {The Bytelandian Cryptographer (Act IV)}\relax }}{8}{figure.caption.6}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Deskripsi Format Masukan dan Keluaran pada SPOJ \textit {The Bytelandian Cryptographer (Act IV)}\relax }}{9}{figure.caption.7}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Aturan \textit {Polyalphabetical Cipher}\relax }}{13}{figure.caption.12}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Aturan \textit {Polyalphabetical Cipher}\relax }}{7}{figure.caption.6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Deskripsi Permasalahan pada SPOJ \textit {The Bytelandian Cryptographer (Act IV)}\relax }}{10}{figure.caption.8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Deskripsi Format Masukan dan Keluaran pada SPOJ \textit {The Bytelandian Cryptographer (Act IV)}\relax }}{11}{figure.caption.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Gamba Fungsi Main\relax }}{17}{figure.caption.14}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Gambar Fungsi SOLVE\relax }}{19}{figure.caption.15}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Gambar Fungsi VALIDITY\relax }}{20}{figure.caption.16}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Gamba Fungsi Main\relax }}{19}{figure.caption.14}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Gambar Fungsi SOLVE\relax }}{21}{figure.caption.15}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Gambar Fungsi VALIDITY\relax }}{22}{figure.caption.16}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Hasil Uji Coba pada Situs Penilaian SPOJ\relax }}{35}{figure.caption.19}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Grafik Hasil Uji Coba pada Situs SPOJ Sebanyak 30 Kali\relax }}{35}{figure.caption.20}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Hasil Pengujian Sebanyak 30 Kali pada Situs Penilaian Daring SPOJ (1)\relax }}{36}{figure.caption.21}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Hasil Pengujian Sebanyak 30 Kali pada Situs Penilaian Daring SPOJ (2)\relax }}{37}{figure.caption.22}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Hasil Uji Coba pada Situs Penilaian SPOJ\relax }}{39}{figure.caption.19}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Grafik Hasil Uji Coba pada Situs SPOJ Sebanyak 30 Kali\relax }}{39}{figure.caption.20}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Hasil Pengujian Sebanyak 30 Kali pada Situs Penilaian Daring SPOJ (1)\relax }}{40}{figure.caption.21}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Hasil Pengujian Sebanyak 30 Kali pada Situs Penilaian Daring SPOJ (2)\relax }}{41}{figure.caption.22}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Peringkat yang lebih tinggi dari program ini (1)\relax }}{42}{figure.caption.23}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Peringkat yang lebih tinggi dari program ini (2)\relax }}{43}{figure.caption.24}
 \addvspace {10\p@ }

@@ -28,12 +28,12 @@ Data masukan berupa berkas teks yang berisi data dengan format yang telah ditent
 
 
 \subsection{Data Keluaran}
-Data keluaran yang dihasilkan oleh program hanya berupa satu kalimat yang berisikan \plaintext yang bisa didapatkan.
+Data keluaran yang dihasilkan oleh program hanya berupa satu kalimat yang berisikan \plaintext yang bisa didapatkan dari \ciphertext dan batas atas panjang kunci yang telah di berikan.
 
 \section{Implementasi Algoritma}
 Pada subbab ini akan dijelaskan tentang implementasi proses
 algoritma secara keseluruhan berdasarkan desain yang telah
-dijelaskan pada bab \ref{chapter:design}.
+dijelaskan pada bab \ref{chapter:design}. Pada bagian ini menggunakan optimasi kompiler yang bertujuan untuk mempersingkat waktu eksekusi, seperti inline dan noexcept. Inline berguna untuk membuat baris kode dalam kompiler menjadi berurutan, karena bisa saja baris kode yang terjadi pada kompiler tidak berurutan. Noexcept adalah membuang  \textit{exception} apabila terjadinya \textit{exception}.
 
 \subsection{\textit{Header} yang Diperlukan}
 Implementasi algoritma dengan teknik \textit{Kasiski Examination} untuk menyelesaikan \textit{The Bytelandian Cryptographer (Act IV)} untuk membutuhkan 4 \textit{header} yaitu cstdio, cstring, algorithm, dan $unordered\_map$. Seperti yang terdapat pada kode sumber
