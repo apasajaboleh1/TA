@@ -17,7 +17,11 @@
 \usepackage{booktabs}% http://ctan.org/pkg/booktabs
 \usepackage[noend]{algpseudocode}
 \usepackage{caption}
+\usepackage{subcaption}
 \usepackage{amsmath}
+\usepackage{colortbl}
+%\usepackage{pgfplots}
+%\usepackage{tikz}
 \usepackage{ltxtable} %for long table
 % \usepackage{lon} %for long table
 \captionsetup[ltxtable]{position=bottom}
@@ -64,7 +68,7 @@
 \makeatletter
 \def\l@lstlisting#1#2{\@dottedtocline{1}{1.5em}{3em}{#1}{#2}}
 \makeatother
-
+%\counterwithin*{equation}{chapter}
 \raggedbottom
 \include{Metadata}
 \begin{document}
@@ -90,11 +94,12 @@
     \include{Chapters/Main/Bab6-Penutup}
 
     % Daftar Pustaka
-    \bibliography{Zotero1}
-    \bibliographystyle{ieeetran}
+    %\bibliography{Zotero1}
+    %\bibliographystyle{ieeetran}
     
     \appendix % Halaman lampiran, dengan judul LAMPIRAN X
     \include{Chapters/Auxiliary}
+    \include{Chapters/Auxiliary2}
   \backmatter % Lampiran tanpa judul LAMPIRAN X, untuk BIODATA PENULIS
 
    \include{Chapters/Main/Bab7-Biodata}

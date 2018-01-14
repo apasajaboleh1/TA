@@ -57,4 +57,14 @@ Pada \textit{pseudocode} yang terdapat pada Gambar \ref{fig:mainfx}. Untuk setia
 \indent Sehingga secara keseluruhan kompleksitas dari algoritma yang dirancang pada tugas akhir ini adalah $\mathcal{O}(T*\frac{M}{2}*(N+S))$.
 
 Pada umumnya, eksekusi program pada situs penilaian daring SPOJ adalah $ 1 $ detik untuk setiap $ 1.000.000.000 $ proses .Ekseskusi program dengan kompleksitas $\mathcal{O}(T*\frac{M}{2}*(N+S))$. Pada \textit{worst case} $T*(N+S)=1.000.000$, sedangakan $\frac{M}{2}$ adalah 50,000. Hasilnya melebihi dari 50 miliar perulangan, maka waktu yang dibutuhkan adalah 50 detik. Jika hal ini terjadi maka waktu exsekusi akan berjalan dengan sangat lama. Estimasi waktu kurang lebih $100$ detik, tetapi kenyataan yang terjadi tidak demikian, alasannya karena jumlah $S$ bisa berkurang seringin dengan perulangan yang ada. Karena dari pernyataan soal bahwa file masukkan tidak akan lebih besar daripada 2 MB\cite{piwakowski_crypto4_2004}.
+\\
+Sebagai perbandingan ujicoba kinerja antara menggunakan algoritma \textit{Naive} dan algoritma optimasi \textit{Kasiski Examination} ditambah dengan \textit{Intersection}, dapat dilihat pada gambar \ref{fig:banding}. Dimana $A$ adalah performa algoritma \textit{Naive} dan $B$ adalah performa algoritma optimasi \textit{Kasiski Examination}. N pada gambar \ref{fig:banding} adalah jumlah banyak \plaintext atau \ciphertext sebagai masukan program.
+%dengan batas atas panjang kunci yang uniform yaitu 41 dan struktur plaintext dan cipher yang berulang. sehingga dapat memperlihat pergerakan waktu sesungguhnya yang dibutuhkan. ini hanyalah sebagian kecil dari proses program yang telah dijalankan. dengan algoritma naive pasti TLE.
+	
+	\begin{figure}[H]
+	\centering
+  	\includegraphics[scale=0.7]{images/bab5/b.png}
+  	\caption{Perbandingan Kinerja Algoritma Optimasi \textit{Kasiski Examination} dan \textit{Naive}}
+  	\label{fig:banding}
+	\end{figure}
 %telah dilakukan ujicoba apabila menggunakan pure n2 maka tidak akan memungkinkan untuk menyelesaikan masalah ini dengan cepat dan tidak akan berhasil. dilakukan juga untuk membuat perubahan pada intersection akan tetapi juga sesuatu kegagalan. perubahan yang dilakukan untuk mengubah struktur data harus mengakses dengan cepat hanya hal yang mungkin, tapi ini sudah dilakukan . maka yang paling mungkin adalah melakukan optimasi pada pencarian panjang kunci. uji yang telah dilakukan degan menggunakan bilangan prima -> gagal. dengan pigeonhole juga gagal. apbila n=m -> meh podo ae. 

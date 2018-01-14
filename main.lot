@@ -2,14 +2,35 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {2.1}{\ignorespaces Contoh \textit {Kasiski Examintaion}\relax }}{9}{table.caption.7}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Contoh 1\relax }}{12}{table.caption.10}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Contoh 2\relax }}{13}{table.caption.11}
-\contentsline {table}{\numberline {2.4}{\ignorespaces Contoh 3\relax }}{14}{table.caption.12}
-\contentsline {table}{\numberline {2.5}{\ignorespaces Hasil dari Contoh 3\relax }}{14}{table.caption.13}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Contoh 1\relax }}{16}{table.caption.11}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Langkah 1 Contoh 1\relax }}{16}{table.caption.12}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Contoh 2\relax }}{17}{table.caption.13}
+\contentsline {table}{\numberline {2.5}{\ignorespaces Panjang Kunci 1 Contoh 2\relax }}{17}{table.caption.14}
+\contentsline {table}{\numberline {2.6}{\ignorespaces Panjang Kunci 2 Contoh 2\relax }}{18}{table.caption.15}
+\contentsline {table}{\numberline {2.7}{\ignorespaces Panjang Kunci 3 Contoh 2\relax }}{18}{table.caption.16}
+\contentsline {table}{\numberline {2.8}{\ignorespaces Panjang Kunci 4 Contoh 2\relax }}{19}{table.caption.17}
+\contentsline {table}{\numberline {2.9}{\ignorespaces Hasil Contoh 2\relax }}{20}{table.caption.18}
+\contentsline {table}{\numberline {2.10}{\ignorespaces Contoh 3\relax }}{20}{table.caption.19}
+\contentsline {table}{\numberline {2.11}{\ignorespaces Panjang Kunci 1 Contoh 3\relax }}{20}{table.caption.20}
+\contentsline {table}{\numberline {2.12}{\ignorespaces Panjang Kunci 2 Contoh 3\relax }}{21}{table.caption.21}
+\contentsline {table}{\numberline {2.13}{\ignorespaces Panjang Kunci 3 Contoh 3\relax }}{22}{table.caption.22}
+\contentsline {table}{\numberline {2.14}{\ignorespaces Panjang Kunci 4 Contoh 3\relax }}{22}{table.caption.23}
+\contentsline {table}{\numberline {2.15}{\ignorespaces Hasil dari Contoh 3\relax }}{23}{table.caption.24}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Kecepatan Maksimal, Minimal, dan Rata-Rata dari Hasil Uji Coba Pengumpulan 30 Kali pada Situs Pengujian Daring Spoj\relax }}{32}{table.caption.17}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Kecepatan Maksimal, Minimal, dan Rata-Rata dari Hasil Uji Coba Pengumpulan 30 Kali pada Situs Pengujian Daring Spoj\relax }}{42}{table.caption.29}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Optimasi Kasiski Examination} (1)\relax }}{55}{table.caption.37}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Optimasi Kasiski Examination} (2)\relax }}{56}{table.caption.38}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Optimasi Kasiski Examination} (3)\relax }}{57}{table.caption.39}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Optimasi Kasiski Examination} (4)\relax }}{58}{table.caption.40}
+\contentsline {table}{\numberline {2.5}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Optimasi Kasiski Examination} (5)\relax }}{59}{table.caption.41}
+\contentsline {table}{\numberline {2.6}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Naive} (1)\relax }}{60}{table.caption.42}
+\contentsline {table}{\numberline {2.7}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Naive} (2)\relax }}{61}{table.caption.43}
+\contentsline {table}{\numberline {2.8}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Naive} (3)\relax }}{62}{table.caption.44}
+\contentsline {table}{\numberline {2.9}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Naive} (4)\relax }}{63}{table.caption.45}
+\contentsline {table}{\numberline {2.10}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Naive} (5)\relax }}{64}{table.caption.46}
 \addvspace {10\p@ }

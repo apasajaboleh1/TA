@@ -1,3 +1,7 @@
+\definecolor{Gray}{gray}{0.85}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+
+\newcolumntype{a}{>{\columncolor{Gray}}c}
 	\chapter{LANDASAN TEORI}
 	Bab ini akan membahas mengenai dasar teori dan literatur yang menjadi dasar pengerjaan tugas akhir ini. Pada subbab 2.1 membahas mengenai definisi umum yang digunakan dalam memecahkan permasalahan ini. Pada subbab 2.2 membahas mengenai deskripsi permasalahan. Pada subbab 2.3 membahas mengenai contoh permasalahan. Pada subbab 2.4 membahas mengenai penyelesaian masalah secara lengkap.
 	\section{Definisi Umum}
@@ -11,7 +15,14 @@
 	Untuk memperjelas aturan diatas, dapat dilihat pada gambar \ref{fig:polyalphabeticalcipher}.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.85]{images/bab2/poly.png}
+		%\includegraphics[scale=0.85]{images/bab2/poly.png}
+		\begin{align*}
+ 		C &=c_0,c_1,c_2,...,c_{n-1} \\
+      	E(K,P)&=E[(k_0,k_1,...,k_{m-1})(p_0,p_1,...,p_{n-1})] \\
+      	&=(p_0+k_0)mod26,(p_1+k_1)mod26,...,(p_{m-1}+k_{m-1})mod26, \\
+      		&(p_m+k_0)mod26,(p_{m+1}+k_1)mod26,...,(p_{2m-1}+k_{m-1})mod26,...
+		\end{align*}		
+		
 		\caption{Aturan \textit{Polyalphabetical Cipher}}
 		\label{fig:polyalphabeticalcipher}
 	\end{figure}
@@ -28,20 +39,29 @@
 	\textit{Secret Key} atau yang lebih dikenal dengan \textit{key} adalah suatu inputan dari algoritma enskripsi yang akan menentukan suatu transformasi dan subtitusi yang akan dilakukan oleh algoritma enskripsi\cite{william_crytography_2011}. Dalam kasus \textit{polyalphabetical cipher} pada permasalahan yang diangkat dalam tugas akhir ini, panjang kunci yang digunakan setidaknya 1. 
 	
 	 \subsection{Kasiski Examination}
-	 \textit{Kasiski Examination} merupakan suatu teknik yang digunakan untuk mendeskripsikan secara paksa suatu \textit{ciphertext} yang menggunakan teknik subtitusi, baik itu \textit{polyalphabetical cipher} maupun \textit{monoalphabetical cipher}. Teknik menggunakan kelemahan yang ditimbulkan oleh teknik subtitusi itu sendiri, yaitu apabila suatu \textit{subtring} dari \plaintext dan \textit{subtring} dari suatu set kunci yang berulang terdapat yang berulang, maka dapat dipastikan untuk menebak panjang huruf / karakter kunci yang digunakan. Sebagai contoh dapat dilihat pada table \ref{tab:kasiski examination}.
+	 \textit{Kasiski Examination} merupakan suatu teknik yang digunakan untuk mendeskripsikan secara paksa suatu \textit{ciphertext} yang menggunakan teknik subtitusi, baik itu \textit{polyalphabetical cipher} maupun \textit{monoalphabetical cipher}. Teknik menggunakan kelemahan yang ditimbulkan oleh teknik subtitusi itu sendiri, yaitu apabila suatu \textit{subtring} dari \plaintext dan \textit{subtring} dari suatu set kunci yang berulang terdapat yang berulang, maka dapat dipastikan untuk menebak panjang huruf / karakter kunci yang digunakan, tanpa diketahui \plaintext dan kuncinya. Sebagai contoh dapat dilihat pada table \ref{tab:kasiski examination}.
 	 \begin{table}[H]
-		\centering
-		\begin{tabular}   {|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}\hline
-		\textit{plain text}&c&r&y&p&t&o& &i&s& &s&h&o&r&t& &f&o&r& &c&r&y&p&t&o&g&r&a&p&h&y\\ \hline
-		kunci&a&b&c&d&e&a&b&c&d&e&a&b&c&d&e&a&b&c&d&e&a&b&c&d&e&a&b&c&d&e&a&b\\ \hline
-		\end{tabular}
+		\resizebox{\textwidth}{!}{%
+		\begin{tabular}   {|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}\hline
+		\textit{ciphertext}&C&S&A&S&X&S&J&O&S&P&C&S&A&S&X \\ \hline
+		%kunci              &a&b&c&d&e&a&b&c&d&e&a&b&c&d&e \\ \hline
+		\end{tabular}}
 		\caption{Contoh \textit{Kasiski Examintaion}}
 		\label{tab:kasiski examination}
 	\end{table}
-	Dari table \ref{tab:kasiski examination} yang ada dapat disimpulakan bawah \plaintext "crypto" dan kunci "abcdea" berulang. Sehingga setidaknya dapat disimpulkan bahwa panjang kuncinya mungkin 4 karakter. \cite{noauthor_kasiski_nodate}. Hal ini yang menjadi dasar pengerjaan permasalahan yang diangkat dalam tugas akhir ini.
+	Dari table \ref{tab:kasiski examination} yang ada dapat disimpulkan bahwa kata "CSASX" berulang.Sehingga setidaknya dapat disimpulkan bahwa panjang kuncinya mungkin 5 karakter atau faktor dari 10.\cite{noauthor_kasiski_nodate}. Cara pencarian panjangnya:
+	\begin{enumerate}
+	\item Mencari semua subtring yang berulang. Seperti tabel \ref{tab:kasiski examination}.
+	\item Mencari semua faktor kapan subtring itu berulang lagi sebagai contoh table \ref{tab:kasiski examination} itu selisih antara sub kalimat "CSASX" adalah 10. Maka, faktor dari 10 adalah 10,5,2,1. 
+	\item Faktor yang sering berulang biasanya adalah jawabannya. 
+	\end{enumerate}
+	 Hal ini yang menjadi dasar pengerjaan permasalahan yang diangkat dalam tugas akhir ini.
 	\subsection{Intersection}
-	\textit{Intersection} adalah himpunan A dan Himpunan B dimana ada bagian dari A juga merupakan bagian dari B. Sehingga dapat ditulis 
-	$$A\cap{B=\{x:x\in A \textrm{ dan } x \in B \}}$$
+	\textit{Intersection} adalah himpunan A dan Himpunan B dimana ada bagian dari A juga merupakan bagian dari B. Sehingga dapat ditulis dengan persamaan \ref{eq:intersect}.
+	\begin{equation}
+	\label{eq:intersect}
+	A\cap{B=\{x:x\in A \textrm{ dan } x \in B \}}
+	\end{equation}
 	Sebagai contoh \textit{intersection} antara $\{1,2,3\}$ dan $\{1,4,5\}$ adalah $\{1\}$.\cite{devlin_joy_1993}	
 	
 	\section{Deskripsi Permasalahan}
@@ -50,17 +70,16 @@
 	
 	
 	 Permasalahan pada The Bytelandian Cryptographer (Act IV) diberikana pesan dengan panjang $N$ huruf, huruf yang digunakan adalah huruf kapital latin dari A sampai dengan Z, yang dapat ditafsirkan menjadi bilangan bulat dari 0 sampai dengan 25. Diberikan kunci untuk mentransmisikan pesan yang diketahui oleh kedua belah pihak yang terdiri dari $M$ bilangan bulat. Dengan menggunakan kunci yang ada bahwa pada index ke $i$ dari pesan pada index $x_i$ akan di enkripsikan ke dalam bentuk index ke $i$ dari pesan hasil enskripsi $y$, yang mengikuti aturan
-	 $$y_i=x_i+k_{1+(i-1)mod M} mod 26 $$
-	 
-	 
+	\begin{equation}
+	y_i=x_i+k_{1+(i-1)mod M} mod 26 
+	\end{equation}		 
 	 Diketahui \textit{plain text} dan \textit{ciphertext} yang diberikan hanya berupa potongan-potongan dari kedua pesan tersebut. Dicari bagaimana menkonstruksi ulang pesan yang telah didapat sehingga bisa membentuk \textit{plain text} yang asli dari pesan yang telah didapatkan sebanyak-banyaknya.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.5]{images/bab2/crypto_def.png}
+		\includegraphics[scale=0.8]{images/bab2/crypto_def.png}
 		\caption{Deskripsi Permasalahan pada SPOJ \textit{The Bytelandian Cryptographer (Act IV)}}
 		\label{fig:crypto4_def}
 	\end{figure}
-	
 	
 	Format masukan pada baris pertama diberikan $T$ ujicoba kasus. Pada baris selanjutnya diberikan $M$ batas atas panjang kunci. Pada baris selanjutnya diberikan \textit{plain text}. Pada baris selanjutnya di berikan \textit{ciphertext}, \textit{plain text} dan \textit{ciphertext} menggunakan karakter A sampai dengan Z yang dapat ditafsirkan kedalam bilangan bulat 0 sampai dengan 25 dan '*'(sebagai karakter yang hilang).
 	
@@ -68,7 +87,13 @@
 	Format keluaran yang dihasilkan adalah 1 baris yang mengandung \textit{plain text} dan '*' apabila nilai dari karakter tersebut tidak dapat ditentukan.Deskripsi mengenai Format masukan dan keluaran beserta dengan contohnya dalam bahasa Inggris dapat lihat pada gambar \ref{fig:crypto4_io}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.5]{images/bab2/crypto_io.png}
+		\includegraphics[scale=0.7]{images/bab2/crypto_io1.png}
+		%\caption{Deskripsi Format Masukan dan Keluaran pada SPOJ \textit{The Bytelandian Cryptographer (Act IV)}}
+		%\label{fig:crypto4_io}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{images/bab2/crypto_io2.png}
 		\caption{Deskripsi Format Masukan dan Keluaran pada SPOJ \textit{The Bytelandian Cryptographer (Act IV)}}
 		\label{fig:crypto4_io}
 	\end{figure}
@@ -100,13 +125,31 @@
 	 	\caption{Contoh 1}
 	 	\label{tab:contoh1}
 	\end{table}
-	 Dari table \ref{tab:contoh1} diketahui bahwa batas atas panjang kuncinya 1, oleh karena itu pasti panjang kuncinya 1. Tujuan awal adalah mendapatkan \plaintext sebanyak banyakanya dari \ciphertext dan batas atas panjang kunci yang telah diberikan. Oleh karena panjang \ciphertext yang diketahui hanya 2, sedangkan salah satu \ciphertext digunakan untuk menghitung selisih yang diketahui, maka dari tabel \ref{tab:contoh1} hanya mendapatkan 1 plaintext saja. Langkah-langkah yang digunakan adalah menyimpan seluruh hasil selisih dari \plaintext dan \ciphertext yang diketahui. Pada tahap ini index 2 dengan selisihnya 5. Mencari \ciphertext yang lain yang \plaintext masih kosong. Pada contoh ini index 3 saja. Dari yang telah diketahui dapat disimpulkan bahwa index 3 ini nilai \plaintext adalah H, karena dapat panjang kunci pasti 1 dan index $3\%1$ adalah 0 dan tidak ada \textit{collsion} yang terjadi. Sehingga index 3 dapat diisi dengan cara \ciphertext pada index 3 dikurangi dengan 5 dan hasil yang diperoleh adalah "H".
+	 
+	 Dari table \ref{tab:contoh1} dapat diketahui bagaimana hasil yang akan dicapai. Cara mencapai hasil yang diinginkan adalah sebagai berikut. Pertama-tama pencarian panjang kunci. Pada pencarian panjang kunci harus mengetahui dahulu batas atas dari panjang kunci tersebut. Pada contoh kasus ini $M$ bernilai 1, maka kemungkinan jawabannya hanya ada 1, yaitu $M$ itu sendiri, karena suatu panjang kunci yang digunakan dalam enskripsi tidak mungkin 0 .Diasumsikan bahwa 1 warna mewakili satu blok kunci yang akan digunakan. Maka akan membentuk seperti pada tabel \ref{tab:langkah1contoh1}.
+	 
+	\begin{table}[H]
+	 	\centering
+	 	\setlength{\arrayrulewidth}{.08em}
+	 	\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+	 	\textit{index}&0&1&2&3&4\\ \hline
+	 	\textit{plain text}&\cellcolor{blue!15}A&\cellcolor{lime!15}*&\cellcolor{yellow!25}X&\cellcolor{green!15}*&\cellcolor{pink!25}C\\ \hline
+	 	\textit{ciphertext}&\cellcolor{blue!15}*&\cellcolor{lime!15}*&\cellcolor{yellow!25}C&\cellcolor{green!15}M&\cellcolor{pink!25}*\\ \hline
+	 	Selisih yang diketahui& & &5& & \\ \hline
+	 	%Hasil              &A&*&X&H&C\\ \hline
+	 	\end{tabular}
+	 	\caption{Langkah 1 Contoh 1}
+	 	\label{tab:langkah1contoh1}
+	\end{table}
+	
+	  Karena selisih yang di ketahui hanya ada 1, maka itulah yang menjadi jawabannya. Selanjutnya mencari yang \plaintext yang bernilai "*" dan \ciphertext tidak kosong, seperti indeks ketiga. Maka indeks ketiga jawabannya adalah "H". Karena "M"$-5$ adlaah "H"
 	 
 	 
 	 
 	 Contoh 2. Diketahui bahwa $M$ bernilai 4 yang menunjukkan batas atas dari panjang kunci. Diketahui\plaintext adalah *B***A dan \ciphertext adalah AAAAAA. Dalam Contoh ini panjang kuncinya bisa dari 1 sampai dengan 4. 
 	 \begin{table}[H]
 	 	\centering
+	 	
 	 	\begin{tabular}{|c|c|c|c|c|c|c|}\hline
 		\textit{index}&0&1&2&3&4&5\\ \hline
 	 	\textit{plain text}&*&B&*&*&*&A\\ \hline
@@ -120,27 +163,171 @@
 	 	\caption{Contoh 2}
 	 	\label{tab:contoh2}
 	\end{table}
+	Cara yang harus dilalui adalah sebagai berikut. Pertama mencari panjang kunci yang bernilai diantara 1 - 4. \\
+	Pada table \ref{tab:k1contoh2} akan diperlihatkan proses pencarian ketika panjang kunci adalah 1.
+	\begin{table}[H]
+	 	\centering
+	 	\setlength{\arrayrulewidth}{.08em}
+	 	\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		\textit{index}&0&1&2&3&4&5\\ \hline
+	 	\textit{plain text}&\cellcolor{blue!15}*&\cellcolor{yellow!25}B&\cellcolor{green!15}*&\cellcolor{lime!25}*&\cellcolor{pink!30}*&\cellcolor{red!25}A\\ \hline
+	 	\textit{ciphertext}&\cellcolor{blue!15}A&\cellcolor{yellow!25}A&\cellcolor{green!15}A&\cellcolor{lime!25}A&\cellcolor{pink!30}A&\cellcolor{red!25}A\\ \hline
+	 	Selisih yang diketahui& &25& & & &0\\ \hline
+	 	Panjang Kunci 1 & \multicolumn{6}{c|}{tidak bisa karena ada yang \textit{collision}}\\ \hline
+	 	\end{tabular}
+	 	\caption{Panjang Kunci 1 Contoh 2}
+	 	\label{tab:k1contoh2}
+	\end{table}	
 	
-	Melanjutkan dari tabel \ref{tab:contoh1} untuk melihat adanya \textit{collision} yang terjadi pada indeks selisih \plaintext dan \ciphertext yang diketahui. Dari table \ref{tab:contoh2} dapat diketahui pada indeks 1 selisih antara \plaintext dan \ciphertext adalah 25 dan indeks 5 selisih antara \plaintext dan \ciphertext adalah 0. Pada tabel \ref{tab:contoh2} dapat dilihat bahwa panjang kunci 1 tidak bisa digunakan, alasannya adalah terjadinya \textit{collision} pada selisih yang diketahui dan nilai dari indek yang bertabrakan itu berbeda. Indeks 1 dan 5 apabila dimodulo 1 hasilnya adalah 1 dan nilai dari indeks yang bertabarakan itu berbeda. Hal ini juga terjadi pada panjang kunci 2,dimana indeks 1 dan 5 dimodulo 2 adalah 1, dan nilai dari indeks 1 dan 5 berbeda. Hal serupa juga terjadi panjang kunci 4, dimana indeks 1 dan 5 dimodulo hasilnya 1 dan nilai dari indeks yang bertabrakan itu berbeda. Apbila indeks yang bertabrakan itu memiliki nilai yang sama maka dapat dibentuk jawabannya. Seperti yang terjadi pada tabel\ref{tab:contoh3}. Sehingga hasil yang terbentuk hanya terdapat pada panjang kunci 3. Hal ini terjadi karena pada indeks yang telah diketahui selisihnya tidak terjadi \textit{colision}. Dibuktikan dari $1\%3=1$ dan $5\%3=2$. 
+	Apabila $1$ warna direpresentasikan menjadi 1 blok kunci, maka terdapat 5 blok kunci yang terbentuk. Pada bagian tabel \ref{tab:k1contoh2} bahwa hanya ada 2 indeks dimana \plaintext dan \ciphertext yang diketahui. Kedua-duanya terletak pada blok kunci yang berbeda. Akan tetapi karena panjang bloknya $1$ maka tidak mungkin panjang kunci 1 dilakukan karena kedua-duanya saling bertabrakan dan membawa nilai yang berbeda. Yang menjadi permasalahan pada panjang kunci 1 adalah ketika blok yang diketahui bertabrakan dan masing masing membawa nilai yang berbeda juga. Sehinnga dapat disimpulkan bahwa panjang kunci 1 pada contoh kasus 2 tidak mungkin terjadi.
+	\\
+	Proses pencarian ketika panjang kunci adalah 2.
+	\begin{table}[H]
+	 	\centering
+	 	\setlength{\arrayrulewidth}{.08em}
+	 	\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		\textit{index}&0&1&2&3&4&5\\ \hline
+	 	\textit{plain text}&\cellcolor{blue!15}*&\cellcolor{blue!15}B&\cellcolor{green!15}*&\cellcolor{green!15}*&\cellcolor{pink!30}*&\cellcolor{pink!30}A\\ \hline
+	 	\textit{ciphertext}&\cellcolor{blue!15}A&\cellcolor{blue!15}A&\cellcolor{green!15}A&\cellcolor{green!15}A&\cellcolor{pink!30}A&\cellcolor{pink!30}A\\ \hline
+	 	Selisih yang diketahui& &25& & & &0\\ \hline
+	 	Panjang Kunci 2 & \multicolumn{6}{c|}{tidak bisa karena ada yang \textit{collision}}\\ \hline
+	 	\end{tabular}
+	 	\caption{Panjang Kunci 2 Contoh 2}
+	 	\label{tab:k2contoh2}
+	\end{table}	
 	
+	Apabila 1 warna direprentasikan menjadi 1 blok kunci, maka terdapat 3 blok kunci yang terbentuk. Pada tabel \ref{tab:k2contoh2} terlihat bahwa terdapat 2 indeks dimana \plaintext dan \ciphertext yang diketahui. Indeks yang pertama terletak pada blok pertama bagian akhir, begitu juga indeks yang kedua terletak pada blok 3 bagian akhir. Karena kedua-duanya terletak pada bagian akhir dari masing-masing blok maka dapat disimpulkan panjang kunci 2 juga tidak dapat digunakan.
+	\\
+	Proses Pencarian ketika panjang kunci adalah 3.
+	\begin{table}[H]
+	 	\centering
+	 	\setlength{\arrayrulewidth}{.08em}
+	 	\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		\textit{index}&0&1&2&3&4&5\\ \hline
+	 	\textit{plain text}&\cellcolor{blue!15}*&\cellcolor{blue!15}B&\cellcolor{blue!15}*&\cellcolor{green!15}*&\cellcolor{green!15}*&\cellcolor{green!15}A\\ \hline
+	 	\textit{ciphertext}&\cellcolor{blue!15}A&\cellcolor{blue!15}A&\cellcolor{blue!15}A&\cellcolor{green!15}A&\cellcolor{green!15}A&\cellcolor{green!15}A\\ \hline
+	 	Selisih yang diketahui& &25& & & &0\\ \hline
+	 	Panjang Kunci 3 &*&B&A&*&B&A \\ \hline
+	 	\end{tabular}
+	 	\caption{Panjang Kunci 3 Contoh 2}
+	 	\label{tab:k3contoh2}
+	\end{table}	
+	Apabila 1 warna direpresentasikan menjadi 1 blok kunci, maka terdapat 2 blok kunci yang terbentuk. Pada tabel \ref{tab:k3contoh2} terlihat bahwa terdapat 2 indeks dimana \plaintext dan \ciphertext yang diketahui. Indeks yang pertama terletak dibagian tengah pada blok 1 dan indeks yang kedua terletak pada bagian akhir pada blok 2. Maka, \plaintext yang terbentuk adalah pada bagian akhir dari blok kunci 1 dan bagian tengah dari blok kunci 2. Karena kedua-duanya saling melengkapi antara satu bagian dengan bagian lainnya. Sehingga hasil yang terbentuk pada bagian akhir dari blok kunci 1 adalah "A"$-0$ adalah "A" dan bagian tengah dari blok kunci 2 adalah "A"$-25$ adalah "B". 
+	\\
+	Proses pencarian ketika panjang kunci adalah 4
+	\begin{table}[H]
+	 	\centering
+	 	\setlength{\arrayrulewidth}{.08em}
+	 	\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		\textit{index}&0&1&2&3&4&5\\ \hline
+	 	\textit{plain text}&\cellcolor{blue!15}*&\cellcolor{blue!15}B&\cellcolor{blue!15}*&\cellcolor{blue!15}*&\cellcolor{green!15}*&\cellcolor{green!15}A\\ \hline
+	 	\textit{ciphertext}&\cellcolor{blue!15}A&\cellcolor{blue!15}A&\cellcolor{blue!15}A&\cellcolor{blue!15}A&\cellcolor{green!15}A&\cellcolor{green!15}A\\ \hline
+	 	Selisih yang diketahui& &25& & & &0\\ \hline
+	 	Panjang Kunci 4 & \multicolumn{6}{c|}{tidak bisa karena ada yang \textit{collision}}\\ \hline
+	 	\end{tabular}
+	 	\caption{Panjang Kunci 4 Contoh 2}
+	 	\label{tab:k4contoh2}
+	\end{table}	
+	Apabila 1 warna direpresentasikan menjadi 1 blok kunci, maka terdapat 2 blok kunci yang terbentuk. Pada tabel \ref{tab:k4contoh2} terlihat bahwa terdapat 2 indeks dimana \plaintext dan \ciphertext yang diketahui. Indeks yang pertama terletak dibagian kedua dari depan pada blok 1 dan indeks yang kedua terletak pada bagian kedua dari depan pada blok 2. Maka dalam ini tidak bisa digunakan panjang kunci 4, karena terdapat bagian dari kedua blok pada panjang kunci 4 yang bertabrakan dan membawa nilai yang berbeda. Sehingga hasil yang terbentuk dapat dilihat pada tabel \ref{tab:rescontoh2}
 	
-	Contoh 3. Diketahui bahwa $M$ bernilai 4 yang menunjukkan batas atas dari panjang kunci. Diketahui \plaintext adalah *AA******* dan \ciphertext adalah AAAAAAAAAA. Indek akan dihitung mulai dari 0.
+	\begin{table}[H]
+	 	\centering
+	 	\setlength{\arrayrulewidth}{.08em}
+	 	\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+		\textit{index}&0&1&2&3&4&5\\ \hline
+	 	\textit{plain text}&*&B&*&*&*&A\\ \hline
+	 	\textit{ciphertext}&A&A&A&A&A&A\\ \hline
+	 	Selisih yang diketahui& &25& & & &0\\ \hline
+	 	Hasil &*&B&A&*&B&A \\ \hline
+	 	\end{tabular}
+	 	\caption{Hasil Contoh 2}
+	 	\label{tab:rescontoh2}
+	\end{table}	 
+	
+		
+	Contoh 3. Diketahui bahwa $M$ bernilai 4 yang menunjukkan batas atas dari panjang kunci. Diketahui \plaintext adalah *AA******* dan \ciphertext adalah AAAAAAAAAA. Indek akan dihitung mulai dari 0. 
 	 \begin{table}[H]
 	 	\centering
 	 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline
-	 	\textit{index}&1&2&3&4&5&6&7&8&9&10\\ \hline
+	 	\textit{index}&0&1&2&3&4&5&6&7&8&9\\ \hline
 	 	\textit{plain text}&*&A&A&*&*&*&*&*&*&*\\ \hline
 	 	\textit{ciphertext}&A&A&A&A&A&A&A&A&A&A\\ \hline
 		Selisih yang diketahui & &0&0& & & & & & & \\ \hline	 	
 	 	\end{tabular}
-	 	\caption{Contoh 3}
+	 	\caption{ Contoh 3}
 	 	\label{tab:contoh3}
 	\end{table}
+	
+	Cara yang harus dilalui adalah sebagai berikut. Pertama mencari panjang kunci yang bernilai diantara 1 - 4. \\
+	Pada table \ref{tab:k1contoh3} akan diperlihatkan proses pencarian ketika panjang kunci adalah 1.
+	\begin{table}[H]
+	 	\centering
+	 	\setlength{\arrayrulewidth}{.08em}
+	 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline
+	 	\textit{index}&0&1&2&3&4&5&6&7&8&9\\ \hline
+	 	\textit{plain text}&\cellcolor{blue!15}*&\cellcolor{yellow!25}A&\cellcolor{green!15}A&\cellcolor{lime!25}*&\cellcolor{pink!30}*&\cellcolor{red!15}*&\cellcolor{violet!30}*&\cellcolor{magenta!15}*&\cellcolor{purple!25}*&\cellcolor{teal!35}*\\ \hline
+	 	\textit{ciphertext}&\cellcolor{blue!15}A&\cellcolor{yellow!25}A&\cellcolor{green!15}A&\cellcolor{lime!25}A&\cellcolor{pink!30}A&\cellcolor{red!15}A&\cellcolor{violet!30}A&\cellcolor{magenta!15}A&\cellcolor{purple!25}A&\cellcolor{teal!35}A\\ \hline
+		Selisih yang diketahui & &0&0& & & & & & & \\ \hline	
+		Panjang kunci 1 &A&A&A&A&A&A&A&A&A&A\\ \hline 	
+	 	\end{tabular}
+	 	\caption{Panjang Kunci 1 Contoh 3}
+	 	\label{tab:k1contoh3}
+	\end{table}
+	
+	Apabila 1 warna merepresentasikan sebagai 1 blok kunci maka, dapat terbentuk sebanyak 10 blok kunci. Dapat dilihat pada table \ref{tab:k1contoh3}. Indek yang diketahui baik \plaintext dan \ciphertext adalah indek 1 dan indek 2, yang mana keduanya terletak pada blok yang berbeda. Akan tetapi, karena mereka membawa 1 nilai yang sama maka semua plaintext yang kosong pasti bernilai "A".
+	\\
+	Pada table \ref{tab:k2contoh3} akan diperlihatkan proses pencarian ketika panjang kunci adalah 2.
+	\begin{table}[H]
+	 	\centering
+	 	\setlength{\arrayrulewidth}{.08em}
+	 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline
+	 	\textit{index}&0&1&2&3&4&5&6&7&8&9\\ \hline
+	 	\textit{plain text}&\cellcolor{blue!15}*&\cellcolor{blue!15}A&\cellcolor{green!15}A&\cellcolor{green!15}*&\cellcolor{pink!30}*&\cellcolor{pink!30}*&\cellcolor{violet!30}*&\cellcolor{violet!30}*&\cellcolor{purple!25}*&\cellcolor{purple!25}*\\ \hline
+	 	\textit{ciphertext}&\cellcolor{blue!15}A&\cellcolor{blue!15}A&\cellcolor{green!15}A&\cellcolor{green!15}A&\cellcolor{pink!30}A&\cellcolor{pink!30}A&\cellcolor{violet!30}A&\cellcolor{violet!30}A&\cellcolor{purple!25}A&\cellcolor{purple!25}A\\ \hline
+		Selisih yang diketahui & &0&0& & & & & & & \\ \hline	
+		Panjang kunci 2 &A&A&A&A&A&A&A&A&A&A\\ \hline 	
+	 	\end{tabular}
+	 	\caption{Panjang Kunci 2 Contoh 3}
+	 	\label{tab:k2contoh3}
+	\end{table}
+	Apabila 1 warna merepresentasikan sebagai 1 blok kunci maka, dapat terbentuk sebanyak 5 blok kunci. Dapat dilihat pada tabel \ref{tab:k2contoh3}. Indek yang diketahui baik \plaintext dan \ciphertext adalah indek 1 dan indek 2, yang mana keduanya terletak pada blok yang berbeda dan posisi yang berbeda pula. Hal ini dapat dilihat pada tabel \ref{tab:k2contoh3}. Indek yang diketahui pertama terletak pada bagian akhir dari blok 1 dan indek yang diketahui kedua terletak pada bagian awal dari blok 2. Maka dapat disimpulkan bahwa seluruh plaintext yang nilai "*" dan ciphertext yang nilainya tidak "*", nilai dari plaintext yang terbentuk seluruhnya "A", seperti yang terlihat pada tabel \ref{tab:k2contoh3}.
+	\\	
+	Pada table \ref{tab:k3contoh3} akan diperlihatkan proses pencarian ketika panjang kunci adalah 3.
+	\begin{table}[H]
+	 	\centering
+	 	\setlength{\arrayrulewidth}{.08em}
+	 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline
+	 	\textit{index}&0&1&2&3&4&5&6&7&8&9\\ \hline
+	 	\textit{plain text}&\cellcolor{blue!15}*&\cellcolor{blue!15}A&\cellcolor{blue!15}A&\cellcolor{blue!15}*&\cellcolor{green!15}*&\cellcolor{green!15}*&\cellcolor{green!15}*&\cellcolor{green!15}*&\cellcolor{violet!30}*&\cellcolor{violet!30}*\\ \hline
+	 	\textit{ciphertext}&\cellcolor{blue!15}A&\cellcolor{blue!15}A&\cellcolor{blue!15}A&\cellcolor{blue!15}A&\cellcolor{green!15}A&\cellcolor{green!15}A&\cellcolor{green!15}A&\cellcolor{green!15}A&\cellcolor{violet!30}A&\cellcolor{violet!30}A\\ \hline
+		Selisih yang diketahui & &0&0& & & & & & & \\ \hline	
+		Panjang kunci 3 &*&A&A&*&A&A&*&A&A&*\\ \hline 	
+	 	\end{tabular}
+	 	\caption{Panjang Kunci 3 Contoh 3}
+	 	\label{tab:k3contoh3}
+	\end{table}
+	Apabila 1 warna merepresentasikan sebagai 1 blok kunci maka, dapat terbentuk sebanyak 4 blok kunci. Dapat dilihat pada tabel \ref{tab:k3contoh3}. Indek yang diketahui baik \plaintext dan \ciphertext adalah indek 1 dan indek 2, dimana smuanya terletak pada satu blok yang sama, yaitu blok kunci 1 . Jadi, sisanya menngikuti perulangan dari blok kunci 1. 
+	\\
+	Pada table \ref{tab:k4contoh3} akan diperlihatkan proses pencarian ketika panjang kunci adalah 4.
+	\begin{table}[H]
+	 	\centering
+	 	\setlength{\arrayrulewidth}{.08em}
+	 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline
+	 	\textit{index}&0&1&2&3&4&5&6&7&8&9\\ \hline
+	 	\textit{plain text}&\cellcolor{blue!15}*&\cellcolor{blue!15}A&\cellcolor{blue!15}A&\cellcolor{green!15}*&\cellcolor{green!15}*&\cellcolor{green!15}*&\cellcolor{violet!30}*&\cellcolor{violet!30}*&\cellcolor{violet!30}*&\cellcolor{purple!25}*\\ \hline
+	 	\textit{ciphertext}&\cellcolor{blue!15}A&\cellcolor{blue!15}A&\cellcolor{blue!15}A&\cellcolor{green!15}A&\cellcolor{green!15}A&\cellcolor{green!15}A&\cellcolor{violet!30}A&\cellcolor{violet!30}A&\cellcolor{violet!30}A&\cellcolor{purple!25}A\\ \hline
+		Selisih yang diketahui & &0&0& & & & & & & \\ \hline	
+		Panjang kunci 4 &*&A&A&*&*&A&A&*&*&A\\ \hline 	
+	 	\end{tabular}
+	 	\caption{Panjang Kunci 4 Contoh 3}
+	 	\label{tab:k4contoh3}
+	\end{table}
+	Apabila 1 warna merepresentasikan sebagai 1 blok kunci maka, dapat terbentuk sebanyak 4 blok kunci. Dapat dilihat pada tabel \ref{tab:k4contoh3}. Indek yang diketahui baik \plaintext dan \ciphertext adalah indek 1 dan indek 2, dimana smuanya terletak pada satu blok yang sama, yaitu blok kunci 1 . Jadi, sisanya menngikuti perulangan dari blok kunci 1. 
 	
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline
-		\textit{index}&1&2&3&4&5&6&7&8&9&10\\ \hline		
+		\textit{index}&0&1&2&3&4&5&6&7&8&9\\ \hline	
 		\textit{plain text} awal&*&A&A&*&*&*&*&*&*&*\\ \hline
 		Panjang kunci 1 &A&A&A&A&A&A&A&A&A&A\\ \hline
 		Panjang kunci 2 &A&A&A&A&A&A&A&A&A&A\\ \hline

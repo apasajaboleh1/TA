@@ -349,7 +349,7 @@
         Dosen Pembimbing II\\*%
         \pembimbingDua
     }{} \\\\*[10pt]%
-    JURUSAN \MakeUppercase{\jurusan} \\*%
+    Departemen \MakeUppercase{\jurusan} \\*%
     Fakultas \fakultas \\*%
     Institut Teknologi Sepuluh Nopember \\*%
     Surabaya, \tahun \\*%
@@ -372,7 +372,7 @@
         Dosen Pembimbing II\\*%
         \pembimbingDua
     }{} \\\\*[10pt]%
-    JURUSAN \MakeUppercase{\jurusan} \\*%
+    Departemen \MakeUppercase{\jurusan} \\*%
     Fakultas \fakultas \\*%
     Institut Teknologi Sepuluh Nopember \\*%
     Surabaya, \tahun \\*%
@@ -418,7 +418,7 @@
         Memperoleh Gelar \gelar \\*%
         pada \\*%
         Bidang Studi \bidangStudi \\*%
-        Program Studi \prodi  Jurusan \jurusan \\*%
+        Program Studi \prodi  Departement \jurusan \\*%
         Fakultas \fakultas \\*%
         Institut Teknologi Sepuluh Nopember \\*[10pt]%
         Oleh: \\*%
@@ -450,7 +450,7 @@
 \noindent\begin{tabular}{>{\bfseries}ll>{\bfseries}p{6.5cm}}
 Nama  & :& \MakeUppercase{\penulis} \\
 NRP & :& \nrp \\
-Jurusan  & :& \jurusan \fakultasSingkatan \\
+Departemen  & :& \jurusan \fakultasSingkatan \\
 Pembimbing I  & :& \pembimbingSatu
 \ifdef{\pembimbingDua}{\\Pembimbing II  & :& \pembimbingDua}{}
 \end{tabular}
