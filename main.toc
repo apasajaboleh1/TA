@@ -48,6 +48,7 @@
 \contentsline {chapter}{\numberline {VI}PENUTUP}{47}{chapter.6}
 \contentsline {section}{\numberline {6.1}Kesimpulan}{47}{section.6.1}
 \contentsline {section}{\numberline {6.2}Saran}{47}{section.6.2}
-\contentsline {chapter}{\numberline {A}Lampiran}{49}{appendix.A}
-\contentsline {chapter}{\numberline {B}Hasil Percobaan dengan menggunakan Algoritma Naive dan Kasiski Examination}{55}{appendix.B}
-\contentsline {chapter}{BIODATA PENULIS}{65}{appendix*.47}
+\contentsline {chapter}{DAFTAR PUSTAKA}{49}{chapter*.31}
+\contentsline {chapter}{\numberline {A}Lampiran}{51}{appendix.A}
+\contentsline {chapter}{\numberline {B}Hasil Percobaan dengan menggunakan Algoritma Naive dan Kasiski Examination}{57}{appendix.B}
+\contentsline {chapter}{BIODATA PENULIS}{67}{appendix*.48}

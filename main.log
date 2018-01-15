@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  15 JAN 2018 00:46
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  15 JAN 2018 12:23
 entering extended mode
 **./main.tex
 (main.tex
@@ -2014,10 +2014,18 @@ File: images/bab5/b.png Graphic file (type QTm)
 
 ]
 BAB VI.
-[47]) [48]
+[47]) [48] (main.bbl) [49
+
+
+
+]
 \openout2 = `Chapters/Auxiliary.aux'.
 
- (Chapters/Auxiliary.tex
+ (Chapters/Auxiliary.tex [50
+
+
+
+]
 Lampiran A.
 File: images/lampiran/best.png Graphic file (type QTm)
 <use  "images/lampiran/best.png" >
@@ -2028,16 +2036,11 @@ Overfull \hbox (18.04512pt too wide) in paragraph at lines 9--10
 File: images/lampiran/uji31.png Graphic file (type QTm)
 <use  "images/lampiran/uji31.png" >
 File: images/lampiran/uji1.png Graphic file (type QTm)
- <use  "images/lampiran/uji1.png" > [49
-
-
-
-
-]
+ <use  "images/lampiran/uji1.png" > [51]
 Overfull \vbox (24.68826pt too high) has occurred while \output is active []
 
 
-[50]
+[52]
 File: images/lampiran/uji3.png Graphic file (type QTm)
  <use  "images/lampiran/uji3.png" >
 Overfull \hbox (0.93588pt too wide) in paragraph at lines 30--31
@@ -2050,24 +2053,24 @@ Overfull \hbox (22.63757pt too wide) in paragraph at lines 37--38
  [][] 
  []
 
-[51]
+[53]
 File: images/lampiran/rankdiatas2.png Graphic file (type QTm)
  <use  "images/lampiran/rankdiatas2.png" >
 Overfull \hbox (31.98761pt too wide) in paragraph at lines 44--45
  [][] 
  []
 
-[52]) [53]
+[54]) [55]
 \openout2 = `Chapters/Auxiliary2.aux'.
 
- (Chapters/Auxiliary2.tex [54
+ (Chapters/Auxiliary2.tex [56
 
 
 
 
 ]
 Lampiran B.
-[55] [56] [57] [58] [59] [60] [61] [62]) [63] [64]
+[57] [58] [59] [60] [61] [62] [63] [64]) [65] [66]
 \openout2 = `Chapters/Main/Bab7-Biodata.aux'.
 
 
@@ -2076,7 +2079,7 @@ File: images/foto-diri.jpg Graphic file (type QTm)
  <use  "images/foto-diri.jpg" >
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
 (Font)              scaled to size 9.85492pt on input line 8.
-) [65
+) [67
 
 
 
@@ -2109,12 +2112,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29727 strings out of 427834
- 533853 string characters out of 3152470
+ 29741 strings out of 427834
+ 534072 string characters out of 3152470
  931463 words of memory out of 3000000
- 33185 multiletter control sequences out of 15000+200000
+ 33196 multiletter control sequences out of 15000+200000
  549160 words of font info for 79 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  49i,12n,69p,10395b,871s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.pdf (87 pages).
+Output written on main.pdf (89 pages).
