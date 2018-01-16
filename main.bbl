@@ -21,13 +21,6 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{piwakowski_crypto4_2004}
-\BIBentryALTinterwordspacing
-K.~Piwakowski, ``{CRYPTO}4 - {The} {Bytelandian} {Cryptographer} ({Act}
-  {IV}),'' 2004. [Online]. Available:
-  \url{http://www.spoj.com/problems/CRYPTO4/}
-\BIBentrySTDinterwordspacing
-
 \bibitem{stallings_computer_2015}
 W.~Stallings and L.~Brown, \emph{Computer {Security} {Principles} and
   {Practice}}, 3rd~ed.\hskip 1em plus 0.5em minus 0.4em\relax Pearson, 2015.
@@ -36,10 +29,17 @@ W.~Stallings and L.~Brown, \emph{Computer {Security} {Principles} and
 S.~William, \emph{Crytography and {Network} {Security}}, 5th~ed.\hskip 1em plus
   0.5em minus 0.4em\relax Pearson, 2011.
 
-\bibitem{noauthor_kasiski_nodate}
+\bibitem{piwakowski_crypto4_2004}
 \BIBentryALTinterwordspacing
-``Kasiski {Method}.'' [Online]. Available:
-  \url{http://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/Vig-Kasiski.html}
+K.~Piwakowski, ``{CRYPTO}4 - {The} {Bytelandian} {Cryptographer} ({Act}
+  {IV}),'' 2004. [Online]. Available:
+  \url{http://www.spoj.com/problems/CRYPTO4/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{john_jones_spoj_2009}
+\BIBentryALTinterwordspacing
+john\_jones, ``{SPOJ} {Discussion} {Board},'' 2009. [Online]. Available:
+  \url{http://discuss.spoj.com/t/problemset-3/242/13}
 \BIBentrySTDinterwordspacing
 
 \bibitem{devlin_joy_1993}
@@ -47,10 +47,20 @@ K.~Devlin, \emph{The {Joy} of {Sets}: {Fundamentals} of {Contemporary} {Set}
   {Theory}}, 2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax New York: Springer,
   1993.
 
-\bibitem{john_jones_spoj_2009}
+\bibitem{center_for_history_and_new_media_zotero_nodate}
 \BIBentryALTinterwordspacing
-john\_jones, ``{SPOJ} {Discussion} {Board},'' 2009. [Online]. Available:
-  \url{http://discuss.spoj.com/t/problemset-3/242/13}
+{Center for History and New Media}, ``Zotero {Quick} {Start} {Guide}.''
+  [Online]. Available: \url{http://zotero.org/support/quick_start_guide}
+\BIBentrySTDinterwordspacing
+
+\bibitem{henk_encyclopedia_2005}
+C.~Henk, \emph{Encyclopedia of {Cryptography} and {Security}}.\hskip 1em plus
+  0.5em minus 0.4em\relax Springer, 2005.
+
+\bibitem{noauthor_kasiski_nodate}
+\BIBentryALTinterwordspacing
+``Kasiski {Method}.'' [Online]. Available:
+  \url{http://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/Vig-Kasiski.html}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

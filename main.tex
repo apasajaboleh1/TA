@@ -11,6 +11,7 @@
 \usepackage{etoolbox}
 \usepackage{listings}
 %\usepackage{longtable}
+%\usepackage[style=authoryear,backend=biber]{biblatex}
 %\usepackage{algorithm} 
 \usepackage{float}
 \usepackage{slantsc}
@@ -32,7 +33,7 @@
 
 \usepackage{xcolor} %start packages for colored code listing
 \usepackage{upquote} %start packages for colored code listing
-\def\plaintext{\textit{plain text }}
+\def\plaintext{\textit{plaintext }}
 \def\ciphertext{\textit{ciphertext }}
 \usepackage{enumitem} % for advanced enumerate numberings
 \usepackage{scrextend}
@@ -92,7 +93,7 @@
     \include{Chapters/Main/Bab5-PengujianDanEvaluasi}
     %\include{Contoh}
     \include{Chapters/Main/Bab6-Penutup}
-
+	\nocite{*}
     % Daftar Pustaka
     \bibliography{Zotero1}
     \bibliographystyle{ieeetran}

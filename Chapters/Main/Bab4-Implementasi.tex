@@ -33,7 +33,7 @@ Data keluaran yang dihasilkan oleh program hanya berupa satu kalimat yang berisi
 \section{Implementasi Algoritma}
 Pada subbab ini akan dijelaskan tentang implementasi proses
 algoritma secara keseluruhan berdasarkan desain yang telah
-dijelaskan pada bab \ref{chapter:design}. Pada bagian ini menggunakan optimasi kompiler yang bertujuan untuk mempersingkat waktu eksekusi, seperti inline dan noexcept. Inline berguna untuk membuat baris kode dalam kompiler menjadi berurutan, karena bisa saja baris kode yang terjadi pada kompiler tidak berurutan. Noexcept adalah membuang  \textit{exception} apabila terjadinya \textit{exception}.
+dijelaskan pada bab \ref{chapter:design}. Pada bagian ini menggunakan kode untuk mengoptimasi kompiler yang bertujuan untuk mempersingkat waktu eksekusi, seperti "inline" dan "noexcept". Inline berguna untuk membuat baris kode dalam kompiler menjadi berurutan, karena bisa saja baris kode yang terjadi pada kompiler tidak berurutan. Noexcept adalah membuang  \textit{exception} apabila terjadinya \textit{exception}.
 
 \subsection{\textit{Header} yang Diperlukan}
 Implementasi algoritma dengan teknik \textit{Kasiski Examination} untuk menyelesaikan \textit{The Bytelandian Cryptographer (Act IV)} untuk membutuhkan 4 \textit{header} yaitu cstdio, cstring, algorithm, dan $unordered\_map$. Seperti yang terdapat pada kode sumber
@@ -41,7 +41,7 @@ Implementasi algoritma dengan teknik \textit{Kasiski Examination} untuk menyeles
 \lstinputlisting[language=C++, firstline=1, lastline=4, caption=\textit{Header} yang diperlukan, label=source:implementasi_header]{Chapters/Details/bab4/crypto4.cpp}
 
 \textit{Header} cstdio berisi modul untuk menerima masukan dan
-memberikan keluaran. \textit{Header} \textit{algorithm} berisi modul yang memiliki fungsi-fungsi yang sangat berguna dalam membantu mengimplementasi algortima yang telah dibangun. Contohnya adalah fungsi \textit{max} dan \textit{sort}. \textit{Header} cstring berisi modul yang memiliki fungsi-fungsi untuk melakukan pemrosesan \textit{string}. Contoh fungsi yang membantu mengimplementasikan algoritma yang dibangun adalah fungsi \textit{memset}. \textit{Header} \textit{$unordered\_map$} berisi modul-modul untuk membuat suatu tempat penyimpanan data yang dapat diisi, dihapus untuk setiap elementnya, tetapi hanya dapat menyimpan data dalam bentuk seperti array 1 dimensi, akan tetapi media penyimpanannya seperti memetakan suatu elemen himpunan kedalam elemen lainnya. Pengindeksan yang ada menggunakan \textit{hashing function}.
+memberikan keluaran. \textit{Header} algorithm berisi modul yang memiliki fungsi-fungsi yang sangat berguna dalam membantu mengimplementasi algortima yang telah dibangun. Contohnya adalah fungsi \textit{max} dan \textit{sort}. \textit{Header} cstring berisi modul yang memiliki fungsi-fungsi untuk melakukan pemrosesan \textit{string}. Contoh fungsi yang membantu mengimplementasikan algoritma yang dibangun adalah fungsi \textit{memset}. \textit{Header} \textit{$unordered\_map$} berisi modul-modul untuk membuat suatu tempat penyimpanan data yang dapat diisi, dihapus untuk setiap elementnya, tetapi hanya dapat menyimpan data dalam bentuk seperti array 1 dimensi, akan tetapi media penyimpanannya seperti memetakan suatu elemen himpunan kedalam elemen lainnya. Pengindeksan yang ada menggunakan \textit{hashing function}.
 
 \subsection{\textit{Preprocessor Directives}}
 \textit{Preprocessor directives} digunakan untuk memudahkan dalam menyingkat kode-kode yang akan dibuat dan biasanya berupa fungsi ataupun suatu konstanta yang akan digunakan dalam proses perhitungan, yang nantinya akan diterjemahkan terlebih dahulu sebelum mengeksekusi kode. Kode Sumber implementasi constanta variabel dapat dilihat pada Kode Sumber \ref{source:const_variable}.
@@ -66,7 +66,8 @@ Fungsi Main adalah implementasi algoritma yang dirancang pada Gambar \ref{fig:ma
 Fungsi SOLVE adalah implementasi algoritma yang dirancang pada Gambar \ref{fig:solvefx}. Implementasi fungsi SOLVE dapat dilihat pada Kode Sumber \ref{source:fungsi_SOLVE}. 
 
 \begin{minipage}{\linewidth}
-\lstinputlisting[language=C++, firstline=26, lastline=67, caption=Fungsi SOLVE, label=source:fungsi_SOLVE]{Chapters/Details/bab4/crypto4.cpp}
+\resizebox{\textwidth}{!}{%
+\lstinputlisting[language=C++, firstline=26, lastline=67, caption=Fungsi SOLVE, label=source:fungsi_SOLVE]{Chapters/Details/bab4/crypto4.cpp}}
 \end{minipage} 
 
 \subsection{Implementasi Fungsi VALIDITY}

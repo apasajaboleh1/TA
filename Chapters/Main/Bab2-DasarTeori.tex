@@ -26,20 +26,20 @@
 		\caption{Aturan \textit{Polyalphabetical Cipher}}
 		\label{fig:polyalphabeticalcipher}
 	\end{figure}
-	Salah satu turunan dari \textit{polyalphabetic cipher} adalah teknik \textit{Vigenere Cipher} yang menjadi dasar permasalahan yang diangkat dalam tugas akhir ini.\cite{stallings_computer_2015}
+	Salah satu turunan dari \textit{polyalphabetic cipher} adalah teknik \textit{Vigenere Cipher} yang menjadi dasar permasalahan yang diangkat dalam tugas akhir ini\cite{stallings_computer_2015}.
 	
 	\subsection{Ciphertext}
 	\textit{Ciphertext} adalah suatu pesan / teks acak yang dihasilkan dari suatu algoritma kriptografi. 
-	Contoh dari Ciphertext dalam kasus \textit{polyalphabetical cipher} adalah "RTPPRKGFI" yang merupakan hasil enkripsi dari "PLAINTEXT" dan menggunakan kunci "CIPHER".\cite{william_crytography_2011}
+	Contoh dari Ciphertext dalam kasus \textit{polyalphabetical cipher} adalah "RTPPRKGFI" yang merupakan hasil enkripsi dari "PLAINTEXT" dan menggunakan kunci "CIPHER"\cite{william_crytography_2011}.
 	
 	\subsection{Plaintext}
-	\textit{Plaintext} Plaintext adalah data original sebagai inputan dari suatu metode enskripsi yang akan dilakukan\cite{william_crytography_2011}. Biasanya merupakan suatu rangkaian kata yang masih dapat dipahami artinya atau hasil keluaran dari suatu algoritma kriptografi yang akan dienskripsi lagi.
+	\textit{Plaintext} adalah data original sebagai inputan dari suatu metode enskripsi yang akan dilakukan\cite{william_crytography_2011}. Biasanya merupakan suatu rangkaian kata yang masih dapat dipahami artinya atau hasil keluaran dari suatu algoritma kriptografi yang akan dienskripsi lagi.
 	
 	\subsection{Secret Key}
 	\textit{Secret Key} atau yang lebih dikenal dengan \textit{key} adalah suatu inputan dari algoritma enskripsi yang akan menentukan suatu transformasi dan subtitusi yang akan dilakukan oleh algoritma enskripsi\cite{william_crytography_2011}. Dalam kasus \textit{polyalphabetical cipher} pada permasalahan yang diangkat dalam tugas akhir ini, panjang kunci yang digunakan setidaknya 1. 
 	
 	 \subsection{Kasiski Examination}
-	 \textit{Kasiski Examination} merupakan suatu teknik yang digunakan untuk mendeskripsikan secara paksa suatu \textit{ciphertext} yang menggunakan teknik subtitusi, baik itu \textit{polyalphabetical cipher} maupun \textit{monoalphabetical cipher}. Teknik menggunakan kelemahan yang ditimbulkan oleh teknik subtitusi itu sendiri, yaitu apabila suatu \textit{subtring} dari \plaintext dan \textit{subtring} dari suatu set kunci yang berulang terdapat yang berulang, maka dapat dipastikan untuk menebak panjang huruf / karakter kunci yang digunakan, tanpa diketahui \plaintext dan kuncinya. Sebagai contoh dapat dilihat pada table \ref{tab:kasiski examination}.
+	 \textit{Kasiski Examination} merupakan suatu teknik yang digunakan untuk mendeskripsikan secara paksa suatu \textit{ciphertext} yang menggunakan teknik subtitusi, baik itu \textit{polyalphabetical cipher} maupun \textit{monoalphabetical cipher}. Teknik menggunakan kelemahan yang ditimbulkan oleh teknik subtitusi itu sendiri, yaitu apabila suatu \textit{subtring} dari \plaintext dan \textit{subtring} dari suatu set kunci yang berulang terdapat yang berulang, maka dapat dipastikan untuk menebak panjang huruf / karakter kunci yang digunakan, tanpa diketahui \plaintext dan kuncinya. Sebagai contoh dapat dilihat pada table \ref{tab:kasiskiexamination}.
 	 \begin{table}[H]
 		\resizebox{\textwidth}{!}{%
 		\begin{tabular}   {|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}\hline
@@ -47,12 +47,13 @@
 		%kunci              &a&b&c&d&e&a&b&c&d&e&a&b&c&d&e \\ \hline
 		\end{tabular}}
 		\caption{Contoh \textit{Kasiski Examintaion}}
-		\label{tab:kasiski examination}
+		\label{tab:kasiskiexamination}
 	\end{table}
-	Dari table \ref{tab:kasiski examination} yang ada dapat disimpulkan bahwa kata "CSASX" berulang.Sehingga setidaknya dapat disimpulkan bahwa panjang kuncinya mungkin 5 karakter atau faktor dari 10.\cite{noauthor_kasiski_nodate}. Cara pencarian panjangnya:
+	Dari table \ref{tab:kasiskiexamination} yang ada dapat disimpulkan bahwa kata "CSASX" berulang.Sehingga setidaknya dapat disimpulkan bahwa panjang kuncinya mungkin 5 karakter atau faktor dari 10\cite{noauthor_kasiski_nodate}.
+	Cara pencarian panjangnya:
 	\begin{enumerate}
-	\item Mencari semua subtring yang berulang. Seperti tabel \ref{tab:kasiski examination}.
-	\item Mencari semua faktor kapan subtring itu berulang lagi sebagai contoh table \ref{tab:kasiski examination} itu selisih antara sub kalimat "CSASX" adalah 10. Maka, faktor dari 10 adalah 10,5,2,1. 
+	\item Mencari semua subtring yang berulang. Seperti tabel \ref{tab:kasiskiexamination}.
+	\item Mencari semua faktor kapan subtring itu berulang lagi sebagai contoh table \ref{tab:kasiskiexamination} itu selisih antara sub kalimat "CSASX" adalah 10. Maka, faktor dari 10 adalah 10,5,2,1. 
 	\item Faktor yang sering berulang biasanya adalah jawabannya. 
 	\end{enumerate}
 	 Hal ini yang menjadi dasar pengerjaan permasalahan yang diangkat dalam tugas akhir ini.
@@ -62,11 +63,11 @@
 	\label{eq:intersect}
 	A\cap{B=\{x:x\in A \textrm{ dan } x \in B \}}
 	\end{equation}
-	Sebagai contoh \textit{intersection} antara $\{1,2,3\}$ dan $\{1,4,5\}$ adalah $\{1\}$.\cite{devlin_joy_1993}	
+	Sebagai contoh \textit{intersection} antara $\{1,2,3\}$ dan $\{1,4,5\}$ adalah $\{1\}$\cite{devlin_joy_1993}	.
 	
 	\section{Deskripsi Permasalahan}
 	\label{chapter:dasar-teori}
-	Permasalahan yang diangkat dalam tugas akhir ini diangkat dari suatu permasalahan yang terdapat pada suatu situs penilaian daring atau \textit{online judge} SPOJ yaitu \textit{The Bytelandian Cryptographer (Act IV)} dengan nomer soal 20 dengan kode soal CRYPTO4. Deskripsi soal yang asli menggunakan bahasa Inggris dapat dilihat pada \ref{fig:crypto4_def}.\cite{piwakowski_crypto4_2004}
+	Permasalahan yang diangkat dalam tugas akhir ini diangkat dari suatu permasalahan yang terdapat pada suatu situs penilaian daring atau \textit{online judge} SPOJ yaitu \textit{The Bytelandian Cryptographer (Act IV)} dengan nomer soal 20 dengan kode soal CRYPTO4. Deskripsi soal yang asli menggunakan bahasa Inggris dapat dilihat pada \ref{fig:crypto4_def}\cite{piwakowski_crypto4_2004}.
 	
 	
 	 Permasalahan pada The Bytelandian Cryptographer (Act IV) diberikana pesan dengan panjang $N$ huruf, huruf yang digunakan adalah huruf kapital latin dari A sampai dengan Z, yang dapat ditafsirkan menjadi bilangan bulat dari 0 sampai dengan 25. Diberikan kunci untuk mentransmisikan pesan yang diketahui oleh kedua belah pihak yang terdiri dari $M$ bilangan bulat. Dengan menggunakan kunci yang ada bahwa pada index ke $i$ dari pesan pada index $x_i$ akan di enkripsikan ke dalam bentuk index ke $i$ dari pesan hasil enskripsi $y$, yang mengikuti aturan
@@ -76,12 +77,12 @@
 	 Diketahui \textit{plain text} dan \textit{ciphertext} yang diberikan hanya berupa potongan-potongan dari kedua pesan tersebut. Dicari bagaimana menkonstruksi ulang pesan yang telah didapat sehingga bisa membentuk \textit{plain text} yang asli dari pesan yang telah didapatkan sebanyak-banyaknya.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.8]{images/bab2/crypto_def.png}
-		\caption{Deskripsi Permasalahan pada SPOJ \textit{The Bytelandian Cryptographer (Act IV)}}
+		\includegraphics[scale=0.75]{images/bab2/crypto_def.png}
+		\caption{Deskripsi Permasalahan dalam Bahasa Inggris pada SPOJ \textit{The Bytelandian Cryptographer (Act IV)}}
 		\label{fig:crypto4_def}
 	\end{figure}
 	
-	Format masukan pada baris pertama diberikan $T$ ujicoba kasus. Pada baris selanjutnya diberikan $M$ batas atas panjang kunci. Pada baris selanjutnya diberikan \textit{plain text}. Pada baris selanjutnya di berikan \textit{ciphertext}, \textit{plain text} dan \textit{ciphertext} menggunakan karakter A sampai dengan Z yang dapat ditafsirkan kedalam bilangan bulat 0 sampai dengan 25 dan '*'(sebagai karakter yang hilang).
+	Format masukan pada baris pertama diberikan $T$ ujicoba kasus. Pada baris selanjutnya diberikan $M$ batas atas panjang kunci. Pada baris selanjutnya diberikan \textit{plain text}. Pada baris selanjutnya di berikan \textit{ciphertext}, \textit{plain text} dan \textit{ciphertext} menggunakan karakter A sampai dengan Z yang dapat ditafsirkan kedalam bilangan bulat 0 sampai dengan 25 dan '*' dapat ditafsirkan sebagai karakter yang hilang.
 	
 	
 	Format keluaran yang dihasilkan adalah 1 baris yang mengandung \textit{plain text} dan '*' apabila nilai dari karakter tersebut tidak dapat ditentukan.Deskripsi mengenai Format masukan dan keluaran beserta dengan contohnya dalam bahasa Inggris dapat lihat pada gambar \ref{fig:crypto4_io}
@@ -102,7 +103,7 @@
 	Batasan permasalahan \textit{The Bytelandian Cryptographer (Act IV)} adalah sebagai berikut:
 	\begin{enumerate}
 		\item $T<=200$
-		\item $1<=M<=n<=100,000$
+		\item $1<=M<=100,000$
 		\item Panjang \textit{input file} tidak melebihi dari 2MB.
 		\item Lingkungan penilaian Intel Pentium G860 3GHz.
 		\item Batas Waktu: <=17 detik
@@ -126,7 +127,7 @@
 	 	\label{tab:contoh1}
 	\end{table}
 	 
-	 Dari table \ref{tab:contoh1} dapat diketahui bagaimana hasil yang akan dicapai. Cara mencapai hasil yang diinginkan adalah sebagai berikut. Pertama-tama pencarian panjang kunci. Pada pencarian panjang kunci harus mengetahui dahulu batas atas dari panjang kunci tersebut. Pada contoh kasus ini $M$ bernilai 1, maka kemungkinan jawabannya hanya ada 1, yaitu $M$ itu sendiri, karena suatu panjang kunci yang digunakan dalam enskripsi tidak mungkin 0 .Diasumsikan bahwa 1 warna mewakili satu blok kunci yang akan digunakan. Maka akan membentuk seperti pada tabel \ref{tab:langkah1contoh1}.
+	 Dari table \ref{tab:contoh1} dapat diketahui bagaimana hasil yang akan dicapai. Cara mencapai hasil yang diinginkan adalah sebagai berikut. Pertama-tama pencarian panjang kunci. Pada pencarian panjang kunci harus mengetahui dahulu batas atas dari panjang kunci tersebut. Pada contoh kasus ini $M$ bernilai 1, maka kemungkinan jawabannya hanya ada 1, yaitu $M$ itu sendiri, karena suatu panjang kunci yang digunakan dalam enskripsi tidak mungkin 0. Diasumsikan bahwa 1 warna mewakili satu blok kunci yang akan digunakan. Maka akan membentuk seperti pada tabel \ref{tab:langkah1contoh1}.
 	 
 	\begin{table}[H]
 	 	\centering
@@ -142,14 +143,13 @@
 	 	\label{tab:langkah1contoh1}
 	\end{table}
 	
-	  Karena selisih yang di ketahui hanya ada 1, maka itulah yang menjadi jawabannya. Selanjutnya mencari yang \plaintext yang bernilai "*" dan \ciphertext tidak kosong, seperti indeks ketiga. Maka indeks ketiga jawabannya adalah "H". Karena "M"$-5$ adlaah "H"
+	  Karena selisih yang di ketahui hanya ada 1, maka itulah yang menjadi jawabannya. Selanjutnya mencari yang \plaintext yang bernilai "*" dan \ciphertext tidak kosong, seperti indeks ketiga. Maka indeks ketiga jawabannya adalah "H". Karena "M"$-5$ adalah "H".
 	 
 	 
 	 
 	 Contoh 2. Diketahui bahwa $M$ bernilai 4 yang menunjukkan batas atas dari panjang kunci. Diketahui\plaintext adalah *B***A dan \ciphertext adalah AAAAAA. Dalam Contoh ini panjang kuncinya bisa dari 1 sampai dengan 4. 
 	 \begin{table}[H]
 	 	\centering
-	 	
 	 	\begin{tabular}{|c|c|c|c|c|c|c|}\hline
 		\textit{index}&0&1&2&3&4&5\\ \hline
 	 	\textit{plain text}&*&B&*&*&*&A\\ \hline
@@ -344,15 +344,16 @@
 	\label{chapter:solving}
 	Permasalahan \textit{The Bytelandian Cryptographer (Act IV)} dapat diselesaikan dengan menggunakan \textit{Kasiski Examination} dan \textit{Intersection}. Untuk menyelesaikan masalah ini perlu ditafsirkan bahwa karakter A sampai dengan Z menjadi 0 sampai dengan 25, karena untuk memudahkan perhitungan mencari selisih dan merekonstruksi \plaintext dari \ciphertext dan karakter kunci. Berikut ini tahapan-tahapan untuk menyeselsaikan masalah ini:
 	\begin{enumerate}
-	\item Menyimpan posisi indeks karakter, dimana pada indeks tersebut baik \ciphertext maupun \plaintext tidak bernilai '*', besertra menyimpan hasil perhitungan selisih antara \ciphertext dan \plaintext.\cite{john_jones_spoj_2009}.
+	\item Menyimpan posisi indeks karakter, dimana pada indeks tersebut baik \ciphertext maupun \plaintext tidak bernilai '*', beserta menyimpan hasil perhitungan selisih antara \ciphertext dan \plaintext\cite{john_jones_spoj_2009}.
 	\item Menyimpan posisi indeks, apabila /ciphertext diketahui dan \plaintext tidak diketahui. Untuk mengurangi \textit{running time} dari program\cite{john_jones_spoj_2009}.
 	\item Pada Tahapan ini adalah modifikasi dari \textit{Kasiski Examnination}, apabila menggunakan \textit{Kasiski Examination} pada umumnya yang hanya mencari posisi berulang dari suatu sub kalimat dalam suatu kalimat tidak bisa digunakan untuk menyelesaikan permaslahan ini. Oleh karena itu dirubah menjadi mengiterasi $M$ dari 1 sampai dengan $M$, yang akan digunakan untuk membagi selisih yang diketahui antara \plaintext dan \ciphertext sebesar posisi iterasi yang telah berjalan. Melihat apakah dalam blok-blok yang telah terbentuk ini terdapat \textit{collision} dan indeks yang saling bertabrakan memiliki value yang sama atau tidak, apabila sama maka tidak terjadi tabrakan sebalik jika terjadi tabrakan maka harus mencari panjang kunci yang baru. Mengiterasi panjang kunci dari $\frac{M}{2}+1<=N<=M$, alasannya dimulai dari $\frac{M}{2}+1$ tidak dari $1$ karena apabila suatu panjang kunci bernilai benar maka kelipatan dari panjang kunci itu pun juga pasti benar dan untuk mempersingkat waktu \textit{running time} yang seharusnya terjadi. Yang mendasari ini adalah dari tabel  \ref{tab:contoh2} pada bagian 2.2. Pada bagian ini dilakukan untuk mencari panjang kunci yang benar dengan cara mengiterasi hasil yang diperoleh pada tahap 1 dimodulo dengan posisi iterasi yang dilakukan, apabila tidak terjadi konflik maka panjang kunci tersebut benar jika sebaliknya yang terjadi maka pnajang kunci tersebut tidak salah. Contohnya dapat dilihat pada contoh 2 pada bagian 2.2. Pada bagian ini memungkinkan bahwa bisa jadi lebih dari 1 panjang kunci yang bernilai benar. Contohnya seperti yang terjadi pada table \ref{tab:contoh3} pada bagian 2.2. 
 	\item Melakukan \textit{intersection} terhadap himpunan dari kunci yang telah di hasilkan\cite{john_jones_spoj_2009}. \textit{intersection} yang dilakukan berada didalam perulangan panjang kunci pada waktu generate setiap karakter yang terdapat dalam penyimpanan tahap 2 pada panjang kunci tersebut dengan ketentuan:
 	\begin{enumerate}
 	\item Panjang kunci harus benar
-	\item Apabila terdapat indeks yang tidak dapat dipastikan isinya maka posisinya harus di buang dari penyimpanan dan hasilnya pasti '*'
+	\item Apabila terdapat indeks yang tidak dapat dipastikan isinya maka posisinya harus di buang dari penyimpanan dan hasil yang diperoleh pasti '*'.
+	\item Apabila \plaintext pada indeks tersebut nilainya masih '*' dan pada penyimpanan masih menyimpan indek tersebut maka, hasilnya adalah \ciphertext pada indeks tersebut dikurangi dengan hasil yang diperoleh dari tahap 1 bagian perhitungan selisih pada indeks yang sama kemudian dimodulo 26.
 	\end{enumerate}
 	\end{enumerate}
 	Sehingga untuk setiap \textit{textcase} kompleksitasnya 
 	$$\mathcal{O}(T*\frac{M}{2}*(N+S))$$ 
-	Dimana $n$ adalah panjang karakter \plaintext atau \ciphertext , $\frac{M}{2}$ adalah batas atas kunci dibagi dengan 2, $N$ adalah jumlah posisi karakter yang terdapat pada tahap 2, dan $S$ adalah jumlah posisi karakter yang terdapat pada tahap 1. Pada kondisi \textit{worst case} $T*(N+S)=1.000.000$, sedangakan $\frac{M}{2}$ adalah $50.000$. Hasilnya $50$ miliar perulangan, dengan asumsi $1$ detik adalah $1$ miliar perulangan maka waktu yang dibutuhkan adalah $50$ detik. Oleh karena itu hal ini tidak mungkin bisa dilakukan begitu saja, diperlukan pruning pada sumber kode yang ada untuk memangkas waktu eksekusi program.
+	Dimana $\frac{M}{2}$ adalah batas atas kunci dibagi dengan 2, $N$ adalah jumlah posisi karakter yang terdapat pada tahap 2, dan $S$ adalah jumlah posisi karakter yang terdapat pada tahap 1. Pada kondisi \textit{worst case} $T*(N+S)=1.000.000$, sedangakan $\frac{M}{2}$ adalah $50.000$. Hasilnya $50$ miliar perulangan, dengan asumsi $1$ detik adalah $1$ miliar perulangan maka waktu yang dibutuhkan adalah $50$ detik. Oleh karena itu hal ini tidak mungkin bisa dilakukan begitu saja, diperlukan pruning pada sumber kode yang ada untuk memangkas waktu eksekusi program.

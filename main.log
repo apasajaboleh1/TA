@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  15 JAN 2018 12:23
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  16 JAN 2018 11:23
 entering extended mode
 **./main.tex
 (main.tex
@@ -1397,31 +1397,31 @@ LaTeX Warning: Label `fig:solvefx@cref' multiply defined.
 (Chapters/Main/Bab7-Biodata.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 75.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    ... okay on input line 75.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1465,10 +1465,10 @@ Package caption Info: longtable package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 74.
-LaTeX Info: Redefining \ref on input line 74.
-LaTeX Info: Redefining \pageref on input line 74.
-LaTeX Info: Redefining \nameref on input line 74.
+Package hyperref Info: Link coloring OFF on input line 75.
+LaTeX Info: Redefining \ref on input line 75.
+LaTeX Info: Redefining \pageref on input line 75.
+LaTeX Info: Redefining \nameref on input line 75.
 (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -1522,7 +1522,7 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 ]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 11.22368pt on input line 77.
+(Font)              scaled to size 11.22368pt on input line 78.
  [0
 
 
@@ -1610,9 +1610,9 @@ File: images/cover/sampulWhite.png Graphic file (type QTm)
 
 ]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/bx/n' will be
-(Font)              scaled to size 11.22368pt on input line 78.
+(Font)              scaled to size 11.22368pt on input line 79.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/bx/n' will be
-(Font)              scaled to size 12.29993pt on input line 78.
+(Font)              scaled to size 12.29993pt on input line 79.
  [1] [2
 
 
@@ -1775,45 +1775,14 @@ Overfull \hbox (57.229pt too wide) in paragraph at lines 24--24
  [] 
  []
 
-[7]
-
-LaTeX Warning: Citation `stallings_computer_2015' on page 8 undefined on input 
-line 29.
-
-
-LaTeX Warning: Citation `william_crytography_2011' on page 8 undefined on input
- line 33.
-
-
-LaTeX Warning: Citation `william_crytography_2011' on page 8 undefined on input
- line 36.
-
-
-LaTeX Warning: Citation `william_crytography_2011' on page 8 undefined on input
- line 39.
-
-[8]
-
-LaTeX Warning: Citation `noauthor_kasiski_nodate' on page 9 undefined on input 
-line 52.
-
-[9]
+[7] [8] [9]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 8.19995pt on input line 63.
+(Font)              scaled to size 8.19995pt on input line 64.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 6.14996pt on input line 63.
-
-
-LaTeX Warning: Citation `devlin_joy_1993' on page 10 undefined on input line 65
-.
-
-
-LaTeX Warning: Citation `piwakowski_crypto4_2004' on page 10 undefined on input
- line 69.
-
+(Font)              scaled to size 6.14996pt on input line 64.
 File: images/bab2/crypto_def.png Graphic file (type QTm)
-<use  "images/bab2/crypto_def.png" > [10] [11]
-Overfull \vbox (59.15656pt too high) has occurred while \output is active []
+ <use  "images/bab2/crypto_def.png" > [10] [11]
+Overfull \vbox (29.00479pt too high) has occurred while \output is active []
 
 
 [12]
@@ -1871,21 +1840,7 @@ Overfull \hbox (3.59549pt too wide) in paragraph at lines 329--338
  [][] 
  []
 
-[22] [23]
-
-LaTeX Warning: Citation `john_jones_spoj_2009' on page 24 undefined on input li
-ne 347.
-
-
-LaTeX Warning: Citation `john_jones_spoj_2009' on page 24 undefined on input li
-ne 348.
-
-[24]
-
-LaTeX Warning: Citation `john_jones_spoj_2009' on page 25 undefined on input li
-ne 350.
-
-) [25]
+[22] [23] [24]) [25]
 \openout2 = `Chapters/Main/Bab3-DesainDanPerancangan.aux'.
 
  (Chapters/Main/Bab3-DesainDanPerancangan.tex [26
@@ -1951,40 +1906,13 @@ Overfull \hbox (11.30946pt too wide) in paragraph at lines 56--59
 (Chapters/Details/bab4/crypto4.cpp) [36] (Chapters/Details/bab4/crypto4.cpp
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 11.0699pt on input line 30.
-
-Overfull \hbox (24.43303pt too wide) in paragraph at lines 35--36
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (13.36299pt too wide) in paragraph at lines 51--52
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (2.29295pt too wide) in paragraph at lines 54--55
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][]  
- []
-
-
-Overfull \hbox (7.82797pt too wide) in paragraph at lines 59--60
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][]  
- []
-
 )
-Overfull \hbox (11.30946pt too wide) in paragraph at lines 68--71
+Overfull \hbox (17.0pt too wide) in paragraph at lines 68--72
 []$[]$ 
  []
 
 [37]
-Overfull \vbox (54.92749pt too high) has occurred while \output is active []
+Overfull \vbox (32.96187pt too high) has occurred while \output is active []
 
 
 [38] (Chapters/Details/bab4/crypto4.cpp)) [39]
@@ -1999,15 +1927,12 @@ Overfull \vbox (54.92749pt too high) has occurred while \output is active []
 ]
 BAB V.
 [41] [42] [43]
-
-LaTeX Warning: Citation `piwakowski_crypto4_2004' on page 44 undefined on input
- line 59.
-
 File: images/bab5/b.png Graphic file (type QTm)
-<use  "images/bab5/b.png" >) [44] [45]
+ <use  "images/bab5/b.png" >) [44] [45]
 \openout2 = `Chapters/Main/Bab6-Penutup.aux'.
 
- (Chapters/Main/Bab6-Penutup.tex [46
+
+(Chapters/Main/Bab6-Penutup.tex [46
 
 
 
@@ -2088,11 +2013,11 @@ LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
 
 ]
 
-Package caption Warning: Unused \captionsetup[ltxtable] on input line 27.
+Package caption Warning: Unused \captionsetup[ltxtable] on input line 28.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
 (main.aux (Chapters/Main/Bab0-Abstrak.aux) (Chapters/Main/Bab0-Abstract.aux)
 (Chapters/Main/Bab0-KataPengantar.aux) (Chapters/Main/Bab1-Pendahuluan.aux)
 (Chapters/Main/Bab2-DasarTeori.aux)
@@ -2101,23 +2026,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
 (Chapters/Main/Bab5-PengujianDanEvaluasi.aux) (Chapters/Main/Bab6-Penutup.aux)
 (Chapters/Auxiliary.aux) (Chapters/Auxiliary2.aux)
 (Chapters/Main/Bab7-Biodata.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 106.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 106.
-
-
-LaTeX Warning: There were undefined references.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 107.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 107.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29741 strings out of 427834
- 534072 string characters out of 3152470
- 931463 words of memory out of 3000000
- 33196 multiletter control sequences out of 15000+200000
+ 29743 strings out of 427834
+ 534162 string characters out of 3152470
+ 1038462 words of memory out of 3000000
+ 33198 multiletter control sequences out of 15000+200000
  549160 words of font info for 79 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 49i,12n,69p,10395b,871s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,12n,69p,10395b,902s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on main.pdf (89 pages).
