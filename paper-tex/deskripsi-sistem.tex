@@ -1,0 +1,20 @@
+\section{Metode Penyelesaian}
+Dalam bagian pendahuluan telah dijelaskan bahwa enskripsi yang digunakan adalah \textit{Vigenere Cipher}. Dimana enskripsi yang dilakuakn mengikuti aturan 
+\begin{equation}
+	y_i=x_i+k_{1+(i-1)mod M} mod 26 
+\end{equation}
+Pada studi kasus inputan yang bernilai A sampai dengan Z, dapat direpresentasikan menjadi $0$ sampai dengan $25$. 
+Tahapan-tahapan untuk menyelesaikan studi kasus ini sebagai berikut:
+\begin{enumerate}
+\item Menyimpan posisi indeks karakter, dimana pada indeks tersebut baik \textit{ciphertext} maupun \textit{plaintext} tidak bernilai '*', besertra menyimpan hasil perhitungan selisih antara \textit{ciphertext} dan \textit{plaintext}.\cite{john_jones_spoj_2009}.
+	\item Menyimpan posisi indeks, apabila \textit{ciphertext} diketahui dan \textit{plaintext} tidak diketahui. Untuk mengurangi \textit{running time} dari program\cite{john_jones_spoj_2009}.
+	\item Pada Tahapan ini adalah modifikasi dari \textit{Kasiski Examnination}, apabila menggunakan \textit{Kasiski Examination} pada umumnya yang hanya mencari posisi berulang dari suatu sub kalimat dalam suatu kalimat tidak bisa digunakan untuk menyelesaikan permaslahan ini. Oleh karena itu dirubah menjadi mengiterasi $M$ dari 1 sampai dengan $M$, yang akan digunakan untuk membagi selisih yang diketahui antara \textit{plaintext} dan \textit{ciphertext} sebesar posisi iterasi yang telah berjalan. Melihat apakah dalam blok-blok yang telah terbentuk ini terdapat \textit{collision} dan indeks yang saling bertabrakan memiliki value yang sama atau tidak, apabila sama maka tidak terjadi tabrakan sebalik jika terjadi tabrakan maka harus mencari panjang kunci yang baru. Mengiterasi panjang kunci dari $\frac{M}{2}+1<=N<=M$, alasannya dimulai dari $\frac{M}{2}+1$ tidak dari $1$ karena apabila suatu panjang kunci bernilai benar maka kelipatan dari panjang kunci itu pun juga pasti benar dan untuk mempersingkat waktu \textit{running time} yang seharusnya terjadi. Pada bagian ini dilakukan untuk mencari panjang kunci yang benar dengan cara mengiterasi hasil yang diperoleh pada tahap 1 dimodulo dengan posisi iterasi yang dilakukan, apabila tidak terjadi konflik maka panjang kunci tersebut benar jika sebaliknya yang terjadi maka pnajang kunci tersebut tidak salah. Pada bagian ini memungkinkan bahwa bisa jadi lebih dari 1 panjang kunci yang bernilai benar.  
+	\item Melakukan \textit{intersection} terhadap himpunan dari kunci yang telah di hasilkan pada tahapan sebelumnya\cite{john_jones_spoj_2009}. \textit{intersection} yang dilakukan berada didalam perulangan panjang kunci pada waktu generate setiap karakter yang terdapat dalam penyimpanan tahap 2 pada panjang kunci tersebut dengan ketentuan:
+	\begin{enumerate}
+	\item Panjang kunci harus benar
+	\item Apabila terdapat indeks yang tidak dapat dipastikan isinya maka posisinya harus di buang dari penyimpanan dan hasilnya pasti '*'
+	\item Apabila plaintext bernilai '*' dan himpunan kunci yang telah terbentuk tidak kosong pada indeks tersebut, maka \textit{plaintext} akan bernilai sesuai dengan kunci yang terbentuk pada indeks tersebut
+	\end{enumerate} 
+\end{enumerate}	
+
+	

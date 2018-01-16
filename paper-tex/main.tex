@@ -1,0 +1,69 @@
+
+%% version 0.0 Alpha
+
+%% see airavata.me/about
+%% for current contact information.
+
+\documentclass[journal]{IEEEtran}
+\usepackage{blindtext}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{nameref}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{ltxtable} %for long table
+\usepackage{etoolbox}
+\usepackage{slantsc}
+\usepackage{url}
+%\usepackage[style=authoryear,backend=biber]{biblatex}
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\let\labelindent\relax
+
+
+% \let\author\relax % please?
+
+
+\usepackage{enumitem}
+
+%\usepackage{caption}
+% \usepackage{lon} %for long table
+
+\usepackage{xcolor} %start packages for colored code listing
+\usepackage{upquote} %start packages for colored code listing
+
+% \usepackage{apacite} % for APA citing style
+\usepackage{wrapfig} %untuk wrapfigure?
+%reconfiguring inline list
+\newlist{inlinelist}{enumerate*}{1}
+\setlist*[inlinelist,1]{
+	label={\alph*)},font={\color{red!50!black}\bfseries}
+}
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+	\input{Metadata}	
+	\input{abstract}
+	\input{introduction}
+	\input{analisa-perancangan}
+	% si deskripsi sistem masuk subsistem sebelumnya
+	% jadi subsection
+	\input{deskripsi-sistem} 
+%	\input{deskripsi} <-
+	\input{test-eval}
+	%\input{chapter-example}
+	\input{conclusion} 
+	%	\input{appendices}
+	 \input{acknowledgement}
+	\bibliography{Zotero}
+	\bibliographystyle{ieeetran}
+	%\input{about-author}
+% let's finish this
+% happily
+\end{document}
+
+
