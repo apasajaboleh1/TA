@@ -50,7 +50,7 @@
 \contentsline {chapter}{\numberline {VI}PENUTUP}{49}{chapter.6}
 \contentsline {section}{\numberline {6.1}Kesimpulan}{49}{section.6.1}
 \contentsline {section}{\numberline {6.2}Saran}{50}{section.6.2}
-\contentsline {chapter}{DAFTAR PUSTAKA}{51}{chapter*.39}
+\contentsline {chapter}{DAFTAR PUSTAKA}{51}{chapter*.42}
 \contentsline {chapter}{\numberline {A}Lampiran}{53}{appendix.A}
 \contentsline {chapter}{\numberline {B}Hasil Percobaan dengan menggunakan Algoritma Naive dan Kasiski Examination}{59}{appendix.B}
-\contentsline {chapter}{BIODATA PENULIS}{69}{appendix*.56}
+\contentsline {chapter}{BIODATA PENULIS}{69}{appendix*.59}

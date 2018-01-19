@@ -17,27 +17,30 @@
 \contentsline {table}{\numberline {2.14}{\ignorespaces Panjang Kunci 4 Contoh 3\relax }}{20}{table.caption.21}
 \contentsline {table}{\numberline {2.15}{\ignorespaces Hasil dari Contoh 3\relax }}{21}{table.caption.22}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Penjelasan variabel yang digunakan dalam fungsi MAIN\relax }}{26}{table.caption.24}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Penjelasan variabel yang digunakan dalam fungsi SOLVE\relax }}{30}{table.caption.27}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Penjelasan variabel yang digunakan dalam fungsi VALIDITY\relax }}{32}{table.caption.30}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Masukan, Proses, dan Keluaran fungsi MAIN\relax }}{25}{table.caption.23}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Penjelasan variabel yang digunakan dalam fungsi MAIN\relax }}{26}{table.caption.25}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Masukan, Proses, dan Keluaran fungsi SOLVE\relax }}{27}{table.caption.26}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Penjelasan variabel yang digunakan dalam fungsi SOLVE\relax }}{30}{table.caption.29}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Masukan, Proses, dan Keluaran fungsi MAIN\relax }}{31}{table.caption.31}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Penjelasan variabel yang digunakan dalam fungsi VALIDITY\relax }}{32}{table.caption.33}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Penjelasan Variabel yang digunakan dalam variabel global\relax }}{37}{table.caption.31}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Penjelasan Variabel yang digunakan dalam fungsi MAIN\relax }}{38}{table.caption.32}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Penjelasan Variabel yang digunakan dalam fungsi SOLVE\relax }}{40}{table.caption.33}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Penjelasan Variabel yang digunakan dalam fungsi MAIN\relax }}{41}{table.caption.34}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Penjelasan Variabel yang digunakan dalam variabel global\relax }}{37}{table.caption.34}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Penjelasan Variabel yang digunakan dalam fungsi MAIN\relax }}{38}{table.caption.35}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Penjelasan Variabel yang digunakan dalam fungsi SOLVE\relax }}{40}{table.caption.36}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Penjelasan Variabel yang digunakan dalam fungsi MAIN\relax }}{41}{table.caption.37}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Kecepatan Maksimal, Minimal, dan Rata-Rata dari Hasil Uji Coba Pengumpulan 30 Kali pada Situs Pengujian Daring Spoj\relax }}{44}{table.caption.35}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Kecepatan Maksimal, Minimal, dan Rata-Rata dari Hasil Uji Coba Pengumpulan 30 Kali pada Situs Pengujian Daring Spoj\relax }}{44}{table.caption.38}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma optimasi \textit {Kasiski Examination} dan \textit {Intersection} (1)\relax }}{59}{table.caption.46}
-\contentsline {table}{\numberline {B.2}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma optimasi \textit {Kasiski Examination} dan \textit {Intersection} (2)\relax }}{60}{table.caption.47}
-\contentsline {table}{\numberline {B.3}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma optimasi \textit {Kasiski Examination} dan \textit {Intersection} (3)\relax }}{61}{table.caption.48}
-\contentsline {table}{\numberline {B.4}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma optimasi \textit {Kasiski Examination} dan \textit {Intersection} (4)\relax }}{62}{table.caption.49}
-\contentsline {table}{\numberline {B.5}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma optimasi \textit {Kasiski Examination} dan \textit {Intersection} (5)\relax }}{63}{table.caption.50}
-\contentsline {table}{\numberline {B.6}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Naive} (0)\relax }}{64}{table.caption.51}
-\contentsline {table}{\numberline {B.7}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Naive} (1)\relax }}{65}{table.caption.52}
-\contentsline {table}{\numberline {B.8}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Naive} (2)\relax }}{66}{table.caption.53}
-\contentsline {table}{\numberline {B.9}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Naive} (3)\relax }}{67}{table.caption.54}
-\contentsline {table}{\numberline {B.10}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Naive} (4)\relax }}{68}{table.caption.55}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma optimasi \textit {Kasiski Examination} dan \textit {Intersection} (1)\relax }}{59}{table.caption.49}
+\contentsline {table}{\numberline {B.2}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma optimasi \textit {Kasiski Examination} dan \textit {Intersection} (2)\relax }}{60}{table.caption.50}
+\contentsline {table}{\numberline {B.3}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma optimasi \textit {Kasiski Examination} dan \textit {Intersection} (3)\relax }}{61}{table.caption.51}
+\contentsline {table}{\numberline {B.4}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma optimasi \textit {Kasiski Examination} dan \textit {Intersection} (4)\relax }}{62}{table.caption.52}
+\contentsline {table}{\numberline {B.5}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma optimasi \textit {Kasiski Examination} dan \textit {Intersection} (5)\relax }}{63}{table.caption.53}
+\contentsline {table}{\numberline {B.6}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Naive} (0)\relax }}{64}{table.caption.54}
+\contentsline {table}{\numberline {B.7}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Naive} (1)\relax }}{65}{table.caption.55}
+\contentsline {table}{\numberline {B.8}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Naive} (2)\relax }}{66}{table.caption.56}
+\contentsline {table}{\numberline {B.9}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Naive} (3)\relax }}{67}{table.caption.57}
+\contentsline {table}{\numberline {B.10}{\ignorespaces Hasil Percobaan Penyelesaian Studi Kasus SPOJ The Bytelandian Cryptographer(Act IV) dengan menggunakan algoritma \textit {Naive} (4)\relax }}{68}{table.caption.58}
 \addvspace {10\p@ }

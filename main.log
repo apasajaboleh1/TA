@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  19 JAN 2018 10:49
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  19 JAN 2018 14:19
 entering extended mode
 **./main.tex
 (main.tex
@@ -1392,6 +1392,12 @@ LaTeX Warning: Label `tab:solvar' multiply defined.
 LaTeX Warning: Label `tab:solvar@cref' multiply defined.
 
 
+LaTeX Warning: Label `tab:iomain' multiply defined.
+
+
+LaTeX Warning: Label `tab:iomain@cref' multiply defined.
+
+
 LaTeX Warning: Label `tab:solvar' multiply defined.
 
 
@@ -1748,7 +1754,7 @@ Overfull \hbox (1.6977pt too wide) detected at line 18
 
 
 ] [12]
-Overfull \hbox (3.97528pt too wide) detected at line 42
+Overfull \hbox (3.97528pt too wide) detected at line 45
 \TU/lmr/m/n/10.95 Tabel B.10 
  []
 
@@ -1878,21 +1884,35 @@ Overfull \hbox (3.59549pt too wide) in paragraph at lines 341--351
 BAB III.
 File: images/bab3/mainfx.png Graphic file (type QTm)
 <use  "images/bab3/mainfx.png" >
-Overfull \hbox (5.77351pt too wide) in paragraph at lines 15--16
+Overfull \hbox (5.77351pt too wide) in paragraph at lines 24--25
  [][] 
  []
 
-[25] [26]
+[25]
+Overfull \hbox (0.61136pt too wide) in paragraph at lines 57--62
+[][][][] 
+ []
+
+[26]
 File: images/bab3/solvefx1.png Graphic file (type QTm)
  <use  "images/bab3/solvefx1.png" >
 File: images/bab3/solvefx21.png Graphic file (type QTm)
-
-<use  "images/bab3/solvefx21.png" > [27] [28]
+ <use  "images/bab3/solvefx21.png" >
+[27] [28]
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 71.
+(Font)              scaled to size 9.85492pt on input line 90.
  [29] [30]
-File: images/bab3/validity.png Graphic file (type QTm)
+Overfull \hbox (3.33763pt too wide) in paragraph at lines 119--119
+\TU/lmr/m/n/10.95 counter[]\TU/CourierNew(0)/m/n/10.95 _\TU/lmr/m/n/10.95 diket
+ahui,
+ []
 
+
+Overfull \hbox (0.61136pt too wide) in paragraph at lines 117--122
+[][][][] 
+ []
+
+File: images/bab3/validity.png Graphic file (type QTm)
 <use  "images/bab3/validity.png" >) [31] [32]
 \openout2 = `Chapters/Main/Bab4-Implementasi.aux'.
 
@@ -2089,10 +2109,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29754 strings out of 427834
- 534199 string characters out of 3152470
+ 29758 strings out of 427834
+ 534259 string characters out of 3152470
  986462 words of memory out of 3000000
- 33209 multiletter control sequences out of 15000+200000
+ 33213 multiletter control sequences out of 15000+200000
  549144 words of font info for 77 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  49i,15n,69p,10395b,878s stack positions out of 5000i,500n,10000p,200000b,50000s
