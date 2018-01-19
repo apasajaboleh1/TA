@@ -8,7 +8,7 @@
 \begin{document}
 
 \begin{algorithm}[H]
-    \caption{Gambar Fungsi Main}
+    %\caption{Gambar Fungsi Main}
     \begin{algorithmic}[1]
         \Function{MAIN}{}
 			\State $T \leftarrow INPUT$
@@ -25,7 +25,7 @@
 
 \begin{algorithm}[H]
 	\centering
-    \caption{Gambar Fungsi SOLVE}
+    %\caption{Gambar Fungsi SOLVE}
     \begin{algorithmic}[1]
         \Function{SOLVE}{$message$,$chiper$,$m$}
 			\State $counter\_diketahui \gets 0 $            
@@ -64,12 +64,13 @@
 					\EndWhile
             	\EndIf
             \EndFor
+            \State $puts(message)$
         \EndFunction
     \end{algorithmic}
 \end{algorithm}
 
 \begin{algorithm}[H]
-    \caption{Gambar Fungsi VALIDITY}
+   % \caption{Gambar Fungsi VALIDITY}
     \begin{algorithmic}[1]
         \Function{VALIDITY}{$Key$,$counter\_diketahui$,$diketahui$,$Selisih\_diketahui$,$n$}
 			\State $Intialize(Key,-1)$                  

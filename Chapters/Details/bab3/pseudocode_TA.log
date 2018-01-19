@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  20 NOV 2017 14:00
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  18 JAN 2018 13:33
 entering extended mode
 **./pseudocode_TA.tex
 (pseudocode_TA.tex
@@ -249,12 +249,12 @@ ter\OT1/cmr/m/n/10.95 ]] \OMS/cmsy/m/n/10.95 6\OT1/cmr/m/n/10.95 =
 
 ] [2] [3] (pseudocode_TA.aux) ) 
 Here is how much of TeX's memory you used:
- 2461 strings out of 427834
- 31294 string characters out of 3152470
+ 2460 strings out of 427834
+ 31288 string characters out of 3152470
  118539 words of memory out of 3000000
- 6422 multiletter control sequences out of 15000+200000
+ 6421 multiletter control sequences out of 15000+200000
  7109 words of font info for 33 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 27i,5n,32p,294b,321s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,5n,32p,294b,311s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on pseudocode_TA.pdf (3 pages).

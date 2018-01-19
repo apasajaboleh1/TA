@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  16 JAN 2018 11:23
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  19 JAN 2018 10:49
 entering extended mode
 **./main.tex
 (main.tex
@@ -1386,14 +1386,44 @@ Package csquotes Info: ... found 'babel' package.
 (Chapters/Main/Bab1-Pendahuluan.aux) (Chapters/Main/Bab2-DasarTeori.aux)
 (Chapters/Main/Bab3-DesainDanPerancangan.aux
 
-LaTeX Warning: Label `fig:solvefx' multiply defined.
+LaTeX Warning: Label `tab:solvar' multiply defined.
 
 
-LaTeX Warning: Label `fig:solvefx@cref' multiply defined.
+LaTeX Warning: Label `tab:solvar@cref' multiply defined.
 
-) (Chapters/Main/Bab4-Implementasi.aux)
-(Chapters/Main/Bab5-PengujianDanEvaluasi.aux) (Chapters/Main/Bab6-Penutup.aux)
-(Chapters/Auxiliary.aux) (Chapters/Auxiliary2.aux)
+
+LaTeX Warning: Label `tab:solvar' multiply defined.
+
+
+LaTeX Warning: Label `tab:solvar@cref' multiply defined.
+
+) (Chapters/Main/Bab4-Implementasi.aux
+
+LaTeX Warning: Label `tab:mainvar' multiply defined.
+
+
+LaTeX Warning: Label `tab:mainvar@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:mainvar' multiply defined.
+
+
+LaTeX Warning: Label `tab:mainvar@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:mainvar' multiply defined.
+
+
+LaTeX Warning: Label `tab:mainvar@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:mainvar' multiply defined.
+
+
+LaTeX Warning: Label `tab:mainvar@cref' multiply defined.
+
+) (Chapters/Main/Bab5-PengujianDanEvaluasi.aux) (Chapters/Main/Bab6-Penutup.aux
+) (Chapters/Auxiliary.aux) (Chapters/Auxiliary2.aux)
 (Chapters/Main/Bab7-Biodata.aux))
 \openout1 = `main.aux'.
 
@@ -1717,30 +1747,30 @@ Overfull \hbox (1.6977pt too wide) detected at line 18
 [11
 
 
-]
-Overfull \hbox (1.6977pt too wide) detected at line 35
-\TU/lmr/m/n/10.95 Tabel 2.10 
+] [12]
+Overfull \hbox (3.97528pt too wide) detected at line 42
+\TU/lmr/m/n/10.95 Tabel B.10 
  []
 
 )
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
- [12] (main.lof)
+ [13] [14
+
+
+] (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [13
-
-
-] [14
+ [15] [16
 
 
 ] (main.lol)
 \tf@lol=\write7
 \openout7 = `main.lol'.
 
- [15] [16
+ [17] [18
 
 
 ]
@@ -1777,73 +1807,69 @@ Overfull \hbox (57.229pt too wide) in paragraph at lines 24--24
 
 [7] [8] [9]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 8.19995pt on input line 64.
+(Font)              scaled to size 8.19995pt on input line 80.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 6.14996pt on input line 64.
+(Font)              scaled to size 6.14996pt on input line 80.
+ [10]
 File: images/bab2/crypto_def.png Graphic file (type QTm)
- <use  "images/bab2/crypto_def.png" > [10] [11]
+ <use  "images/bab2/crypto_def.png" > [11]
 Overfull \vbox (29.00479pt too high) has occurred while \output is active []
 
 
-[12]
-File: images/bab2/crypto_io1.png Graphic file (type QTm)
- <use  "images/bab2/crypto_io1.png" >
-File: images/bab2/crypto_io2.png Graphic file (type QTm)
- <use  "images/bab2/crypto_io2.png" >
-[13] [14] [15]
-Overfull \hbox (9.6095pt too wide) in paragraph at lines 153--163
+[12] [13]
+Overfull \hbox (9.6095pt too wide) in paragraph at lines 165--176
  [][] 
  []
 
-[16]
-Overfull \hbox (11.03754pt too wide) in paragraph at lines 171--178
+[14]
+Overfull \hbox (11.03754pt too wide) in paragraph at lines 183--191
  [][] 
  []
 
 
-Overfull \hbox (11.03754pt too wide) in paragraph at lines 188--195
+Overfull \hbox (11.03754pt too wide) in paragraph at lines 200--208
  [][] 
  []
 
-[17]
-Overfull \hbox (11.03754pt too wide) in paragraph at lines 221--228
+[15]
+Overfull \hbox (11.03754pt too wide) in paragraph at lines 233--241
  [][] 
  []
 
-[18] [19]
-Overfull \hbox (30.26968pt too wide) in paragraph at lines 251--257
- [][] 
- []
-
-
-Overfull \hbox (35.98184pt too wide) in paragraph at lines 266--273
+[16] [17]
+Overfull \hbox (30.26968pt too wide) in paragraph at lines 263--270
  [][] 
  []
 
 
-Overfull \hbox (35.98184pt too wide) in paragraph at lines 283--290
- [][] 
- []
-
-[20]
-Overfull \hbox (35.98184pt too wide) in paragraph at lines 299--306
- [][] 
- []
-
-[21]
-Overfull \hbox (35.98184pt too wide) in paragraph at lines 315--322
+Overfull \hbox (35.98184pt too wide) in paragraph at lines 278--286
  [][] 
  []
 
 
-Overfull \hbox (3.59549pt too wide) in paragraph at lines 329--338
+Overfull \hbox (35.98184pt too wide) in paragraph at lines 295--303
  [][] 
  []
 
-[22] [23] [24]) [25]
+[18]
+Overfull \hbox (35.98184pt too wide) in paragraph at lines 311--319
+ [][] 
+ []
+
+[19]
+Overfull \hbox (35.98184pt too wide) in paragraph at lines 327--335
+ [][] 
+ []
+
+
+Overfull \hbox (3.59549pt too wide) in paragraph at lines 341--351
+ [][] 
+ []
+
+[20] [21] [22]) [23]
 \openout2 = `Chapters/Main/Bab3-DesainDanPerancangan.aux'.
 
- (Chapters/Main/Bab3-DesainDanPerancangan.tex [26
+ (Chapters/Main/Bab3-DesainDanPerancangan.tex [24
 
 
 
@@ -1852,46 +1878,45 @@ Overfull \hbox (3.59549pt too wide) in paragraph at lines 329--338
 BAB III.
 File: images/bab3/mainfx.png Graphic file (type QTm)
 <use  "images/bab3/mainfx.png" >
-Overfull \hbox (10.43585pt too wide) in paragraph at lines 11--12
+Overfull \hbox (5.77351pt too wide) in paragraph at lines 15--16
  [][] 
  []
 
-[27]
+[25] [26]
 File: images/bab3/solvefx1.png Graphic file (type QTm)
  <use  "images/bab3/solvefx1.png" >
-File: images/bab3/solvefx2.png Graphic file (type QTm)
- <use  "images/bab3/solvefx2.png" >
-[28] [29]
+File: images/bab3/solvefx21.png Graphic file (type QTm)
+
+<use  "images/bab3/solvefx21.png" > [27] [28]
+LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 71.
+ [29] [30]
 File: images/bab3/validity.png Graphic file (type QTm)
- <use  "images/bab3/validity.png" > [30]) [31]
+
+<use  "images/bab3/validity.png" >) [31] [32]
 \openout2 = `Chapters/Main/Bab4-Implementasi.aux'.
 
 
-(Chapters/Main/Bab4-Implementasi.tex [32
+(Chapters/Main/Bab4-Implementasi.tex
+BAB IV.
+[33
 
 
 
 
 ]
-BAB IV.
-[33]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/bx/it' will be
-(Font)              scaled to size 11.27493pt on input line 38.
+(Font)              scaled to size 11.27493pt on input line 42.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 9.22495pt on input line 41.
- (Chapters/Details/bab4/crypto4.cpp
+(Font)              scaled to size 9.22495pt on input line 45.
+ [34] (Chapters/Details/bab4/crypto4.cpp
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 1.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 1.
 )
-LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 8.19995pt on input line 44.
-LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 6.14996pt on input line 44.
- [34]
 (Chapters/Details/bab4/crypto4.cpp)
-Overfull \hbox (11.30946pt too wide) in paragraph at lines 49--52
+Overfull \hbox (11.30946pt too wide) in paragraph at lines 53--56
 []$[]$ 
  []
 
@@ -1899,54 +1924,87 @@ Overfull \hbox (11.30946pt too wide) in paragraph at lines 49--52
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
 (Font)              scaled to size 8.09995pt on input line 10.
 )
-Overfull \hbox (11.30946pt too wide) in paragraph at lines 56--59
+Overfull \hbox (11.30946pt too wide) in paragraph at lines 61--64
 []$[]$ 
  []
 
-(Chapters/Details/bab4/crypto4.cpp) [36] (Chapters/Details/bab4/crypto4.cpp
+
+Overfull \hbox (13.01134pt too wide) in paragraph at lines 68--79
+[][][][] 
+ []
+
+[36]
+Overfull \vbox (5.55591pt too high) has occurred while \output is active []
+
+
+[37] (Chapters/Details/bab4/crypto4.cpp)
+Overfull \hbox (13.01134pt too wide) in paragraph at lines 89--95
+[][][][] 
+ []
+
+[38] (Chapters/Details/bab4/crypto4.cpp
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 11.0699pt on input line 30.
 )
-Overfull \hbox (17.0pt too wide) in paragraph at lines 68--72
+Overfull \hbox (17.0pt too wide) in paragraph at lines 101--105
 []$[]$ 
  []
 
-[37]
-Overfull \vbox (32.96187pt too high) has occurred while \output is active []
+(Chapters/Details/bab4/crypto4.cpp)
+Overfull \hbox (17.0pt too wide) in paragraph at lines 106--110
+[]$[]$ 
+ []
 
 
-[38] (Chapters/Details/bab4/crypto4.cpp)) [39]
+Overfull \hbox (12.61134pt too wide) in paragraph at lines 114--120
+[][][][] 
+ []
+
+[39] (Chapters/Details/bab4/crypto4.cpp)
+Overfull \hbox (11.30946pt too wide) in paragraph at lines 125--128
+[]$[]$ 
+ []
+
+
+Overfull \hbox (12.61134pt too wide) in paragraph at lines 132--138
+[][][][] 
+ []
+
+[40]) [41]
 \openout2 = `Chapters/Main/Bab5-PengujianDanEvaluasi.aux'.
 
-
-(Chapters/Main/Bab5-PengujianDanEvaluasi.tex [40
+ (Chapters/Main/Bab5-PengujianDanEvaluasi.tex [42
 
 
 
 
 ]
 BAB V.
-[41] [42] [43]
+[43] [44] [45]
+File: images/bab5/ACD.png Graphic file (type QTm)
+ <use  "images/bab5/ACD.png" > [46]
 File: images/bab5/b.png Graphic file (type QTm)
- <use  "images/bab5/b.png" >) [44] [45]
+ <use  "images/bab5/b.png" >
+File: images/bab5/banding.png Graphic file (type QTm)
+
+<use  "images/bab5/banding.png" >) [47] [48]
 \openout2 = `Chapters/Main/Bab6-Penutup.aux'.
 
-
-(Chapters/Main/Bab6-Penutup.tex [46
-
-
-
-
-]
+ (Chapters/Main/Bab6-Penutup.tex
 BAB VI.
-[47]) [48] (main.bbl) [49
+[49
+
+
+
+
+]) [50] (main.bbl) [51
 
 
 
 ]
 \openout2 = `Chapters/Auxiliary.aux'.
 
- (Chapters/Auxiliary.tex [50
+ (Chapters/Auxiliary.tex [52
 
 
 
@@ -1961,11 +2019,11 @@ Overfull \hbox (18.04512pt too wide) in paragraph at lines 9--10
 File: images/lampiran/uji31.png Graphic file (type QTm)
 <use  "images/lampiran/uji31.png" >
 File: images/lampiran/uji1.png Graphic file (type QTm)
- <use  "images/lampiran/uji1.png" > [51]
+ <use  "images/lampiran/uji1.png" > [53]
 Overfull \vbox (24.68826pt too high) has occurred while \output is active []
 
 
-[52]
+[54]
 File: images/lampiran/uji3.png Graphic file (type QTm)
  <use  "images/lampiran/uji3.png" >
 Overfull \hbox (0.93588pt too wide) in paragraph at lines 30--31
@@ -1978,33 +2036,30 @@ Overfull \hbox (22.63757pt too wide) in paragraph at lines 37--38
  [][] 
  []
 
-[53]
+[55]
 File: images/lampiran/rankdiatas2.png Graphic file (type QTm)
  <use  "images/lampiran/rankdiatas2.png" >
 Overfull \hbox (31.98761pt too wide) in paragraph at lines 44--45
  [][] 
  []
 
-[54]) [55]
+[56]) [57]
 \openout2 = `Chapters/Auxiliary2.aux'.
 
- (Chapters/Auxiliary2.tex [56
+ (Chapters/Auxiliary2.tex [58
 
 
 
 
 ]
 Lampiran B.
-[57] [58] [59] [60] [61] [62] [63] [64]) [65] [66]
+[59] [60] [61] [62] [63] [64] [65] [66]) [67] [68]
 \openout2 = `Chapters/Main/Bab7-Biodata.aux'.
 
 
 (Chapters/Main/Bab7-Biodata.tex
 File: images/foto-diri.jpg Graphic file (type QTm)
- <use  "images/foto-diri.jpg" >
-LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 8.
-) [67
+ <use  "images/foto-diri.jpg" >) [69
 
 
 
@@ -2034,12 +2089,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29743 strings out of 427834
- 534162 string characters out of 3152470
- 1038462 words of memory out of 3000000
- 33198 multiletter control sequences out of 15000+200000
- 549160 words of font info for 79 fonts, out of 3000000 for 9000
+ 29754 strings out of 427834
+ 534199 string characters out of 3152470
+ 986462 words of memory out of 3000000
+ 33209 multiletter control sequences out of 15000+200000
+ 549144 words of font info for 77 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 49i,12n,69p,10395b,902s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,15n,69p,10395b,878s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.pdf (89 pages).
+Output written on main.pdf (93 pages).

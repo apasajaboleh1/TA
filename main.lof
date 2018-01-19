@@ -3,22 +3,23 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Aturan \textit {Polyalphabetical Cipher}\relax }}{8}{figure.caption.6}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Deskripsi Permasalahan dalam Bahasa Inggris pada SPOJ \textit {The Bytelandian Cryptographer (Act IV)}\relax }}{12}{figure.caption.8}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Deskripsi Format Masukan dan Keluaran pada SPOJ \textit {The Bytelandian Cryptographer (Act IV)}\relax }}{15}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Gamba Fungsi Main\relax }}{27}{figure.caption.25}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Gambar Fungsi SOLVE (1)\relax }}{29}{figure.caption.26}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Gambar Fungsi SOLVE (2)\relax }}{30}{figure.caption.27}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Gambar Fungsi VALIDITY\relax }}{31}{figure.caption.28}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Perbandingan Kinerja Algoritma Optimasi \textit {Kasiski Examination} dengan \textit {Intersection} dan \textit {Naive}\relax }}{45}{figure.caption.30}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Gambar Fungsi Main\relax }}{25}{figure.caption.23}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Gambar Fungsi SOLVE (1)\relax }}{28}{figure.caption.25}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Gambar Fungsi SOLVE (2)\relax }}{29}{figure.caption.26}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Gambar Fungsi VALIDITY\relax }}{31}{figure.caption.29}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Hasil Uji Coba pada Situs Penilaian SPOJ\relax }}{51}{figure.caption.32}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Grafik Hasil Uji Coba pada Situs SPOJ Sebanyak 30 Kali\relax }}{51}{figure.caption.33}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Hasil Pengujian Sebanyak 30 Kali pada Situs Penilaian Daring SPOJ (1)\relax }}{52}{figure.caption.34}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Hasil Pengujian Sebanyak 30 Kali pada Situs Penilaian Daring SPOJ (2)\relax }}{53}{figure.caption.35}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Daftar Peringkat Berdasarkan Kecepatan yang Diperoleh dari Dari SPOJ(1)\relax }}{54}{figure.caption.36}
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Daftar Hasil Peringkat Berdasarkan Kecepatan yang Diperoleh dari Dari SPOJ(2)\relax }}{55}{figure.caption.37}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Gambar Perbandingan Kinerja Algoritma Optimasi \textit {Kasiski Examination} dengan \textit {Intersection} dan \textit {Intersection}\relax }}{47}{figure.caption.36}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Gambar Kinerja Algoritma Optimasi \textit {Kasiski Examination} dengan \textit {Intersection}\relax }}{47}{figure.caption.37}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Gambar Kinerja Algoritma \textit {Naive}\relax }}{48}{figure.caption.38}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Hasil Uji Coba pada Situs Penilaian SPOJ\relax }}{53}{figure.caption.40}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Grafik Hasil Uji Coba pada Situs SPOJ Sebanyak 30 Kali\relax }}{53}{figure.caption.41}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Hasil Pengujian Sebanyak 30 Kali pada Situs Penilaian Daring SPOJ (1)\relax }}{54}{figure.caption.42}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Hasil Pengujian Sebanyak 30 Kali pada Situs Penilaian Daring SPOJ (2)\relax }}{55}{figure.caption.43}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Daftar Peringkat Berdasarkan Kecepatan Eksekusi Program yang Diperoleh dari Dari SPOJ(1)\relax }}{56}{figure.caption.44}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Daftar Hasil Peringkat Berdasarkan Kecepatan Eksekusi Program yang Diperoleh dari Dari SPOJ(2)\relax }}{57}{figure.caption.45}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
