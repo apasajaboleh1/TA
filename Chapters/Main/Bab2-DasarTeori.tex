@@ -51,7 +51,7 @@
 	\begin{equation} \label{eq:13}
 	IC=\frac{\sum_{i=1}^{c}n_i(n_i-1)}{\frac{N*(N-1)}{c}}
 	\end{equation}
-	$IC$ adalah \textit{index of coincidence}, $n_a$ adalah jumlah huruf "a" yang terdapat pada suatu \textit{ciphertext} dan seterusnya, $N$ adalah jumlah huruf yang terdapat pada \textit{ciphertext}, $c$ adalah jumlah huruf dalam alfabet. Karena tidak dapat mengetahui jumlah huruf yang mungkin terbentuk dalam alfabet yang ada dan harus mengetahui jumlah setiap huruf yang muncul dalam suatu \textit{ciphertext}. Karena keterbatasan informasi mengenai \ciphertext yang didapatkan, maka metode ini tidak dapat digunakan untuk menyelesaikan permasalahan dalam tugas akhir ini.
+	$IC$ adalah \textit{index of coincidence}, $n_i$ adalah jumlah huruf ke i yang terdapat pada suatu alfabet yang terdapat pada \textit{ciphertext}, $N$ adalah jumlah huruf yang terdapat pada \textit{ciphertext}, $c$ adalah jumlah huruf dalam alfabet. Alfabet yang terbentuk didalam suatu \ciphertext belum tentu jumlahnya pasti 26. Karena tidak dapat mengetahui jumlah huruf yang mungkin terbentuk dalam alfabet yang ada dan harus mengetahui jumlah setiap huruf yang muncul dalam suatu \textit{ciphertext}. Karena keterbatasan informasi mengenai \ciphertext yang didapatkan, maka metode ini tidak dapat digunakan untuk menyelesaikan permasalahan dalam tugas akhir ini.
 	
 	 \subsection{Kasiski Examination}
 	 \textit{Kasiski Examination} merupakan suatu teknik yang digunakan untuk mendeskripsikan secara paksa suatu \textit{ciphertext} yang menggunakan teknik substitusi, baik itu \textit{polyalphabetical cipher} maupun \textit{monoalphabetical cipher}. Teknik menggunakan kelemahan yang ditimbulkan oleh teknik substitusi itu sendiri. Yaitu apabila suatu \textit{subtring} dari \plaintext dan \textit{subtring} dari suatu set kunci yang berulang terdapat yang berulang, maka dapat dipastikan untuk menebak panjang huruf / karakter kunci yang digunakan, tanpa diketahui \plaintext dan kuncinya. Sebagai contoh dapat dilihat pada Tabel \ref{tab:kasiskiexamination}.
@@ -107,10 +107,10 @@
 	\item Baris ketiga dari setiap kasus uji coba berisi \textit{ciphertext}.
 	%\item \textit{Plaintext} dan \textit{ciphertext} direpresentasikan dengan karakter 'A' sampai dengan 'Z'.
 	\end{enumerate}
-	\textit{Plain text} dan \textit{ciphertext} dalam format masukan menggunakan karakter A sampai dengan Z yang dapat ditafsirkan kedalam bilangan bulat 0 sampai dengan 25 dan karakter '*' yang dapat ditafsirkan sebagai karakter yang hilang.
+	\textit{Plain text} dan \textit{ciphertext} dalam format masukan menggunakan karakter A sampai dengan Z yang dapat ditafsirkan kedalam bilangan bulat 0 sampai dengan 25 dan karakter "*" yang dapat ditafsirkan sebagai karakter yang hilang.
 	
 	
-	Format keluaran yang dihasilkan adalah 1 baris \textit{plaintext} yang dapat direkontruksi dan '*' apabila nilai dari karakter pada posisi tersebut tidak dapat ditentukan. 
+	Format keluaran yang dihasilkan adalah 1 baris \textit{plaintext} yang dapat direkontruksi dan "*" apabila nilai dari karakter pada posisi tersebut tidak dapat ditentukan. 
 	Batasan permasalahan \textit{The Bytelandian Cryptographer (Act IV)} adalah sebagai berikut:
 	\begin{enumerate}
 		\item $T \leq 200$
@@ -223,7 +223,7 @@
 	 	\end{tabular}
 	 	\label{tab:k3contoh2}
 	\end{table}	
-	Apabila 1 warna direpresentasikan menjadi 1 blok kunci, maka terdapat 2 blok kunci yang terbentuk. Pada Tabel \ref{tab:k3contoh2} terlihat bahwa terdapat 2 indeks di mana \plaintext dan \ciphertext yang diketahui. Indeks yang pertama terletak dibagian tengah pada blok 1 dan indeks yang kedua terletak pada bagian akhir pada blok 2. Maka,  \plaintext yang terbentuk adalah pada bagian akhir dari blok kunci 1 dan bagian tengah dari blok kunci 2. Karena kedua-duanya saling melengkapi antara satu bagian dengan bagian lainnya. Sehingga hasil yang terbentuk pada bagian akhir dari blok kunci 1 adalah "A" $-$ $0$ adalah "A" dan bagian tengah dari blok kunci 2 adalah "A" $-$ $25$ adalah "B". 
+	Apabila 1 warna direpresentasikan menjadi 1 blok kunci, maka terdapat 2 blok kunci yang terbentuk. Pada Tabel \ref{tab:k3contoh2} terlihat bahwa terdapat 2 indeks di mana \plaintext dan \ciphertext yang diketahui. Indeks yang pertama terletak dibagian tengah pada blok 1 dan indeks yang kedua terletak pada bagian akhir pada blok 2. Maka,  \plaintext yang terbentuk adalah pada bagian akhir dari blok kunci 1 dan bagian tengah dari blok kunci 2. Karena kedua-duanya saling melengkapi antara satu bagian dengan bagian lainnya. Sehingga hasil yang terbentuk pada bagian akhir dari blok kunci 1 adalah "A" $-$ $0$ adalah "A" dan bagian tengah dari blok kunci 2 adalah "A" $- 25+26$ adalah "B". 
 	\\
 	Proses pencarian ketika panjang kunci adalah 4
 	\begin{table}[H]
@@ -317,7 +317,7 @@
 	 	\end{tabular}
 	 	\label{tab:k3contoh3}
 	\end{table}
-	Apabila 1 warna merepresentasikan sebagai 1 blok kunci maka, dapat terbentuk sebanyak 4 blok kunci. Dapat dilihat pada Tabel \ref{tab:k3contoh3}. Indeks yang diketahui baik \plaintext dan \ciphertext adalah indeks 1 dan indeks 2, di mana smuanya terletak pada satu blok yang sama, yaitu blok kunci 1 . Jadi, sisanya menngikuti perulangan dari blok kunci 1. 
+	Apabila 1 warna merepresentasikan sebagai 1 blok kunci maka, dapat terbentuk sebanyak 4 blok kunci. Dapat dilihat pada Tabel \ref{tab:k3contoh3}. Indeks yang diketahui baik \plaintext dan \ciphertext adalah indeks 1 dan indeks 2, di mana smuanya terletak pada satu blok yang sama, yaitu blok kunci 1. Jadi, sisanya menngikuti perulangan dari blok kunci 1. 
 	\\
 	Pada Tabel \ref{tab:k4contoh3} akan diperlihatkan proses pencarian ketika panjang kunci adalah 4.
 	\begin{table}[H]
@@ -333,7 +333,7 @@
 	 	\end{tabular}
 	 	\label{tab:k4contoh3}
 	\end{table}
-	Apabila 1 warna merepresentasikan sebagai 1 blok kunci maka, dapat terbentuk sebanyak 4 blok kunci. Dapat dilihat pada Tabel \ref{tab:k4contoh3}. Indeks yang diketahui baik \plaintext dan \ciphertext adalah indeks 1 dan indeks 2, di mana smuanya terletak pada satu blok yang sama, yaitu blok kunci 1 . Jadi, sisanya menngikuti perulangan dari blok kunci 1. 
+	Apabila 1 warna merepresentasikan sebagai 1 blok kunci maka, dapat terbentuk sebanyak 4 blok kunci. Dapat dilihat pada Tabel \ref{tab:k4contoh3}. Indeks yang diketahui baik \plaintext dan \ciphertext adalah indeks 1 dan indeks 2, di mana smuanya terletak pada satu blok yang sama, yaitu blok kunci 1. Jadi, sisanya menngikuti perulangan dari blok kunci 1. 
 	
 	\begin{table}[H]
 		\centering

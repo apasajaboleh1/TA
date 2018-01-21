@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  19 JAN 2018 14:19
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  22 JAN 2018 00:19
 entering extended mode
 **./main.tex
 (main.tex
@@ -1428,6 +1428,12 @@ LaTeX Warning: Label `tab:mainvar' multiply defined.
 
 LaTeX Warning: Label `tab:mainvar@cref' multiply defined.
 
+
+LaTeX Warning: Label `tab:mainvar' multiply defined.
+
+
+LaTeX Warning: Label `tab:mainvar@cref' multiply defined.
+
 ) (Chapters/Main/Bab5-PengujianDanEvaluasi.aux) (Chapters/Main/Bab6-Penutup.aux
 ) (Chapters/Auxiliary.aux) (Chapters/Auxiliary2.aux)
 (Chapters/Main/Bab7-Biodata.aux))
@@ -1901,7 +1907,11 @@ File: images/bab3/solvefx21.png Graphic file (type QTm)
 [27] [28]
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
 (Font)              scaled to size 9.85492pt on input line 90.
- [29] [30]
+ [29]
+Overfull \vbox (5.95589pt too high) has occurred while \output is active []
+
+
+[30]
 Overfull \hbox (3.33763pt too wide) in paragraph at lines 119--119
 \TU/lmr/m/n/10.95 counter[]\TU/CourierNew(0)/m/n/10.95 _\TU/lmr/m/n/10.95 diket
 ahui,
@@ -1954,11 +1964,17 @@ Overfull \hbox (13.01134pt too wide) in paragraph at lines 68--79
  []
 
 [36]
-Overfull \vbox (5.55591pt too high) has occurred while \output is active []
-
+Overfull \hbox (13.01134pt too wide) in paragraph at lines 84--88
+[][][][] 
+ []
 
 [37] (Chapters/Details/bab4/crypto4.cpp)
-Overfull \hbox (13.01134pt too wide) in paragraph at lines 89--95
+Overfull \hbox (13.01134pt too wide) in paragraph at lines 98--104
+[][][][] 
+ []
+
+
+Overfull \hbox (13.01134pt too wide) in paragraph at lines 110--116
 [][][][] 
  []
 
@@ -1966,31 +1982,31 @@ Overfull \hbox (13.01134pt too wide) in paragraph at lines 89--95
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 11.0699pt on input line 30.
 )
-Overfull \hbox (17.0pt too wide) in paragraph at lines 101--105
+Overfull \hbox (17.0pt too wide) in paragraph at lines 123--127
 []$[]$ 
  []
 
 (Chapters/Details/bab4/crypto4.cpp)
-Overfull \hbox (17.0pt too wide) in paragraph at lines 106--110
+Overfull \hbox (17.0pt too wide) in paragraph at lines 128--132
 []$[]$ 
  []
 
 
-Overfull \hbox (12.61134pt too wide) in paragraph at lines 114--120
+Overfull \hbox (12.61134pt too wide) in paragraph at lines 136--142
 [][][][] 
  []
 
-[39] (Chapters/Details/bab4/crypto4.cpp)
-Overfull \hbox (11.30946pt too wide) in paragraph at lines 125--128
+[39] [40] (Chapters/Details/bab4/crypto4.cpp)
+Overfull \hbox (11.30946pt too wide) in paragraph at lines 147--150
 []$[]$ 
  []
 
 
-Overfull \hbox (12.61134pt too wide) in paragraph at lines 132--138
+Overfull \hbox (12.61134pt too wide) in paragraph at lines 154--160
 [][][][] 
  []
 
-[40]) [41]
+) [41]
 \openout2 = `Chapters/Main/Bab5-PengujianDanEvaluasi.aux'.
 
  (Chapters/Main/Bab5-PengujianDanEvaluasi.tex [42
@@ -2109,12 +2125,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29758 strings out of 427834
- 534259 string characters out of 3152470
- 986462 words of memory out of 3000000
- 33213 multiletter control sequences out of 15000+200000
+ 29759 strings out of 427834
+ 534240 string characters out of 3152470
+ 984462 words of memory out of 3000000
+ 33214 multiletter control sequences out of 15000+200000
  549144 words of font info for 77 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 49i,15n,69p,10395b,878s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,15n,69p,10395b,862s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on main.pdf (93 pages).

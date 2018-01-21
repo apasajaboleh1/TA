@@ -42,7 +42,7 @@
 \contentsline {subsection}{\numberline {4.3.4}Variabel Global}{36}{subsection.4.3.4}
 \contentsline {subsection}{\numberline {4.3.5}Implementasi Fungsi Main}{38}{subsection.4.3.5}
 \contentsline {subsection}{\numberline {4.3.6}Implementasi Fungsi SOLVE}{39}{subsection.4.3.6}
-\contentsline {subsection}{\numberline {4.3.7}Implementasi Fungsi VALIDITY}{40}{subsection.4.3.7}
+\contentsline {subsection}{\numberline {4.3.7}Implementasi Fungsi VALIDITY}{41}{subsection.4.3.7}
 \contentsline {chapter}{\numberline {V}UJI COBA DAN EVALUASI}{43}{chapter.5}
 \contentsline {section}{\numberline {5.1}Lingkungan Uji Coba}{43}{section.5.1}
 \contentsline {section}{\numberline {5.2}Uji Coba Kebenaran}{43}{section.5.2}
@@ -50,7 +50,7 @@
 \contentsline {chapter}{\numberline {VI}PENUTUP}{49}{chapter.6}
 \contentsline {section}{\numberline {6.1}Kesimpulan}{49}{section.6.1}
 \contentsline {section}{\numberline {6.2}Saran}{50}{section.6.2}
-\contentsline {chapter}{DAFTAR PUSTAKA}{51}{chapter*.42}
+\contentsline {chapter}{DAFTAR PUSTAKA}{51}{chapter*.44}
 \contentsline {chapter}{\numberline {A}Lampiran}{53}{appendix.A}
 \contentsline {chapter}{\numberline {B}Hasil Percobaan dengan menggunakan Algoritma Naive dan Kasiski Examination}{59}{appendix.B}
-\contentsline {chapter}{BIODATA PENULIS}{69}{appendix*.59}
+\contentsline {chapter}{BIODATA PENULIS}{69}{appendix*.61}

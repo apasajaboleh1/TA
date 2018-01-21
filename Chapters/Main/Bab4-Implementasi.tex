@@ -70,13 +70,22 @@ Variabel global digunakan untuk memudahkan dalam mengakses data yang digunakan l
 		1&plaintext&\textit{array of character}&Digunakan untuk menerima dan  menyimpan masukan \textit{plaintext}. \\ \hline
 		2&ciphertext&\textit{array of character}&Digunakan untuk menyimpan dan menerima masukan \textit{ciphertext}. \\ \hline
 		3&key&\textit{array of integer}&Digunakan untuk menyimpan kunci yang telah \textit{generate}. \\ \hline
-		4&both&\textit{array of integer}&Digunakan untuk menyimpan selisih antara \plaintext dan \ciphertext dimana \plaintext dan \ciphertext yang tidak '*'. \\ \hline
-		5&known&\textit{array of integer} &Digunakan untuk menyimpan indeks dimana \plaintext dan \ciphertext yang tidak '*'. \\ \hline
-		6&knownall&int&Digunakan untuk menghitung jumlah \plaintext dan \ciphertext yang tidak '*'. \\ \hline
-		7&tf&\textit{unordered}\verb|_| \textit{map} \textit{of integer to integer}&Digunakan untuk menyimpan indeks dimana  \ciphertext tidak bernilai '*' dan \plaintext bernilai '*'. \\ \hline
+		4&both&\textit{array of integer}&Digunakan untuk menyimpan selisih antara \plaintext dan \ciphertext dimana \plaintext dan \ciphertext pada indeks tersebut tidak bernilai "*". \\ \hline
+		5&known&\textit{array of integer} &Digunakan untuk menyimpan indeks dimana pada indeks tersebut \plaintext dan \ciphertext yang tidak bernilai "*". \\ \hline
+		6&knownall&int&Digunakan untuk menghitung jumlah indeks \plaintext dan \ciphertext yang tidak "*". \\ \hline
+		%7&tf&\textit{unordered}\verb|_| \textit{map} \textit{of integer to integer}&Digunakan untuk menyimpan indeks dimana pada indeks tersebut \ciphertext tidak bernilai "*" dan \plaintext bernilai "*". \\ \hline
 		\end{tabular}%}
 		\label{tab:mainvar}
 	\end{table}
+	
+	\begin{table}[H]
+	 	%\caption{Penjelasan Variabel yang digunakan dalam fungsi MAIN}
+		%\resizebox{\textwidth}{!}{%
+		\begin{tabular}   {|p{0.5cm}|p{2.5cm}|p{2cm}|p{4cm}|}\hline
+		7&tf&\textit{unordered}\verb|_| \textit{map} \textit{of integer to integer}&Digunakan untuk menyimpan indeks dimana pada indeks tersebut \ciphertext tidak bernilai "*" dan \plaintext bernilai "*". \\ \hline
+		\end{tabular}%}
+		\label{tab:mainvar}
+	\end{table}	
 	
 \subsection{Implementasi Fungsi Main}
 Fungsi Main adalah implementasi algoritma yang dirancang pada Gambar \ref{fig:mainfx}. Implementasi fungsi Main dapat dilihat pada Kode Sumber \ref{source:fungsi_main}.
@@ -89,23 +98,36 @@ Fungsi Main adalah implementasi algoritma yang dirancang pada Gambar \ref{fig:ma
 		\begin{tabular}   {|p{0.5cm}|p{2.5cm}|p{2cm}|p{4cm}|}\hline
 		No&Nama Variabel&Tipe Data&Penjelasan \\ \hline
 		1&tc&integer&Digunakan untuk menerima dan menyimpan masukan kasus uji coba. \\ \hline
+		%2&m&integer&Digunakan untuk menerima dan menyimpan masukan batas atas panjang kunci dari setiap kasus uji coba. \\ \hline
+		\end{tabular}%}
+		\label{tab:mainvar}
+	\end{table}
+
+
+\begin{table}[H]
+	 	%\caption{Penjelasan Variabel yang digunakan dalam fungsi MAIN}
+		%\resizebox{\textwidth}{!}{%
+		\begin{tabular}   {|p{0.5cm}|p{2.5cm}|p{2cm}|p{4cm}|}\hline
+		%No&Nama Variabel&Tipe Data&Penjelasan \\ \hline
+		%1&tc&integer&Digunakan untuk menerima dan menyimpan masukan kasus uji coba. \\ \hline
 		2&m&integer&Digunakan untuk menerima dan menyimpan masukan batas atas panjang kunci dari setiap kasus uji coba. \\ \hline
 		\end{tabular}%}
 		\label{tab:mainvar}
 	\end{table}
 
+
 \subsection{Implementasi Fungsi SOLVE}
-Fungsi SOLVE adalah implementasi algoritma yang dirancang pada Gambar \ref{fig:solvefx1} dan Gambar \ref{fig:solvefx2}. Implementasi fungsi SOLVE dapat dilihat pada Kode Sumber \ref{source:fungsi_SOLVE} dan \ref{source:fungsi_SOLVE}.
+Fungsi SOLVE adalah implementasi algoritma yang dirancang pada Gambar \ref{fig:solvefx1} dan Gambar \ref{fig:solvefx2}. Implementasi fungsi SOLVE dapat dilihat pada Kode Sumber \ref{source:fungsi_SOLVE} dan \ref{source:fungsi_SOLVE1}.
 
 
 \begin{minipage}{\linewidth}
 \resizebox{\textwidth}{!}{%
-\lstinputlisting[language=C++, firstline=26, lastline=56, caption=Fungsi SOLVE, label=source:fungsi_SOLVE]{Chapters/Details/bab4/crypto4.cpp}}
+\lstinputlisting[language=C++, firstline=26, lastline=45, caption=Fungsi SOLVE, label=source:fungsi_SOLVE]{Chapters/Details/bab4/crypto4.cpp}}
 \end{minipage} 
 
 \begin{minipage}{\linewidth}
 \resizebox{\textwidth}{!}{%
-\lstinputlisting[language=C++, firstline=57, lastline=67, caption=Fungsi SOLVE, label=source:fungsi_SOLVE1]{Chapters/Details/bab4/crypto4.cpp}}
+\lstinputlisting[language=C++, firstline=46, lastline=67, caption=Fungsi SOLVE, label=source:fungsi_SOLVE1]{Chapters/Details/bab4/crypto4.cpp}}
 \end{minipage} 
 
 \begin{table}[H]
@@ -113,9 +135,9 @@ Fungsi SOLVE adalah implementasi algoritma yang dirancang pada Gambar \ref{fig:s
 		%\resizebox{\textwidth}{!}{%
 		\begin{tabular}   {p{0.5cm}|p{2.5cm}|p{2cm}|p{4cm}|}\hline
 		No&Nama Variabel&Tipe Data&Penjelasan \\ \hline
-		1&ntofind&integer&Digunakan untuk menghitung jumlah \ciphertext tidak bernilai '*' dan \plaintext bernilai '*'. \\ \hline
+		1&ntofind&integer&Digunakan untuk menghitung jumlah indeks \ciphertext tidak bernilai "*" dan \plaintext bernilai "*". \\ \hline
 		2&it&\textit{unordered}\verb|_| \textit{map} \textit{of integer to integer}&Digunakan sebagai \textit{iterator} dari variabel tf. \\ \hline
-		\end{tabular}%}
+		\end{tabular}%}1
 		\label{tab:mainvar}
 	\end{table}
 
@@ -127,12 +149,12 @@ Fungsi VALIDITY adalah inplementasi algoritma yang dirancang pada Gambar \ref{fi
 \end{minipage} 
 
 \begin{table}[H]
-	 	\caption{Penjelasan Variabel yang digunakan dalam fungsi MAIN}
+	 	\caption{Penjelasan Variabel yang digunakan dalam fungsi VALIDITY}
 		%\resizebox{\textwidth}{!}{%
 		\begin{tabular}   {p{0.5cm}|p{2.5cm}|p{2cm}|p{4cm}|}\hline
 		No&Nama Variabel&Tipe Data&Penjelasan \\ \hline
 		1&temp&integer&Digunakan untuk menyimpan sementara nilai dari variabel known pada indeks saat dijalankannya perulangan tersebut. \\ \hline
 		
 		\end{tabular}%}
-		\label{tab:mainvar}
+		\label{tab:valvar}
 	\end{table}
