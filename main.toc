@@ -23,34 +23,34 @@
 \contentsline {subsection}{\numberline {2.1.6}Kasiski Examination}{10}{subsection.2.1.6}
 \contentsline {subsection}{\numberline {2.1.7}Intersection}{10}{subsection.2.1.7}
 \contentsline {section}{\numberline {2.2}Deskripsi Permasalahan}{11}{section.2.2}
-\contentsline {section}{\numberline {2.3}Contoh Kasus Permasalahan}{13}{section.2.3}
-\contentsline {section}{\numberline {2.4}Penyelesaian Masalah The Bytelandian Cryptographer (Act IV)}{21}{section.2.4}
-\contentsline {chapter}{\numberline {III}DESAIN}{25}{chapter.3}
-\contentsline {section}{\numberline {3.1}Desain Umum Sistem}{25}{section.3.1}
-\contentsline {section}{\numberline {3.2}Desain Algoritma}{26}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Desain fungsi SOLVE}{26}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Desain Fungsi VALIDITY}{31}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {IV}IMPLEMENTASI}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Lingkungan Implementasi}{33}{section.4.1}
-\contentsline {section}{\numberline {4.2}Rancangan Data}{33}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Data Masukan}{33}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Data Keluaran}{34}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Implementasi Algoritma dan Struktur Data}{34}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Struktur Data yang Digunakan}{34}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}\textit {Header} yang Diperlukan}{34}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}\textit {Preprocessor Directives}}{35}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Variabel Global}{36}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Implementasi Fungsi Main}{38}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}Implementasi Fungsi SOLVE}{39}{subsection.4.3.6}
-\contentsline {subsection}{\numberline {4.3.7}Implementasi Fungsi VALIDITY}{41}{subsection.4.3.7}
-\contentsline {chapter}{\numberline {V}UJI COBA DAN EVALUASI}{43}{chapter.5}
-\contentsline {section}{\numberline {5.1}Lingkungan Uji Coba}{43}{section.5.1}
-\contentsline {section}{\numberline {5.2}Uji Coba Kebenaran}{43}{section.5.2}
-\contentsline {section}{\numberline {5.3}Analisa Kompleksitas Waktu}{45}{section.5.3}
-\contentsline {chapter}{\numberline {VI}PENUTUP}{49}{chapter.6}
-\contentsline {section}{\numberline {6.1}Kesimpulan}{49}{section.6.1}
-\contentsline {section}{\numberline {6.2}Saran}{50}{section.6.2}
-\contentsline {chapter}{DAFTAR PUSTAKA}{51}{chapter*.44}
-\contentsline {chapter}{\numberline {A}Lampiran}{53}{appendix.A}
-\contentsline {chapter}{\numberline {B}Hasil Percobaan dengan menggunakan Algoritma Naive dan Kasiski Examination}{59}{appendix.B}
-\contentsline {chapter}{BIODATA PENULIS}{69}{appendix*.61}
+\contentsline {section}{\numberline {2.3}Contoh Kasus Permasalahan}{12}{section.2.3}
+\contentsline {section}{\numberline {2.4}Penyelesaian Masalah The Bytelandian Cryptographer (Act IV)}{20}{section.2.4}
+\contentsline {chapter}{\numberline {III}DESAIN}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Desain Umum Sistem}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}Desain Algoritma}{24}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Desain fungsi SOLVE}{24}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Desain Fungsi VALIDITY}{29}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {IV}IMPLEMENTASI}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Lingkungan Implementasi}{31}{section.4.1}
+\contentsline {section}{\numberline {4.2}Rancangan Data}{31}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Data Masukan}{31}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Data Keluaran}{32}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Implementasi Algoritma dan Struktur Data}{32}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Struktur Data yang Digunakan}{32}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}\textit {Header} yang Diperlukan}{33}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}\textit {Preprocessor Directives}}{33}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Variabel Global}{34}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Implementasi Fungsi Main}{36}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}Implementasi Fungsi SOLVE}{37}{subsection.4.3.6}
+\contentsline {subsection}{\numberline {4.3.7}Implementasi Fungsi VALIDITY}{39}{subsection.4.3.7}
+\contentsline {chapter}{\numberline {V}UJI COBA DAN EVALUASI}{41}{chapter.5}
+\contentsline {section}{\numberline {5.1}Lingkungan Uji Coba}{41}{section.5.1}
+\contentsline {section}{\numberline {5.2}Uji Coba Kebenaran}{41}{section.5.2}
+\contentsline {section}{\numberline {5.3}Analisa Kompleksitas Waktu}{43}{section.5.3}
+\contentsline {chapter}{\numberline {VI}PENUTUP}{47}{chapter.6}
+\contentsline {section}{\numberline {6.1}Kesimpulan}{47}{section.6.1}
+\contentsline {section}{\numberline {6.2}Saran}{48}{section.6.2}
+\contentsline {chapter}{DAFTAR PUSTAKA}{49}{chapter*.41}
+\contentsline {chapter}{\numberline {A}Lampiran}{51}{appendix.A}
+\contentsline {chapter}{\numberline {B}Hasil Percobaan dengan menggunakan Algoritma Naive dan Kasiski Examination}{57}{appendix.B}
+\contentsline {chapter}{BIODATA PENULIS}{67}{appendix*.58}

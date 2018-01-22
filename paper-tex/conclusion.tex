@@ -2,13 +2,13 @@
 \section{Kesimpulan}
 Dari hasil uji coba yang telah dilakukan terhadap perancangan dan implementasi algoritma untuk menyelesaikan studi kasus SPOJ 20 \textit{The Bytelandian Cryptographer (Act IV)} dapat diambil kesimpulan sebagai berikut:
 \begin{enumerate}
- \item Implementasi algoritma dengan menggunakan teknik \textit{Kasiski Examnination} dengan adanya optimasi dapat menyelesaikan permasalahan SPOJ \textit{The Bytelandian Cryptographer (Act IV)} dengan benar.
+ \item Implementasi algoritma dengan menggunakan teknik \textit{Kasiski Examnination} dengan adanya optimasi tidak dapat menyelesaikan permasalahan SPOJ \textit{The Bytelandian Cryptographer (Act IV)} dengan benar. Dengan adanya metode \textit{Intersection} yang dilakukan setelah teknik \textit{Kasiski Examnination} dengan optimasi dapat menyelesaikan studi kasus tersebut dengan benar.
  \item Kompleksitas waktu $\mathcal{O}(T*\frac{M}{2}*(N+S))$ masih dapat menyelesaikan permasalahan SPOJ \textit{The Bytelandian Cryptographer (Act IV)}
  \item Waktu yang dibutuhkan oleh program untuk menyelesaikan SPOJ \textit{The Bytelandian Cryptographer (Act IV)} minimum $4,38$ detik, maksimum $4,49$ detik dan rata-rata $4.418$ detik. Memori yang dibutuhkan berkisar antara 26-27 MB. %Dibandingkan dengan menggunakan algoritma \textit{Naive} yang memakan waktu jauh lama. Perbandingannya dapat dilihat pada gambar \ref{fig:banding}.
  \end{enumerate}
 Saran-saran yang dapat diambil dari metode yang telah di bahas sebagai berikut:
   \begin{enumerate}
-    \item Dengan teknik \textit{Kasiski Examination} masih cenderung lambat,karena masih menggunakan teknik \textit{brute force} sehingga hasil yang diperoleh kurang optimal, perlu adanya optimisasi lanjutan yang dapat mencari suatu panjang kunci.%sebenarnya telah dilakukan ujicoba dengan menggunakan bilangan komposit dan bilangan prima yang telah terbentuk dalam persamaan ini, akan tetapi masih menemukan jalan buntu.
-    \item Perlu adanya Optimisasi dalam hal pencarian suatu indeks yang perlu dirubah atau tidak. Dengan teknik yang dipakai oleh penulis tidak dapat memenuhi ekspetasi jika berharap dengan hasil yang sangat cepat.
+    \item Teknik \textit{Kasiski Examination} masih cenderung lambat. Hal tersebut terjadi karena masih menggunakan teknik \textit{brute force} sehingga hasil yang diperoleh kurang optimal. Perlu adanya optimisasi lanjutan yang dapat mencari suatu panjang kunci.%sebenarnya telah dilakukan ujicoba dengan menggunakan bilangan komposit dan bilangan prima yang telah terbentuk dalam persamaan ini, akan tetapi masih menemukan jalan buntu.
+    %\item Perlu adanya Optimisasi dalam hal pencarian suatu indeks yang perlu dirubah atau tidak. Dengan teknik yang dipakai oleh penulis tidak dapat memenuhi ekspetasi jika berharap dengan hasil yang sangat cepat.
     \end{enumerate}
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  15 JAN 2018 18:34
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  22 JAN 2018 18:23
 entering extended mode
 **./main.tex
 (main.tex
@@ -507,8 +507,8 @@ LaTeX Info: Redefining \nameref on input line 48.
 
 
 (Metadata.tex) (abstract.tex
-Underfull \hbox (badness 1960) in paragraph at lines 2--9
-[]\TU/ptm/bx/it/9 Abstrak—Pada Era Digitalisasi ini, tingkat kebutuhan
+Underfull \hbox (badness 3333) in paragraph at lines 2--9
+[]\TU/ptm/bx/it/9 Abstrak—Pada era digitalisasi ini, tingkat kebutuhan
  []
 
 ) (introduction.tex
@@ -529,24 +529,19 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 ]) (deskripsi-sistem.tex
-Underfull \hbox (badness 2165) in paragraph at lines 12--14
+Underfull \hbox (badness 2165) in paragraph at lines 13--15
 []\TU/ptm/m/sc/10 Melakukan intersection terhadap himpunan dari
- []
-
-
-Underfull \hbox (badness 7238) in paragraph at lines 12--14
-\TU/ptm/m/sc/10 kunci yang telah di hasilkan pada tahapan
  []
 
 ) (test-eval.tex
 File: images/best.png Graphic file (type QTm)
  <use  "images/best.png" >
 Underfull \hbox (badness 10000) in paragraph at lines 4--10
-[]\TU/ptm/m/sc/10 Ujicoba kebenaran dilakukan dengan cara
+[]\TU/ptm/m/sc/10 Uji coba kebenaran dilakukan dengan cara
  []
 
 File: images/uji31.png Graphic file (type QTm)
-<use  "images/uji31.png" > [2]) (conclusion.tex) (acknowledgement.tex)
+<use  "images/uji31.png" >) (conclusion.tex [2]) (acknowledgement.tex)
 (main.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 27.
@@ -566,12 +561,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
- 10801 strings out of 427834
- 152101 string characters out of 3152470
+ 10802 strings out of 427834
+ 152115 string characters out of 3152470
  253164 words of memory out of 3000000
- 14661 multiletter control sequences out of 15000+200000
+ 14662 multiletter control sequences out of 15000+200000
  5903 words of font info for 31 fonts, out of 3000000 for 9000
  1331 hyphenation exceptions out of 8191
- 28i,9n,45p,1519b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,9n,45p,1525b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on main.pdf (3 pages).
