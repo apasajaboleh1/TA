@@ -7,7 +7,7 @@
 	\section{Definisi Umum}
 	Pada subbab ini membahas definisi-definisi yang digunakan sebagai dasar untuk memahami permasalahan ini dan pemecahannya.	
 	\subsection{Polyalphabetic Cipher}
-	\textit{Polyalphabetic Cipher }merupakan salah satu teknik untuk menenskripsi dengan menggunakan subtitusi huruf untuk menyubtitusikannya. Secara garis besar yang dimaksud dengan \textit{polyalphabetic cipher} memiliki 2 aturan dasar yang harus dipenuhi yaitu :
+	\textit{Polyalphabetic Cipher }merupakan salah satu teknik untuk menenkripsi dengan menggunakan subtitusi huruf untuk menyubtitusikannya. Secara garis besar yang dimaksud dengan \textit{polyalphabetic cipher} memiliki 2 aturan dasar yang harus dipenuhi yaitu :
 	\begin{enumerate}
 		\item Memiliki satu set aturan subtitusi \textit{monoalphabetic cipher} yang digunakan.
 		\item Sebuah kunci mengatur suatu aturan tertentu yang dipilih untuk mengatur transformasi yang dilakukan.
@@ -26,7 +26,7 @@
 		\caption{Aturan \textit{Polyalphabetical Cipher}}
 		\label{fig:polyalphabeticalcipher}
 	\end{figure}
-	$C$ adalah \textit{ciphertext}, $E$ adalah fungsi enskripsi, $K$ adalah kunci, dan $P$ adalah \textit{plaintext}.
+	$C$ adalah \textit{ciphertext}, $E$ adalah fungsi enkripsi, $K$ adalah kunci, dan $P$ adalah \textit{plaintext}.
 	Salah satu turunan dari \textit{polyalphabetic cipher} adalah teknik \textit{Vigenere Cipher} yang menjadi dasar permasalahan yang diangkat dalam tugas akhir ini \cite{stallings_computer_2015}.
 	
 	\subsection{Ciphertext}
@@ -34,10 +34,10 @@
 	Contoh dari \ciphertext dalam kasus \textit{polyalphabetical cipher} adalah "RTPPRKGFI" yang merupakan hasil enkripsi dari "PLAINTEXT" dan menggunakan kunci "CIPHER" \cite{william_crytography_2011}.
 	
 	\subsection{Plaintext}
-	\textit{Plaintext} adalah data asli sebagai masukan dari suatu metode enskripsi yang akan dilakukan  \cite{william_crytography_2011}. Biasanya merupakan suatu rangkaian kata yang masih dapat dipahami artinya atau hasil keluaran dari suatu algoritma kriptografi yang akan dienskripsi lagi.
+	\textit{Plaintext} adalah data asli sebagai masukan dari suatu metode enkripsi yang akan dilakukan  \cite{william_crytography_2011}. Biasanya merupakan suatu rangkaian kata yang masih dapat dipahami artinya atau hasil keluaran dari suatu algoritma kriptografi yang akan dienkripsi lagi.
 	
 	\subsection{Secret Key}
-	\textit{Secret Key} atau yang lebih dikenal dengan \textit{key} adalah suatu masukan dari algoritma enskripsi yang akan menentukan suatu transformasi dan subtitusi yang akan dilakukan oleh algoritma enskripsi\cite{william_crytography_2011}. Dalam kasus \textit{polyalphabetical cipher} pada permasalahan yang diangkat dalam tugas akhir ini, memiliki panjang kunci setidaknya 1. 
+	\textit{Secret Key} atau yang lebih dikenal dengan \textit{key} adalah suatu masukan dari algoritma enkripsi yang akan menentukan suatu transformasi dan subtitusi yang akan dilakukan oleh algoritma enkripsi\cite{william_crytography_2011}. Dalam kasus \textit{polyalphabetical cipher} pada permasalahan yang diangkat dalam tugas akhir ini, memiliki panjang kunci setidaknya 1. 
 	
 	\subsection{Friedman test}
 	\textit{Friedman test} atau \textit{Kappa Test} merupakan salah satu metode yang digunakan untuk mendeskripsikan \textit{Polyalphabetical Cipher} dengan menggunakan \textit{index of coincidence}. \textit{Index of coincidence} digunakan untuk mengukur tingkat ketidakrataan frekuensi \textit{ciphertext}. Untuk menghitung \textit{index of coincidence} digunakan persamaan \ref{eq:12}\cite{henk_encyclopedia_2005}.
@@ -86,7 +86,7 @@
 	Permasalahan yang diangkat dalam tugas akhir ini diangkat dari suatu permasalahan yang terdapat pada suatu situs penilaian daring atau \textit{online judge} SPOJ yaitu \textit{The Bytelandian Cryptographer (Act IV)} dengan  kode soal CRYPTO4\footnote{\url{http://www.spoj.com/problems/CRYPTO4}} \cite{piwakowski_crypto4_2004}.
 	
 	
-	 Permasalahan pada The Bytelandian Cryptographer (Act IV) diberikan pesan dengan panjang $N$ huruf, huruf yang digunakan adalah huruf kapital latin dari A sampai dengan Z, yang dapat ditafsirkan menjadi bilangan bulat dari 0 sampai dengan 25. Diberikan kunci untuk mentransmisikan pesan yang diketahui oleh kedua belah pihak yang terdiri dari $M$ bilangan bulat. Dengan menggunakan kunci yang ada bahwa pada index ke $i$ dari pesan pada index $x_i$ akan di enkripsikan ke dalam bentuk index ke $i$ dari pesan hasil enskripsi $y$, yang mengikuti aturan \ref{eq:hahah}.
+	 Permasalahan pada The Bytelandian Cryptographer (Act IV) diberikan pesan dengan panjang $N$ huruf, huruf yang digunakan adalah huruf kapital latin dari A sampai dengan Z, yang dapat ditafsirkan menjadi bilangan bulat dari 0 sampai dengan 25. Diberikan kunci untuk mentransmisikan pesan yang diketahui oleh kedua belah pihak yang terdiri dari $M$ bilangan bulat. Dengan menggunakan kunci yang ada bahwa pada index ke $i$ dari pesan pada index $x_i$ akan dienkripsikan ke dalam bentuk index ke $i$ dari pesan hasil enkripsi $y$, yang mengikuti aturan \ref{eq:hahah}.
 	\begin{equation}
 	y_i=x_i+k_{1+(i-1)mod M} mod 26 
 	\label{eq:hahah}
@@ -96,7 +96,7 @@
 	Deskripsi mengenai format masukan sebagai berikut:
 	\begin{enumerate}
 	\item Baris pertama berisi sejumlah $T$ kasus uji coba
-	\item Setiap kasus uji coba, baris pertama berisi $1$ bilangan bulat $M$ dimana merupakan sejumlah batas atas panjang kunci yang digunakan 
+	\item Setiap kasus uji coba, baris pertama berisi $1$ bilangan bulat $M$ di mana merupakan sejumlah batas atas panjang kunci yang digunakan 
 	\item Baris kedua dari setiap kasus uji coba berisi \textit{plaintext}.
 	\item Baris ketiga dari setiap kasus uji coba berisi \textit{ciphertext}.
 	%\item \textit{Plaintext} dan \textit{ciphertext} direpresentasikan dengan karakter 'A' sampai dengan 'Z'.
@@ -132,7 +132,7 @@
 	 	\label{tab:contoh1}
 	\end{table}
 	 
-	 Dari Tabel \ref{tab:contoh1} dapat diketahui bagaimana hasil yang akan dicapai. Cara mencapai hasil yang diinginkan adalah sebagai berikut. Pertama-tama pencarian panjang kunci. Pada pencarian panjang kunci harus mengetahui dahulu batas atas dari panjang kunci tersebut. Pada contoh kasus ini $M$ bernilai 1, maka kemungkinan jawabannya hanya ada 1, yaitu $M$ itu sendiri, karena suatu panjang kunci yang digunakan dalam enskripsi tidak mungkin 0. Diasumsikan bahwa 1 warna mewakili satu blok kunci yang akan digunakan. Maka akan membentuk seperti pada Tabel \ref{tab:langkah1contoh1}.
+	 Dari Tabel \ref{tab:contoh1} dapat diketahui bagaimana hasil yang akan dicapai. Cara mencapai hasil yang diinginkan adalah sebagai berikut. Pertama-tama pencarian panjang kunci. Pada pencarian panjang kunci harus mengetahui dahulu batas atas dari panjang kunci tersebut. Pada contoh kasus ini $M$ bernilai 1, maka kemungkinan jawabannya hanya ada 1, yaitu $M$ itu sendiri, karena suatu panjang kunci yang digunakan dalam enkripsi tidak mungkin 0. Diasumsikan bahwa 1 warna mewakili satu blok kunci yang akan digunakan. Maka akan membentuk seperti pada Tabel \ref{tab:langkah1contoh1}.
 	 
 	\begin{table}[H]
 	 	\centering
@@ -148,7 +148,7 @@
 	 	\label{tab:langkah1contoh1}
 	\end{table}
 	
-	  Karena selisih yang di ketahui hanya ada 1, maka itulah yang menjadi jawabannya. Selanjutnya mencari yang \plaintext yang bernilai "*" dan \ciphertext tidak kosong, seperti indeks ketiga. Maka indeks ketiga jawabannya adalah "H". Karena "M" $-$ $5$ adalah "H".
+	  Karena selisih yang diketahui hanya ada 1, maka itulah yang menjadi jawabannya. Selanjutnya mencari yang \plaintext yang bernilai "*" dan \ciphertext tidak kosong, seperti indeks ketiga. Maka indeks ketiga jawabannya adalah "H". Karena "M" $-$ $5$ adalah "H".
 	 
 	 
 	 
@@ -351,11 +351,11 @@
 	\begin{enumerate}
 	\item Menyimpan posisi indeks karakter, di mana pada indeks tersebut baik \ciphertext maupun \plaintext tidak bernilai '*', beserta menyimpan hasil perhitungan selisih antara \ciphertext dan \plaintext\cite{john_jones_spoj_2009}.
 	\item Menyimpan posisi indeks, apabila  \ciphertext diketahui dan \plaintext tidak diketahui. Untuk mengurangi \textit{running time} dari program\cite{john_jones_spoj_2009}.
-	\item Pada tahapan ini adalah modifikasi dari \textit{Kasiski Examnination}, apabila menggunakan \textit{Kasiski Examination} pada umumnya yang hanya mencari posisi berulang dari suatu sub kalimat dalam suatu kalimat tidak bisa digunakan untuk menyelesaikan permasalahan ini. Oleh karena itu diubah menjadi mengiterasi $M$ dari 1 sampai dengan $M$, yang akan digunakan untuk membagi selisih yang diketahui antara \plaintext dan \ciphertext sebesar posisi iterasi yang telah berjalan. Melihat apakah dalam blok-blok yang telah terbentuk ini terdapat \textit{collision} dan indeks yang saling bertabrakan memiliki nilai yang sama atau tidak. Apabila sama maka tidak terjadi tabrakan sebalik jika terjadi tabrakan maka harus mencari panjang kunci yang baru. Mengiterasi panjang kunci dari $\frac{M}{2}+1<=N<=M$. Alasannya dimulai dari $\frac{M}{2}+1$ tidak dari $1$ karena suatu panjang kunci bernilai benar maka kelipatan dari panjang kunci itu pun juga pasti benar dan untuk mempersingkat waktu \textit{running time} yang seharusnya terjadi. Yang mendasari ini adalah dari Tabel  \ref{tab:contoh2} pada bagian 2.2. Pada bagian ini dilakukan untuk mencari panjang kunci yang benar dengan cara mengiterasi hasil yang diperoleh pada tahap 1 dimodulo dengan posisi iterasi yang dilakukan. Apabila tidak terjadi konflik maka panjang kunci tersebut benar jika sebaliknya yang terjadi maka panjang kunci tersebut tidak salah. Contohnya dapat dilihat pada contoh 2 pada bagian 2.2. Pada bagian ini memungkinkan bahwa bisa jadi lebih dari 1 panjang kunci yang bernilai benar. Contohnya seperti yang terjadi pada Tabel \ref{tab:contoh3} pada bagian 2.2. 
-	\item Melakukan \textit{intersection} terhadap himpunan dari kunci yang telah di hasilkan  \cite{john_jones_spoj_2009}. \textit{Intersection} yang dilakukan berada didalam perulangan panjang kunci pada waktu \textit{generate} setiap karakter yang terdapat dalam penyimpanan tahap 2 pada panjang kunci tersebut dengan ketentuan sebagai berikut:
+	\item Pada tahapan ini adalah modifikasi dari \textit{Kasiski Examination}, apabila menggunakan \textit{Kasiski Examination} pada umumnya yang hanya mencari posisi berulang dari suatu sub kalimat dalam suatu kalimat tidak bisa digunakan untuk menyelesaikan permasalahan ini. Oleh karena itu diubah menjadi mengiterasi $M$ dari 1 sampai dengan $M$, yang akan digunakan untuk membagi selisih yang diketahui antara \plaintext dan \ciphertext sebesar posisi iterasi yang telah berjalan. Melihat apakah dalam blok-blok yang telah terbentuk ini terdapat \textit{collision} dan indeks yang saling bertabrakan memiliki nilai yang sama atau tidak. Apabila sama maka tidak terjadi tabrakan. Sebaliknya jika terjadi tabrakan maka harus mencari panjang kunci yang baru. Mengiterasi panjang kunci dari $\frac{M}{2}+1<=N<=M$. Alasannya dimulai dari $\frac{M}{2}+1$ tidak dari $1$ karena suatu panjang kunci bernilai benar maka kelipatan dari panjang kunci itu pun juga pasti benar dan untuk mempersingkat waktu \textit{running time} yang seharusnya terjadi. Yang mendasari ini adalah dari Tabel  \ref{tab:contoh2} pada bagian 2.2. Pada bagian ini dilakukan untuk mencari panjang kunci yang benar dengan cara mengiterasi hasil yang diperoleh pada tahap satu \textit{modulo} dengan posisi iterasi yang dilakukan. Apabila tidak terjadi konflik maka panjang kunci tersebut benar. Jika sebaliknya yang terjadi maka, panjang kunci tersebut salah. Contohnya dapat dilihat pada contoh 2 pada bagian 2.2. Pada bagian ini memungkinkan bahwa bisa jadi lebih dari 1 panjang kunci yang bernilai benar. Contohnya seperti yang terjadi pada Tabel \ref{tab:contoh3} pada bagian 2.2. 
+	\item Melakukan \textit{intersection} terhadap himpunan dari kunci yang telah dihasilkan  \cite{john_jones_spoj_2009}. \textit{Intersection} yang dilakukan berada didalam perulangan panjang kunci pada waktu \textit{generate} setiap karakter yang terdapat dalam penyimpanan tahap 2 pada panjang kunci tersebut dengan ketentuan sebagai berikut:
 	\begin{enumerate}
 	\item Panjang kunci yang terbentuk harus benar.
-	\item Apabila terdapat indeks yang tidak dapat dipastikan isinya maka posisinya harus di buang dari penyimpanan dan hasil yang diperoleh pasti '*'.
+	\item Apabila terdapat indeks yang tidak dapat dipastikan isinya maka posisinya harus dibuang dari penyimpanan dan hasil yang diperoleh pasti '*'.
 	\item Apabila \plaintext pada indeks tersebut nilainya masih '*' dan pada penyimpanan masih menyimpan indeks tersebut maka, hasilnya adalah \ciphertext pada indeks tersebut dikurangi dengan hasil yang diperoleh dari tahap 1 bagian perhitungan selisih pada indeks yang sama kemudian dimodulo 26.
 	\end{enumerate}
 	\end{enumerate}

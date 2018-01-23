@@ -29,25 +29,24 @@ Data masukan berupa berkas teks yang berisi data dengan format yang telah ditent
 
 
 \subsection{Data Keluaran}
-Data keluaran yang dihasilkan oleh program hanya berupa satu kalimat yang berisikan \plaintext yang bisa didapatkan dari \ciphertext dan batas atas panjang kunci yang telah di berikan.
+Data keluaran yang dihasilkan oleh program hanya berupa satu kalimat yang berisikan \plaintext yang bisa didapatkan dari \ciphertext dan batas atas panjang kunci yang telah diberikan.
 
 \section{Implementasi Algoritma dan Struktur Data}
 Pada subbab ini akan dijelaskan tentang implementasi proses
-algoritma secara keseluruhan berdasarkan desain yang telah
-dijelaskan pada bab \ref{chapter:design}. Pada bagian ini menggunakan kode untuk mengoptimasi kompiler yang bertujuan untuk mempersingkat waktu eksekusi, seperti "inline" dan "noexcept". Inline berguna untuk membuat baris kode dalam kompiler menjadi berurutan, karena bisa saja baris kode yang terjadi pada kompiler tidak berurutan. Noexcept adalah membuang  \textit{exception} apabila terjadinya \textit{exception}.
+algoritma secara keseluruhan berdasarkan desain yang telah dijelaskan pada bab \ref{chapter:design}. Pada bagian ini menggunakan kode untuk mengoptimasi kompiler yang bertujuan untuk mempersingkat waktu eksekusi, seperti "inline" dan "noexcept". Inline berguna untuk membuat baris kode dalam kompiler menjadi berurutan, karena bisa saja baris kode yang terjadi pada kompiler tidak berurutan. Noexcept adalah membuang  \textit{exception} apabila terjadinya \textit{exception}.
 
 \subsection{Struktur Data yang Digunakan}
 Pada Implementasi algoritma dibutuhkan struktur data \textit{unordered}\verb|_|\textit{map}. \textit{Unordered}\verb|_|\textit{map} adalah sebuah wadah assosiatif yang berisi pasangan kunci dan nilai dengan kunci yang unik untuk setiap pasangannya. Operasi yang dapat dilakukan seperti pencarian, penyisipan, dan pemindahan atau pembuangan elemen. Struktur data ini merupakan struktur data bawaan yang terdapat dalam C++. Tujuan struktur data ini digunakan dalam tugas akhir ini adalah pencarian elemen yang memiliki kompleksitas waktu konstan dan penggunaan \textit{dynamic memory allocation} yang dapat menekan penggunaan memori. 
 
 \subsection{\textit{Header} yang Diperlukan}
-Implementasi algoritma dengan teknik \textit{Kasiski Examination} untuk menyelesaikan \textit{The Bytelandian Cryptographer (Act IV)} untuk membutuhkan 4 \textit{header} yaitu cstdio, cstring, algorithm, dan \textit{unordered}\verb|_|\textit{map}. Seperti yang terdapat pada kode sumber
+Implementasi algoritma dengan teknik \textit{Kasiski Examination} untuk menyelesaikan \textit{The Bytelandian Cryptographer (Act IV)} untuk membutuhkan 4 \textit{header} yaitu {\fontfamily{lmss}\selectfont cstdio, cstring, algorithm, dan unordered\verb|_|map} . Seperti yang terdapat pada Kode Sumber \ref{source:implementasi_header}.
 
 \lstinputlisting[language=C++, firstline=1, lastline=4, caption=\textit{Header} yang diperlukan, label=source:implementasi_header]{Chapters/Details/bab4/crypto4.cpp}
 
 \textit{Header} {\fontfamily{lmss}\selectfont cstdio} berisi modul untuk menerima masukan dan memberikan keluaran. \textit{Header} {\fontfamily{lmss}\selectfont algorithm} berisi modul yang memiliki fungsi-fungsi yang sangat berguna dalam membantu mengimplementasi algortima yang telah dibangun. Contohnya adalah fungsi {\fontfamily{lmss}\selectfont max} dan {\fontfamily{lmss}\selectfont min}. \textit{Header} {\fontfamily{lmss}\selectfont cstring }berisi modul yang memiliki fungsi-fungsi untuk melakukan pemrosesan {\fontfamily{lmss}\selectfont string}. Contoh fungsi yang membantu mengimplementasikan algoritma yang dibangun adalah fungsi {\fontfamily{lmss}\selectfont memset}. \textit{Header} {\fontfamily{lmss}\selectfont unordered\verb|_|map} berisi modul-modul untuk membuat suatu tempat penyimpanan data yang dapat diisi, dihapus, dipindah, dan dicari untuk setiap elemennya, tetapi hanya dapat menyimpan data dalam bentuk seperti array 1 dimensi, akan tetapi media penyimpanannya seperti memetakan suatu elemen himpunan ke dalam elemen lainnya. 
 
 \subsection{\textit{Preprocessor Directives}}
-\textit{Preprocessor directives} digunakan untuk memudahkan dalam menyingkat kode-kode yang akan dibuat dan biasanya berupa fungsi ataupun suatu konstanta yang akan digunakan dalam proses perhitungan, yang nantinya akan diterjemahkan terlebih dahulu sebelum mengeksekusi kode. Kode Sumber implementasi constanta variabel dapat dilihat pada Kode Sumber \ref{source:const_variable}.
+\textit{Preprocessor directives} digunakan untuk memudahkan dalam menyingkat kode-kode yang akan dibuat dan biasanya berupa fungsi ataupun suatu konstanta yang akan digunakan dalam proses perhitungan, yang nantinya akan diterjemahkan terlebih dahulu sebelum mengeksekusi kode. Kode sumber implementasi constanta variabel dapat dilihat pada Kode Sumber \ref{source:const_variable}.
 
 \begin{minipage}{\linewidth}
 \lstinputlisting[language=C++, firstline=5, lastline=8, caption=Preprocessor Directives, label=source:const_variable]{Chapters/Details/bab4/crypto4.cpp}
@@ -69,8 +68,8 @@ Variabel global digunakan untuk memudahkan dalam mengakses data yang digunakan l
 		1&plaintext&\textit{array of character}&Digunakan untuk menerima dan  menyimpan masukan \textit{plaintext}. \\ \hline
 		2&ciphertext&\textit{array of character}&Digunakan untuk menyimpan dan menerima masukan \textit{ciphertext}. \\ \hline
 		3&key&\textit{array of integer}&Digunakan untuk menyimpan kunci yang telah \textit{generate}. \\ \hline
-		4&both&\textit{array of integer}&Digunakan untuk menyimpan selisih antara \plaintext dan \ciphertext dimana \plaintext dan \ciphertext pada indeks tersebut tidak bernilai "*". \\ \hline
-		5&known&\textit{array of integer} &Digunakan untuk menyimpan indeks dimana pada indeks tersebut \plaintext dan \ciphertext yang tidak bernilai "*". \\ \hline
+		4&both&\textit{array of integer}&Digunakan untuk menyimpan selisih antara \plaintext dan \ciphertext di mana \plaintext dan \ciphertext pada indeks tersebut tidak bernilai "*". \\ \hline
+		5&known&\textit{array of integer} &Digunakan untuk menyimpan indeks di mana pada indeks tersebut \plaintext dan \ciphertext yang tidak bernilai "*". \\ \hline
 		6&knownall&int&Digunakan untuk menghitung jumlah indeks \plaintext dan \ciphertext yang tidak "*". \\ \hline
 		%7&tf&\textit{unordered}\verb|_| \textit{map} \textit{of integer to integer}&Digunakan untuk menyimpan indeks dimana pada indeks tersebut \ciphertext tidak bernilai "*" dan \plaintext bernilai "*". \\ \hline
 		\end{tabular}%}
@@ -81,7 +80,7 @@ Variabel global digunakan untuk memudahkan dalam mengakses data yang digunakan l
 	 	%\caption{Penjelasan Variabel yang digunakan dalam fungsi MAIN}
 		%\resizebox{\textwidth}{!}{%
 		\begin{tabular}   {|p{0.5cm}|p{2.5cm}|p{2cm}|p{4cm}|}\hline
-		7&tf&\textit{unordered}\verb|_| \textit{map} \textit{of integer to integer}&Digunakan untuk menyimpan indeks dimana pada indeks tersebut \ciphertext tidak bernilai "*" dan \plaintext bernilai "*". \\ \hline
+		7&tf&\textit{unordered}\verb|_| \textit{map} \textit{of integer to integer}&Digunakan untuk menyimpan indeks di mana pada indeks tersebut \ciphertext tidak bernilai "*" dan \plaintext bernilai "*". \\ \hline
 		\end{tabular}%}
 		\label{tab:mainvar}
 	\end{table}	
@@ -141,7 +140,7 @@ Fungsi SOLVE adalah implementasi algoritma yang dirancang pada Gambar \ref{fig:s
 	\end{table}
 
 \subsection{Implementasi Fungsi VALIDITY}
-Fungsi VALIDITY adalah inplementasi algoritma yang dirancang pada Gambar \ref{fig:validity}. Implementasi fungsi VALIDITY dapat dilihat pada Kode Sumber \ref{source:fungsi_VALIDATY}.
+Fungsi VALIDITY adalah implementasi algoritma yang dirancang pada Gambar \ref{fig:validity}. Implementasi fungsi VALIDITY dapat dilihat pada Kode Sumber \ref{source:fungsi_VALIDATY}.
 
 \begin{minipage}{\linewidth}
 \lstinputlisting[language=C++, firstline=13, lastline=25, caption=Fungsi VALIDITY, label=source:fungsi_VALIDATY]{Chapters/Details/bab4/crypto4.cpp}

@@ -43,7 +43,7 @@ Sistem pertama kali akan menjalankan fungsi MAIN terlebih dahulu. Desain dari fu
  Pada bagian ini akan dibahas secara rinci mengenai fungsi-fungsi yang digunakan dalam sistem.  
   \subsection{Desain fungsi SOLVE}
   \label{chapter:fxsolve}
-  Fungsi ini digunakan untuk menyelesaikan permasalahan yang diangkat pada tugas akhir ini yang didalamnya terdapat tahapan yang telah disebutkan di subbab \ref{chapter:dasar-teori} dan subbab \ref{chapter:solving}, kecuali untuk mengecek kebenaran dari suatu panjang kunci. Gambar mengenai fungsi SOLVE dapat dilihat pada Gambar \ref{fig:solvefx1} dan \ref{fig:solvefx2}. %Masukan fungsi ini adalah \textit{plaintext}, \textit{ciphertext}, dan batas atas panjang kunci yang diperoleh dari fungsi MAIN. Keluaran dari fungsi ini adalah \plaintext yang telah direkonstruksi ulang. Proses yang terjadi pada fungsi ini yaitu
+  Fungsi ini digunakan untuk menyelesaikan permasalahan yang diangkat pada tugas akhir ini. Tahapan-tahapan prosesnya terdapat pada subbab \ref{chapter:dasar-teori} dan subbab \ref{chapter:solving}. Pada bagian ini tidak dapat mengecek kebenaran dari suatu panjang kunci. Gambar mengenai fungsi SOLVE dapat dilihat pada Gambar \ref{fig:solvefx1} dan \ref{fig:solvefx2}. %Masukan fungsi ini adalah \textit{plaintext}, \textit{ciphertext}, dan batas atas panjang kunci yang diperoleh dari fungsi MAIN. Keluaran dari fungsi ini adalah \plaintext yang telah direkonstruksi ulang. Proses yang terjadi pada fungsi ini yaitu
   %\begin{enumerate}
   %\item Mencari semua posisi, jumlah dimana \plaintext dan \ciphertext tidak bernilai '*'.
   %\item Mencari semua posisi dimana \ciphertext tidak bernilai '*' dan \plaintext bernilai '*'.
@@ -56,7 +56,7 @@ Sistem pertama kali akan menjalankan fungsi MAIN terlebih dahulu. Desain dari fu
 		%\resizebox{\textwidth}{!}{%
 		\begin{tabular}   {|p{2cm}|p{4.5cm}|p{2.5cm}|}\hline
 		Masukan&Proses&Keluaran \\ \hline
-		\textit{Plaintext}, \textit{ciphertext}, dan batas atas panjang kunci yang diperoleh dari fungsi MAIN&Mencari semua posisi, jumlah dimana \plaintext dan \ciphertext tidak bernilai "*". Mencari semua posisi dimana \ciphertext tidak bernilai "*" dan \plaintext bernilai "*". Mengiterasi panjang kunci dari $\frac{m}{2}+1$ sampai dengan $m$. Melakukan \textit{intersection}.  &\textit{Plaintext} yang telah direkonstruksi ulang \\ \hline
+		\textit{Plaintext}, \textit{ciphertext}, dan batas atas panjang kunci yang diperoleh dari fungsi MAIN&Mencari semua posisi, jumlah di mana \plaintext dan \ciphertext tidak bernilai "*". Mencari semua posisi di mana \ciphertext tidak bernilai "*" dan \plaintext bernilai "*". Mengiterasi panjang kunci dari $\frac{m}{2}+1$ sampai dengan $m$. Melakukan \textit{intersection}.  &\textit{Plaintext} yang telah direkonstruksi ulang \\ \hline
 		\end{tabular}%}
 		\label{tab:iosolve}
 	\end{table}
@@ -89,9 +89,9 @@ Sistem pertama kali akan menjalankan fungsi MAIN terlebih dahulu. Desain dari fu
 		cipher&Digunakan untuk menerima dan menyimpan masukan \ciphertext dari fungsi MAIN. \\ \hline
 		counter\verb|_|diketahui&Digunakan untuk menghitung indeks jumlah \plaintext dan \ciphertext yang tidak "*". \\ \hline
 		counter\verb|_|yang\verb|_| ingin\verb|_|diketahui&Digunakan untuk menghitung jumlah indeks \ciphertext tidak bernilai "*" dan \plaintext bernilai "*". \\ \hline
-		diketahui&Merupakan suatu \textit{array} yang digunakan untuk menyimpan indeks dimana \plaintext dan \ciphertext yang tidak "*". \\ \hline
-		Selisih\verb|_|diketahui&Merupakan suatu \textit{array} yang digunakan untuk menyimpan selisih antara \plaintext dan \ciphertext dimana \plaintext dan \ciphertext pada indeks tersebut tidak bernilai "*". \\ \hline
-		ingin\verb|_|diketahui&Merupakan suatu \textit{array} yang digunakan untuk menyimpan indeks dimana  \ciphertext tidak bernilai "*" dan \plaintext bernilai "*" pada indeks tersebut. \\ \hline
+		diketahui&Merupakan suatu \textit{array} yang digunakan untuk menyimpan indeks di mana \plaintext dan \ciphertext yang tidak "*". \\ \hline
+		Selisih\verb|_|diketahui&Merupakan suatu \textit{array} yang digunakan untuk menyimpan selisih antara \plaintext dan \ciphertext di mana \plaintext dan \ciphertext pada indeks tersebut tidak bernilai "*". \\ \hline
+		ingin\verb|_|diketahui&Merupakan suatu \textit{array} yang digunakan untuk menyimpan indeks di mana  \ciphertext tidak bernilai "*" dan \plaintext bernilai "*" pada indeks tersebut. \\ \hline
 		\end{tabular}%}
 		\label{tab:solvar}
 	\end{table}
@@ -109,7 +109,7 @@ Sistem pertama kali akan menjalankan fungsi MAIN terlebih dahulu. Desain dari fu
 	
 	
 	\subsection{Desain Fungsi VALIDITY}
-	Fungsi ini digunakan untuk memvalidasi suatu panjang kunci yang sekarang di cek kebenarannya. Gambar mengenai fungsi VALIDITY dapat dilihar pada gambar \ref{fig:validity}. Penjelasan mengenai fungsi ini terdapat pada subbab \ref{chapter:solving}. %Masukan pada fungsi ini berupa Key, counter\verb|_|diketahui, diketahui, Selisih\verb|_|diketahui, n. Keluaran dari fungsi ini berupa Key, dan nilai benar atau salah. Proses yang dilakukan pada fungsi ini adalah mencari apakah suatu panjang kunci dapat digunakan atau tidak atau merupakan bagian dari modifikasi dari algoritma \textit{Kasiski Examination}. 
+	Fungsi ini digunakan untuk memvalidasi suatu panjang kunci yang sekarang dicek kebenarannya. Gambar mengenai fungsi VALIDITY dapat dilihat pada gambar \ref{fig:validity}. Penjelasan mengenai fungsi ini terdapat pada subbab \ref{chapter:solving}. %Masukan pada fungsi ini berupa Key, counter\verb|_|diketahui, diketahui, Selisih\verb|_|diketahui, n. Keluaran dari fungsi ini berupa Key, dan nilai benar atau salah. Proses yang dilakukan pada fungsi ini adalah mencari apakah suatu panjang kunci dapat digunakan atau tidak atau merupakan bagian dari modifikasi dari algoritma \textit{Kasiski Examination}. 
 	
 		\begin{table}[H]
 	 	\caption{Masukan, Proses, dan Keluaran fungsi MAIN}
