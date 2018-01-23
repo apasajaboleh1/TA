@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  15 JAN 2018 15:35
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.11.1)  23 JAN 2018 08:42
 entering extended mode
 **./abstract.tex
 (abstract.tex
@@ -25,7 +25,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.4 ^^IP
-        ada Era Digitalisasi ini, tingkat kebutuhan masyarakat akan informas...
+        ada era digitalisasi ini, tingkat kebutuhan masyarakat akan informas...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -34,10 +34,10 @@ Missing character: There is no P in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no E in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no D in font nullfont!
+Missing character: There is no d in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no i in font nullfont!
@@ -309,7 +309,9 @@ Missing character: There is no j in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no i in font nullfont!
-Missing character: There is no 2 in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -661,15 +663,6 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
-! Undefined control sequence.
-l.6 ...h permasalahan untuk mendapatkan \plaintext
-                                                   sebanyak-banyaknya dari \...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no b in font nullfont!
@@ -692,15 +685,6 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
-! Undefined control sequence.
-l.6 ...aintext sebanyak-banyaknya dari \ciphertext
-                                                   dan batas atas panjang ku...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -725,11 +709,26 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no i in font nullfont!
-Missing character: There is no p in font nullfont!
+Missing character: There is no y in font nullfont!
 Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no h in font nullfont!
 Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no m in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no M in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -748,13 +747,20 @@ Missing character: There is no y in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -795,27 +801,9 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
-! Undefined control sequence.
-l.6 ...Dalam permasalahan ini diberikan \plaintext
-                                                   dan \ciphertext, akan tet...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
-! Undefined control sequence.
-l.6 ...an ini diberikan \plaintext dan \ciphertext
-                                                  , akan tetapi terdapat inf...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 Missing character: There is no , in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no k in font nullfont!
@@ -979,15 +967,6 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
-! Undefined control sequence.
-l.6 ...hnya. Untuk dapat merekonstruksi \plaintext
-                                                   dari kepingan informasi y...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -1149,66 +1128,11 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no j in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no j in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no k in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no i in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -1219,16 +1143,12 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no t in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no k in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no i in font nullfont!
@@ -1363,6 +1283,15 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no 2 in font nullfont!
 Missing character: There is no M in font nullfont!
 Missing character: There is no B in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -1403,7 +1332,6 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
 Missing character: There is no 2 in font nullfont!
 Missing character: There is no 6 in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -1430,6 +1358,31 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 4--11
  []
 
 
+Overfull \hbox (25.05pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 plain-
+ []
+
+
+Overfull \hbox (15.88pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 text
+ []
+
+
+Overfull \hbox (11.25pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 ci-
+ []
+
+
+Overfull \hbox (22.62pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 pher-
+ []
+
+
+Overfull \hbox (15.88pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 text
+ []
+
+
 Overfull \hbox (13.7pt too wide) in paragraph at lines 4--11
 \TU/lmr/m/it/10 Vi-
  []
@@ -1450,58 +1403,38 @@ Overfull \hbox (19.04001pt too wide) in paragraph at lines 4--11
  []
 
 
-Overfull \hbox (15.87pt too wide) in paragraph at lines 4--11
-\TU/lmr/m/it/10 Ka-
+Overfull \hbox (25.05pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 plain-
  []
 
 
-Overfull \hbox (18.92pt too wide) in paragraph at lines 4--11
-\TU/lmr/m/it/10 siski
+Overfull \hbox (15.88pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 text
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 4--11
-\TU/lmr/m/it/10 Ex-
+Overfull \hbox (11.25pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 ci-
  []
 
 
-Overfull \hbox (16.87pt too wide) in paragraph at lines 4--11
-\TU/lmr/m/it/10 am-
+Overfull \hbox (22.62pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 pher-
  []
 
 
-Overfull \hbox (6.65pt too wide) in paragraph at lines 4--11
-\TU/lmr/m/it/10 i-
+Overfull \hbox (15.88pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 text
  []
 
 
-Overfull \hbox (14.31pt too wide) in paragraph at lines 4--11
-\TU/lmr/m/it/10 na-
+Overfull \hbox (25.05pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 plain-
  []
 
 
-Overfull \hbox (17.12pt too wide) in paragraph at lines 4--11
-\TU/lmr/m/it/10 tion
- []
-
-
-Overfull \hbox (13.06pt too wide) in paragraph at lines 4--11
-\TU/lmr/m/it/10 In-
- []
-
-
-Overfull \hbox (15.72pt too wide) in paragraph at lines 4--11
-\TU/lmr/m/it/10 ter-
- []
-
-
-Overfull \hbox (16.36pt too wide) in paragraph at lines 4--11
-\TU/lmr/m/it/10 sec-
- []
-
-
-Overfull \hbox (17.12pt too wide) in paragraph at lines 4--11
-\TU/lmr/m/it/10 tion
+Overfull \hbox (15.88pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 text
  []
 
 
@@ -1557,6 +1490,61 @@ Overfull \hbox (16.36pt too wide) in paragraph at lines 4--11
 
 Overfull \hbox (17.12pt too wide) in paragraph at lines 4--11
 \TU/lmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (15.87pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 Ka-
+ []
+
+
+Overfull \hbox (18.92pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 siski
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 Ex-
+ []
+
+
+Overfull \hbox (16.87pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 am-
+ []
+
+
+Overfull \hbox (6.65pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 i-
+ []
+
+
+Overfull \hbox (14.31pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 na-
+ []
+
+
+Overfull \hbox (17.12pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (13.06pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 In-
+ []
+
+
+Overfull \hbox (15.72pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 ter-
+ []
+
+
+Overfull \hbox (16.36pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 sec-
+ []
+
+
+Overfull \hbox (17.12pt too wide) in paragraph at lines 4--11
+\TU/lmr/m/it/10 tion 
  []
 
 
@@ -1584,13 +1572,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13 \textit{Plaintext}
-                       , \textit{Ciphertext}, \textit{Kasiski Examination}, ...
+l.13 \textit{Ciphertext}
+                        , \textit{Kasiski Examination}, Optimisasi, \textit{...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no O in font nullfont!
@@ -1603,6 +1590,7 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
+Missing character: There is no , in font nullfont!
 Missing character: There is no . in font nullfont!
 
 ! LaTeX Error: \begin{document} ended by \end{IEEEkeywords}.
@@ -1618,23 +1606,8 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (59.02pt too wide) in paragraph at lines 13--15
-[]\TU/lmr/m/it/10 Plaintext
- []
-
-
-Overfull \hbox (13.81pt too wide) in paragraph at lines 13--15
-\TU/lmr/m/it/10 Ci-
- []
-
-
-Overfull \hbox (22.62pt too wide) in paragraph at lines 13--15
-\TU/lmr/m/it/10 pher-
- []
-
-
-Overfull \hbox (15.88pt too wide) in paragraph at lines 13--15
-\TU/lmr/m/it/10 text
+Overfull \hbox (65.15001pt too wide) in paragraph at lines 13--15
+[]\TU/lmr/m/it/10 Ciphertext
  []
 
 
@@ -1672,6 +1645,16 @@ Overfull \hbox (17.12pt too wide) in paragraph at lines 13--15
 \TU/lmr/m/it/10 tion
  []
 
+
+Overfull \hbox (26.72pt too wide) in paragraph at lines 13--15
+\TU/lmr/m/it/10 Plain-
+ []
+
+
+Overfull \hbox (15.88pt too wide) in paragraph at lines 13--15
+\TU/lmr/m/it/10 text
+ []
+
 ! Undefined control sequence.
 l.16 \IEEEpeerreviewmaketitle
                              
@@ -1695,5 +1678,5 @@ Here is how much of TeX's memory you used:
  4070 multiletter control sequences out of 15000+200000
  3648 words of font info for 15 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 13i,1n,8p,878b,84s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 13i,1n,8p,880b,84s stack positions out of 5000i,500n,10000p,200000b,50000s
 No pages of output.
