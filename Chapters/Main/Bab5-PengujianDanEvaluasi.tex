@@ -57,13 +57,15 @@ Pada \textit{pseudocode} yang terdapat pada Gambar \ref{fig:mainfx}. Untuk setia
 
 Pada umumnya, eksekusi program pada situs penilaian daring SPOJ adalah $ 1 $ detik untuk setiap $ 1.000.000.000 $ proses. Ekseskusi program dengan kompleksitas $\mathcal{O}(T*\frac{M}{2}*(N+S))$. Pada \textit{worst case} $T*(N+S)=1.000.000$, sedangkan $\frac{M}{2}$ adalah $50.000$. Hasilnya melebihi dari 50 miliar perulangan, maka waktu yang dibutuhkan adalah 50 detik. Jika hal ini terjadi maka waktu eksekusi akan berjalan dengan sangat lama. Estimasi waktu kurang lebih $100$ detik, tetapi kenyataan yang terjadi tidak demikian, alasannya karena jumlah $S$ bisa berkurang seiring dengan perulangan yang ada.
 \\
-Sebagai perbandingan ujicoba kinerja antara menggunakan algoritma \textit{Naive} dan algoritma optimasi \textit{Kasiski Examination} dengan \textit{Intersection}, dapat dilihat pada Gambar \ref{fig:banding12}. Maka, dapat ditarik kesimpulan bahwa algoritma optimasi \textit{Kasiski Examination} dengan \textit{Intersection} jauh lebih cepat dibandingan algoritma \textit{Naive}.
+Algoritma \textit{Naive} yang digunakan adalah sama menggunakan algoritma optimasi \textit{Kasiski Examination} dengan \textit{Intersection}, tetapi perbedaannya terletak pada \textit{Intersection} yang dilakukan. kompleksitas algoritma \textit{Naive} menjadi $\mathcal{O}(T*\frac{M}{2}*(N+S)^2)$.
+\\
+Sebagai perbandingan ujicoba kinerja antara menggunakan algoritma \textit{Naive} dan algoritma optimasi \textit{Kasiski Examination} dengan \textit{Intersection}, dapat dilihat pada Gambar \ref{fig:banding12}. Data tersebut didapatkan dari Lampiran B. Dengan jumlah data 10.000 sampai dengan 19.900 log waktu yang diperlukan oleh algoritma optimasi \textit{Kasiski Examination} dengan \textit{Intersection} lebih rendah daripada algoritma \textit{Naive}. Maka, dapat ditarik kesimpulan bahwa algoritma optimasi \textit{Kasiski Examination} dengan \textit{Intersection} jauh lebih cepat dibandingan algoritma \textit{Naive}. 
 %dengan batas atas panjang kunci yang uniform yaitu 41 dan struktur plaintext dan cipher yang berulang. sehingga dapat memperlihat pergerakan waktu sesungguhnya yang dibutuhkan. ini hanyalah sebagian kecil dari proses program yang telah dijalankan. dengan algoritma naive pasti TLE. naive itu menggunakan sama persis dengan kasiski examination dan intersection tetapi bedanya dimana kalau yg optimasi ada prunningnya sedangkan yang naive tanpa pruning apapun.
 	
 	\begin{figure}[H]
 	\centering
   	\includegraphics[scale=0.7]{images/bab5/ACD.png}
-  	\caption{Gambar Perbandingan Kinerja Algoritma Optimasi \textit{Kasiski Examination} dengan \textit{Intersection} dan \textit{Intersection}}
+  	\caption{Gambar Perbandingan Kinerja Algoritma Optimasi \textit{Kasiski Examination} dengan \textit{Intersection} dan \textit{Naive}}
   	\label{fig:banding12}
 	\end{figure}
 	

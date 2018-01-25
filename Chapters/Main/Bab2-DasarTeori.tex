@@ -51,7 +51,7 @@
 	\begin{equation} \label{eq:13}
 	IC=\frac{\sum_{i=1}^{c}n_i(n_i-1)}{\frac{N*(N-1)}{c}}
 	\end{equation}
-	$IC$ adalah \textit{index of coincidence}, $n_i$ adalah jumlah huruf ke i yang terdapat pada suatu alfabet yang terdapat pada \textit{ciphertext}, $N$ adalah jumlah huruf yang terdapat pada \textit{ciphertext}, $c$ adalah jumlah huruf dalam alfabet. Alfabet yang terbentuk di dalam suatu \ciphertext belum tentu jumlahnya pasti 26. Karena tidak dapat mengetahui jumlah huruf yang mungkin terbentuk dalam alfabet yang ada dan harus mengetahui jumlah setiap huruf yang muncul dalam suatu \textit{ciphertext}. Karena keterbatasan informasi mengenai \ciphertext yang didapatkan, maka metode ini tidak dapat digunakan untuk menyelesaikan permasalahan dalam tugas akhir ini.
+	$IC$ adalah \textit{index of coincidence}, $n_i$ adalah jumlah huruf ke-i yang terdapat pada suatu alfabet yang terdapat pada \textit{ciphertext}, $n_a$ sampai dengan $n_z$ merupakan jumlah huruf "a" sampai dengan huruf "z" yang terdapat pada \ciphertext, $N$ adalah jumlah huruf yang terdapat pada \textit{ciphertext}, dan $c$ adalah jumlah huruf dalam alfabet. Alfabet yang terbentuk di dalam suatu \ciphertext belum tentu jumlahnya pasti 26. Karena tidak dapat mengetahui jumlah huruf yang mungkin terbentuk dalam alfabet yang ada dan harus mengetahui jumlah setiap huruf yang muncul dalam suatu \textit{ciphertext}. Karena keterbatasan informasi mengenai \ciphertext yang didapatkan, maka metode ini tidak dapat digunakan untuk menyelesaikan permasalahan dalam tugas akhir ini.
 	
 	 \subsection{Kasiski Examination}
 	 \textit{Kasiski Examination} merupakan suatu teknik yang digunakan untuk mendeskripsikan secara paksa suatu \textit{ciphertext} yang menggunakan teknik substitusi, baik itu \textit{polyalphabetical cipher} maupun \textit{monoalphabetical cipher}. Teknik menggunakan kelemahan yang ditimbulkan oleh teknik substitusi itu sendiri. Yaitu apabila suatu \textit{subtring} dari \plaintext dan \textit{subtring} dari suatu set kunci yang berulang terdapat yang berulang, maka dapat dipastikan untuk menebak panjang huruf / karakter kunci yang digunakan, tanpa diketahui \plaintext dan kuncinya. Sebagai contoh dapat dilihat pada Tabel \ref{tab:kasiskiexamination}.
@@ -112,7 +112,7 @@
 		\item Panjang \textit{input file} tidak melebihi dari 2MB.
 		\item Lingkungan penilaian Intel Pentium G860 3GHz.
 		\item Batas Waktu: $\leq17$ detik
-		\item Batas Sumber Code : 50000B
+		\item Batas Kode sumber : 50000B
 		\item Batas Memory : 1536 MB.                 
 	\end{enumerate}
 
@@ -132,7 +132,7 @@
 	 	\label{tab:contoh1}
 	\end{table}
 	 
-	 Dari Tabel \ref{tab:contoh1} dapat diketahui bagaimana hasil yang akan dicapai. Cara mencapai hasil yang diinginkan adalah sebagai berikut. Pertama-tama pencarian panjang kunci. Pada pencarian panjang kunci harus mengetahui dahulu batas atas dari panjang kunci tersebut. Pada contoh kasus ini $M$ bernilai 1, maka kemungkinan jawabannya hanya ada 1, yaitu $M$ itu sendiri, karena suatu panjang kunci yang digunakan dalam enkripsi tidak mungkin 0. Diasumsikan bahwa 1 warna mewakili satu blok kunci yang akan digunakan. Maka akan membentuk seperti pada Tabel \ref{tab:langkah1contoh1}.
+	 Dari Tabel \ref{tab:contoh1} dapat diketahui bagaimana hasil yang akan dicapai. Cara mencapai hasil yang diinginkan adalah sebagai berikut. Pertama-tama pencarian panjang kunci. Pencarian panjang kunci harus mengetahui dahulu batas atas dari panjang kunci tersebut. Contoh kasus ini $M$ bernilai 1, maka kemungkinan jawabannya hanya ada 1, yaitu $M$ itu sendiri, karena suatu panjang kunci yang digunakan dalam enkripsi tidak mungkin 0. Diasumsikan bahwa 1 warna mewakili satu blok kunci yang akan digunakan. Maka akan membentuk seperti pada Tabel \ref{tab:langkah1contoh1}.
 	 
 	\begin{table}[H]
 	 	\centering
@@ -168,7 +168,7 @@
 	 	\end{tabular}
 	 	\label{tab:contoh2}
 	\end{table}
-	Cara yang harus dilalui adalah sebagai berikut. Pertama mencari panjang kunci yang bernilai diantara 1 - 4. \\
+	Cara yang harus dilalui adalah sebagai berikut. Pertama mencari panjang kunci yang bernilai antara 1 - 4. \\
 	
 	\begin{table}[H]
 	 	\centering
@@ -184,7 +184,7 @@
 	 	\label{tab:k1contoh2}
 	\end{table}	
 	
-	Pada Tabel \ref{tab:k1contoh2} akan memperlihatkan proses pencarian panjang kunci ketika panjang kuncinya 1. Apabila $1$ warna direpresentasikan menjadi 1 blok kunci, maka terdapat 5 blok kunci yang terbentuk. Pada bagian Tabel \ref{tab:k1contoh2} bahwa hanya ada 2 indeks di mana \plaintext dan \ciphertext yang diketahui. Kedua-duanya terletak pada blok kunci yang berbeda. Akan tetapi karena panjang bloknya $1$ maka tidak mungkin panjang kunci 1 dilakukan karena kedua-duanya saling bertabrakan dan membawa nilai yang berbeda. Yang menjadi permasalahan pada panjang kunci 1 adalah ketika blok yang diketahui bertabrakan dan masing-masing membawa nilai yang berbeda juga. Sehingga dapat disimpulkan bahwa panjang kunci 1 pada contoh kasus 2 tidak mungkin terjadi.
+	Tabel \ref{tab:k1contoh2} memperlihatkan proses pencarian panjang kunci ketika panjang kuncinya 1. Apabila $1$ warna direpresentasikan menjadi 1 blok kunci, maka terdapat 5 blok kunci yang terbentuk. Tabel \ref{tab:k1contoh2} bahwa hanya ada 2 indeks di mana \plaintext dan \ciphertext yang diketahui. Keduanya terletak pada blok kunci yang berbeda. Akan tetapi karena panjang bloknya $1$ maka tidak mungkin panjang kunci 1 dilakukan karena keduanya saling bertabrakan dan membawa nilai yang berbeda. Yang menjadi permasalahan pada panjang kunci 1 adalah ketika blok yang diketahui bertabrakan dan masing-masing membawa nilai yang berbeda juga. Sehingga dapat disimpulkan bahwa panjang kunci 1 pada contoh kasus 2 tidak mungkin terjadi.
 	\\
 	
 	\begin{table}[H]
@@ -201,7 +201,7 @@
 	 	\label{tab:k2contoh2}
 	\end{table}	
 	
-	Pada Tabel \ref{tab:k2contoh2} akan memperlihatkan proses pencarian panjang kunci, ketika panjang kuncinya 2. Apabila 1 warna direprentasikan menjadi 1 blok kunci, maka terdapat 3 blok kunci yang terbentuk. Pada Tabel \ref{tab:k2contoh2} terlihat bahwa terdapat 2 indeks di mana \plaintext dan \ciphertext yang diketahui. Indeks yang pertama terletak pada blok pertama bagian akhir, begitu juga indeks yang kedua terletak pada blok 3 bagian akhir. Karena kedua-duanya terletak pada bagian akhir dari masing-masing blok maka dapat disimpulkan panjang kunci 2 juga tidak dapat digunakan.
+	Tabel \ref{tab:k2contoh2} memperlihatkan proses pencarian panjang kunci, ketika panjang kuncinya 2. Apabila 1 warna direprentasikan menjadi 1 blok kunci, maka terdapat 3 blok kunci yang terbentuk. Tabel \ref{tab:k2contoh2} terlihat bahwa terdapat 2 indeks di mana \plaintext dan \ciphertext yang diketahui. Indeks yang pertama terletak pada blok pertama bagian akhir, begitu juga indeks yang kedua terletak pada blok 3 bagian akhir. Karena keduanya terletak pada bagian akhir dari masing-masing blok maka dapat disimpulkan panjang kunci 2 juga tidak dapat digunakan.
 	\\
 	%Proses Pencarian ketika panjang kunci adalah 3.
 	\begin{table}[H]
@@ -217,7 +217,7 @@
 	 	\end{tabular}
 	 	\label{tab:k3contoh2}
 	\end{table}	
-	Pada Tabel \ref{tab:k3contoh2} akan memperlihatkan proses pencarian panjang kunci, ketika panjang kuncinya 3. Apabila 1 warna direpresentasikan menjadi 1 blok kunci, maka terdapat 2 blok kunci yang terbentuk. Pada Tabel \ref{tab:k3contoh2} terlihat bahwa terdapat 2 indeks di mana \plaintext dan \ciphertext yang diketahui. Indeks  pertama terletak dibagian tengah pada blok 1 dan indeks kedua terletak pada bagian akhir pada blok 2. Maka,  \plaintext yang terbentuk adalah pada bagian akhir dari blok kunci 1 dan bagian tengah dari blok kunci 2. Karena kedua-duanya saling melengkapi antara satu bagian dengan bagian lainnya. Sehingga hasil yang terbentuk pada bagian akhir dari blok kunci 1 adalah "A" $-$ $0$ adalah "A" dan bagian tengah dari blok kunci 2 adalah "A" $- 25+26$ adalah "B". 
+	Tabel \ref{tab:k3contoh2} memperlihatkan proses pencarian panjang kunci, ketika panjang kuncinya 3. Apabila 1 warna direpresentasikan menjadi 1 blok kunci, maka terdapat 2 blok kunci yang terbentuk. Tabel \ref{tab:k3contoh2} terlihat bahwa terdapat 2 indeks di mana \plaintext dan \ciphertext yang diketahui. Indeks  pertama terletak dibagian tengah pada blok 1 dan indeks kedua terletak pada bagian akhir pada blok 2. Maka,  \plaintext yang terbentuk adalah pada bagian akhir dari blok kunci 1 dan bagian tengah dari blok kunci 2. Karena keduanya saling melengkapi antara satu bagian dengan bagian lainnya. Sehingga hasil yang terbentuk pada bagian akhir dari blok kunci 1 adalah "A" $-$ $0$ adalah "A" dan bagian tengah dari blok kunci 2 adalah "A" $- 25+26$ adalah "B". 
 	\\
 	%Proses pencarian ketika panjang kunci adalah 4
 	\begin{table}[H]
@@ -233,7 +233,7 @@
 	 	\end{tabular}
 	 	\label{tab:k4contoh2}
 	\end{table}	
-	Pada Tabel \ref{tab:k4contoh2} akan memperlihatkan proses pencarian panjang kunci, ketika panjang kuncinya 4. Apabila 1 warna direpresentasikan menjadi 1 blok kunci, maka terdapat 2 blok kunci yang terbentuk. Pada Tabel \ref{tab:k4contoh2} terlihat bahwa terdapat 2 indeks di mana \plaintext dan \ciphertext yang diketahui. Indeks yang pertama terletak dibagian kedua dari depan pada blok 1 dan indeks yang kedua terletak pada bagian kedua dari depan pada blok 2. Maka dalam ini tidak bisa digunakan panjang kunci 4, karena terdapat bagian dari kedua blok pada panjang kunci 4 yang bertabrakan dan membawa nilai yang berbeda. Sehingga hasil yang terbentuk dapat dilihat pada Tabel \ref{tab:rescontoh2}
+	Tabel \ref{tab:k4contoh2} memperlihatkan proses pencarian panjang kunci, ketika panjang kuncinya 4. Apabila 1 warna direpresentasikan menjadi 1 blok kunci, maka terdapat 2 blok kunci yang terbentuk. Tabel \ref{tab:k4contoh2} terlihat bahwa terdapat 2 indeks di mana \plaintext dan \ciphertext yang diketahui. Indeks yang pertama terletak dibagian kedua dari depan pada blok 1 dan indeks yang kedua terletak pada bagian kedua dari depan pada blok 2. Maka dalam ini tidak bisa digunakan panjang kunci 4, karena terdapat bagian dari kedua blok pada panjang kunci 4 yang bertabrakan dan membawa nilai yang berbeda. Sehingga hasil yang terbentuk dapat dilihat pada Tabel \ref{tab:rescontoh2}.
 	
 	\begin{table}[H]
 	 	\centering
@@ -263,7 +263,7 @@
 	 	\label{tab:contoh3}
 	\end{table}
 	
-	Cara yang harus dilalui adalah sebagai berikut. Pertama mencari panjang kunci yang bernilai diantara 1 - 4. \\
+	Cara yang harus dilalui adalah sebagai berikut. Pertama mencari panjang kunci yang bernilai antara 1 - 4. \\
 	
 	\begin{table}[H]
 	 	\centering
@@ -279,7 +279,7 @@
 	 	\label{tab:k1contoh3}
 	\end{table}
 	
-	Pada Tabel \ref{tab:k1contoh3} akan memperlihatkan proses pencarian panjang kunci, ketika panjang kuncinya 1. Apabila 1 warna merepresentasikan sebagai 1 blok kunci maka, dapat terbentuk sebanyak 10 blok kunci. Dapat dilihat pada Tabel \ref{tab:k1contoh3}. Indeks yang diketahui baik \plaintext dan \ciphertext adalah indeks 1 dan indeks 2, yang mana keduanya terletak pada blok yang berbeda. Akan tetapi, karena mereka membawa 1 nilai yang sama maka semua plaintext yang kosong pasti bernilai "A".
+	Tabel \ref{tab:k1contoh3} memperlihatkan proses pencarian panjang kunci, ketika panjang kuncinya 1. Apabila 1 warna merepresentasikan sebagai 1 blok kunci maka, dapat terbentuk sebanyak 10 blok kunci. Dapat dilihat pada Tabel \ref{tab:k1contoh3}. Indeks yang diketahui baik \plaintext dan \ciphertext adalah indeks 1 dan indeks 2, yang mana keduanya terletak pada blok yang berbeda. Akan tetapi, karena mereka membawa 1 nilai yang sama maka semua \plaintext yang kosong pasti bernilai "A".
 	\\
 	%Pada Tabel \ref{tab:k2contoh3} akan diperlihatkan proses pencarian ketika panjang kunci adalah 2.
 	\begin{table}[H]
@@ -295,7 +295,7 @@
 	 	\end{tabular}
 	 	\label{tab:k2contoh3}
 	\end{table}
-	Pada Tabel \ref{tab:k2contoh3} akan memperlihatkan proses pencarian panjang kunci, ketika panjang kuncinya 2. Apabila 1 warna merepresentasikan sebagai 1 blok kunci maka, dapat terbentuk sebanyak 5 blok kunci. Dapat dilihat pada Tabel \ref{tab:k2contoh3}. Indeks yang diketahui baik \plaintext dan \ciphertext adalah indeks 1 dan indeks 2, yang mana keduanya terletak pada blok yang berbeda dan posisi yang berbeda pula. Hal ini dapat dilihat pada Tabel \ref{tab:k2contoh3}. Indeks yang diketahui pertama terletak pada bagian akhir dari blok 1 dan indeks yang diketahui kedua terletak pada bagian awal dari blok 2. Maka dapat disimpulkan bahwa seluruh plaintext yang nilai "*" dan ciphertext yang nilainya tidak "*", nilai dari plaintext yang terbentuk seluruhnya "A", seperti yang terlihat pada Tabel \ref{tab:k2contoh3}.
+	Tabel \ref{tab:k2contoh3} memperlihatkan proses pencarian panjang kunci, ketika panjang kuncinya 2. Apabila 1 warna merepresentasikan sebagai 1 blok kunci maka, dapat terbentuk sebanyak 5 blok kunci. Dapat dilihat pada Tabel \ref{tab:k2contoh3}. Indeks yang diketahui baik \plaintext dan \ciphertext adalah indeks 1 dan indeks 2, yang mana keduanya terletak pada blok yang berbeda dan posisi yang berbeda pula. Hal ini dapat dilihat pada Tabel \ref{tab:k2contoh3}. Indeks yang diketahui pertama terletak pada bagian akhir dari blok 1 dan indeks yang diketahui kedua terletak pada bagian awal dari blok 2. Maka dapat disimpulkan bahwa seluruh \plaintext yang nilai "*" dan \ciphertext yang nilainya tidak "*", nilai dari \plaintext yang terbentuk seluruhnya "A", seperti yang terlihat pada Tabel \ref{tab:k2contoh3}.
 	\\	
 	%Pada Tabel \ref{tab:k3contoh3} akan diperlihatkan proses pencarian ketika panjang kunci adalah 3.
 	\begin{table}[H]
@@ -311,7 +311,7 @@
 	 	\end{tabular}
 	 	\label{tab:k3contoh3}
 	\end{table}
-	Pada Tabel \ref{tab:k3contoh3} akan memperlihatkan proses pencarian panjang kunci, ketika panjang kuncinya 3. Apabila 1 warna merepresentasikan sebagai 1 blok kunci maka, dapat terbentuk sebanyak 4 blok kunci. Dapat dilihat pada Tabel \ref{tab:k3contoh3}. Indeks yang diketahui baik \plaintext dan \ciphertext adalah indeks 1 dan indeks 2, di mana smuanya terletak pada satu blok yang sama, yaitu blok kunci 1. Jadi, sisanya menngikuti perulangan dari blok kunci 1. 
+	Tabel \ref{tab:k3contoh3} memperlihatkan proses pencarian panjang kunci, ketika panjang kuncinya 3. Apabila 1 warna merepresentasikan sebagai 1 blok kunci maka, dapat terbentuk sebanyak 4 blok kunci. Dapat dilihat pada Tabel \ref{tab:k3contoh3}. Indeks yang diketahui baik \plaintext dan \ciphertext adalah indeks 1 dan indeks 2, di mana semuanya terletak pada satu blok yang sama, yaitu blok kunci 1. Jadi, sisanya menngikuti perulangan dari blok kunci 1. 
 	\\
 	Pada Tabel \ref{tab:k4contoh3} akan diperlihatkan proses pencarian ketika panjang kunci adalah 4.
 	\begin{table}[H]
@@ -327,7 +327,7 @@
 	 	\end{tabular}
 	 	\label{tab:k4contoh3}
 	\end{table}
-	Pada Tabel \ref{tab:k4contoh3} akan memperlihatkan proses pencarian panjang kunci, ketika panjang kuncinya 4. Apabila 1 warna merepresentasikan sebagai 1 blok kunci maka, dapat terbentuk sebanyak 4 blok kunci. Dapat dilihat pada Tabel \ref{tab:k4contoh3}. Indeks yang diketahui baik \plaintext dan \ciphertext adalah indeks 1 dan indeks 2, di mana smuanya terletak pada satu blok yang sama, yaitu blok kunci 1. Jadi, sisanya menngikuti perulangan dari blok kunci 1. 
+	Tabel \ref{tab:k4contoh3} memperlihatkan proses pencarian panjang kunci, ketika panjang kuncinya 4. Apabila 1 warna merepresentasikan sebagai 1 blok kunci maka, dapat terbentuk sebanyak 4 blok kunci. Dapat dilihat pada Tabel \ref{tab:k4contoh3}. Indeks yang diketahui baik \plaintext dan \ciphertext adalah indeks 1 dan indeks 2, di mana semuanya terletak pada satu blok yang sama, yaitu blok kunci 1. Jadi, sisanya mengikuti perulangan dari blok kunci 1. 
 	
 	\begin{table}[H]
 		\centering
@@ -343,22 +343,22 @@
 		\end{tabular}
 		\label{tab:res_contoh_3}
 	\end{table}
-	Pada contoh ini kalau dilihat pada indeks selisih yang telah diketahui, terjadi bahwa panjang kunci 1 sampai dengan 4 dapat tercipta sedangkan pada contoh sebelumnya tidak bisa. Hal ini juga dipengaruhi oleh karena isinya itu sama. Walaupun terjadi \textit{collision} pada indeks yang selisih yang diketahui, tetapi kalau nilainya sama maka nilai tersebut merupakan jawaban untuk setiap panjang kunci bisa terbentuk. Keempat panjang kunci tersebut benar terhadap pesan tersebut. Hasil keluaran yang diinginkan hanya 1 saja tetapi keempat-empatnya benar, oleh karena itu perlu dilakukan \textit{intersection} atau perpotongan dari himpunan keempat kunci tersebut. Perpotongan itu menghasilkan {,A,A,,A,,,,,}. Terdapat bagian bagian yang kosong yang dapat  diisi dengan *. Sehingga hasil akhirnya dapat dilihat pada Tabel \ref{tab:res_contoh_3} pada bagian hasil akhir.
+	Pada contoh ini kalau dilihat pada indeks selisih yang telah diketahui, terjadi bahwa panjang kunci 1 sampai dengan 4 dapat tercipta sedangkan pada contoh sebelumnya tidak bisa. Hal ini juga dipengaruhi oleh karena isinya itu sama. Walaupun terjadi \textit{collision} pada indeks yang selisih yang diketahui, tetapi kalau nilainya sama maka nilai tersebut merupakan jawaban untuk setiap panjang kunci bisa terbentuk. Keempat panjang kunci tersebut benar terhadap pesan tersebut. Hasil keluaran yang diinginkan hanya 1 saja tetapi keempatnya benar, oleh karena itu perlu dilakukan \textit{intersection} atau perpotongan dari himpunan keempat kunci tersebut. Perpotongan itu menghasilkan {,A,A,,A,,,,,}. Terdapat bagian bagian yang kosong yang dapat  diisi dengan *. Sehingga hasil akhirnya dapat dilihat pada Tabel \ref{tab:res_contoh_3} pada bagian hasil akhir.
 	
 	\section{Penyelesaian Masalah The Bytelandian Cryptographer (Act IV)}
 	\label{chapter:solving}
-	Permasalahan \textit{The Bytelandian Cryptographer (Act IV)} dapat diselesaikan dengan menggunakan \textit{Kasiski Examination} dan \textit{Intersection}. Untuk menyelesaikan masalah ini perlu ditafsirkan bahwa karakter A sampai dengan Z menjadi 0 sampai dengan 25, karena untuk memudahkan perhitungan mencari selisih dan merekonstruksi \plaintext dari \ciphertext dan karakter kunci. Berikut ini tahapan-tahapan untuk menyeselsaikan masalah ini:
+	Permasalahan \textit{The Bytelandian Cryptographer (Act IV)} dapat diselesaikan dengan menggunakan \textit{Kasiski Examination} dan \textit{Intersection}. Untuk menyelesaikan masalah ini perlu ditafsirkan bahwa karakter A sampai dengan Z menjadi 0 sampai dengan 25, karena untuk memudahkan perhitungan mencari selisih dan merekonstruksi \plaintext dari \ciphertext dan karakter kunci. Berikut ini tahapan-tahapan untuk menyelesaikan masalah ini:
 	\begin{enumerate}
 	\item Menyimpan posisi indeks karakter, di mana pada indeks tersebut baik \ciphertext maupun \plaintext tidak bernilai '*', beserta menyimpan hasil perhitungan selisih antara \ciphertext dan \plaintext\cite{john_jones_spoj_2009}.
-	\item Menyimpan posisi indeks, apabila  \ciphertext diketahui dan \plaintext tidak diketahui. Untuk mengurangi \textit{running time} dari program\cite{john_jones_spoj_2009}.
-	\item Pada tahapan ini adalah modifikasi dari \textit{Kasiski Examination}, apabila menggunakan \textit{Kasiski Examination} pada umumnya yang hanya mencari posisi berulang dari suatu sub kalimat dalam suatu kalimat tidak bisa digunakan untuk menyelesaikan permasalahan ini. Oleh karena itu diubah menjadi mengiterasi $M$ dari 1 sampai dengan $M$, yang akan digunakan untuk membagi selisih yang diketahui antara \plaintext dan \ciphertext sebesar posisi iterasi yang telah berjalan. Melihat apakah dalam blok-blok yang telah terbentuk ini terdapat \textit{collision} dan indeks yang saling bertabrakan memiliki nilai yang sama atau tidak. Apabila sama maka tidak terjadi tabrakan. Sebaliknya jika terjadi tabrakan maka harus mencari panjang kunci yang baru. Mengiterasi panjang kunci dari $\frac{M}{2}+1<=N<=M$. Alasannya dimulai dari $\frac{M}{2}+1$ tidak dari $1$ karena suatu panjang kunci bernilai benar maka kelipatan dari panjang kunci itu pun juga pasti benar dan untuk mempersingkat waktu \textit{running time} yang seharusnya terjadi. Yang mendasari ini adalah dari Tabel  \ref{tab:contoh2} pada bagian 2.2. Pada bagian ini dilakukan untuk mencari panjang kunci yang benar dengan cara mengiterasi hasil yang diperoleh pada tahap satu \textit{modulo} dengan posisi iterasi yang dilakukan. Apabila tidak terjadi konflik maka panjang kunci tersebut benar. Jika sebaliknya yang terjadi maka, panjang kunci tersebut salah. Contohnya dapat dilihat pada contoh 2 pada bagian 2.2. Pada bagian ini memungkinkan bahwa bisa jadi lebih dari 1 panjang kunci yang bernilai benar. Contohnya seperti yang terjadi pada Tabel \ref{tab:contoh3} pada bagian 2.2. 
-	\item Melakukan \textit{intersection} terhadap himpunan dari kunci yang telah dihasilkan  \cite{john_jones_spoj_2009}. \textit{Intersection} yang dilakukan berada didalam perulangan panjang kunci pada waktu \textit{generate} setiap karakter yang terdapat dalam penyimpanan tahap 2 pada panjang kunci tersebut dengan ketentuan sebagai berikut:
+	\item Menyimpan posisi indeks, apabila  \ciphertext diketahui dan \plaintext tidak diketahui\cite{john_jones_spoj_2009}.
+	\item Tahapan ini adalah modifikasi dari \textit{Kasiski Examination}. Apabila menggunakan \textit{Kasiski Examination} pada umumnya yang hanya mencari posisi berulang dari suatu sub kalimat dalam suatu kalimat tidak bisa digunakan untuk menyelesaikan permasalahan ini. Oleh karena itu diubah menjadi mengiterasi panjang kunci dari 1 sampai dengan $M$, yang akan digunakan untuk membagi selisih yang diketahui antara \plaintext dan \ciphertext sebesar posisi iterasi yang telah berjalan. Tahapan selanjutnya melihat dalam blok-blok yang telah terbentuk ini terdapat \textit{collision} dan indeks yang saling bertabrakan memiliki nilai yang sama atau tidak. Apabila sama maka tidak terjadi tabrakan. Sebaliknya jika terjadi tabrakan maka harus mencari panjang kunci yang baru. Panjang kunci dapat dicari dari $\frac{M}{2}+1<=N<=M$. Panjang kunci dapat dicari dari $\frac{M}{2}+1$ dan tidak dari $1$ karena suatu panjang kunci bernilai benar maka kelipatan dari panjang kunci itu pun juga pasti benar dan untuk mempersingkat waktu \textit{running time} yang seharusnya terjadi. Dasar pernyataan ini dari Tabel  \ref{tab:contoh2} pada bagian 2.2. Pada bagian ini dilakukan untuk mencari panjang kunci yang benar dengan cara mengiterasi hasil yang diperoleh pada tahap satu \textit{modulo} dengan posisi iterasi yang dilakukan. Apabila tidak terjadi konflik maka panjang kunci tersebut benar. Jika sebaliknya yang terjadi maka, panjang kunci tersebut salah. Contohnya dapat dilihat pada contoh 2 pada bagian 2.2. Bagian ini memungkinkan bahwa bisa jadi lebih dari 1 panjang kunci yang bernilai benar. Contohnya seperti yang terjadi pada Tabel \ref{tab:contoh3} pada bagian 2.2. 
+	\item Melakukan \textit{intersection} terhadap himpunan dari kunci yang telah dihasilkan  \cite{john_jones_spoj_2009}. \textit{Intersection} yang dilakukan berada di dalam perulangan panjang kunci pada waktu \textit{generate} setiap karakter yang terdapat dalam penyimpanan tahap 2 pada panjang kunci tersebut dengan ketentuan sebagai berikut:
 	\begin{enumerate}
 	\item Panjang kunci yang terbentuk harus benar.
 	\item Apabila terdapat indeks yang tidak dapat dipastikan isinya maka posisinya harus dibuang dari penyimpanan dan hasil yang diperoleh pasti '*'.
 	\item Apabila \plaintext pada indeks tersebut nilainya masih '*' dan pada penyimpanan masih menyimpan indeks tersebut maka, hasilnya adalah \ciphertext pada indeks tersebut dikurangi dengan hasil yang diperoleh dari tahap 1 bagian perhitungan selisih pada indeks yang sama kemudian dimodulo 26.
 	\end{enumerate}
 	\end{enumerate}
-	Sehingga untuk setiap \textit{textcase} kompleksitasnya 
+	Sehingga kompleksitasnya 
 	$\mathcal{O}(T*\frac{M}{2}*(N+S))$.
-	Dengan $\frac{M}{2}$ adalah batas atas kunci dibagi dengan $2$, $N$ adalah jumlah posisi karakter yang terdapat pada tahap 2, dan $S$ adalah jumlah posisi karakter yang terdapat pada tahap 1. Pada kondisi \textit{worst case} $T*(N+S)=1.000.000$, sedangkan $\frac{M}{2}$ adalah $50.000$. Hasilnya $50$ miliar perulangan, dengan asumsi $1$ detik adalah $1$ miliar perulangan maka waktu yang dibutuhkan adalah $50$ detik. Oleh karena itu hal ini tidak mungkin bisa dilakukan begitu saja, diperlukan \textit{pruning} pada sumber kode yang ada untuk memangkas waktu eksekusi program.
+	Dengan $T$ adalah kasus uji coba, $\frac{M}{2}$ adalah batas atas kunci dibagi dengan $2$, $N$ adalah jumlah posisi karakter yang terdapat pada tahap 2, dan $S$ adalah jumlah posisi karakter yang terdapat pada tahap 1. Pada kondisi \textit{worst case} $T*(N+S)=1.000.000$, sedangkan $\frac{M}{2}$ adalah $50.000$. Hasilnya $50$ miliar perulangan, dengan asumsi $1$ detik adalah $1$ miliar perulangan maka waktu yang dibutuhkan adalah $50$ detik. Oleh karena itu hal ini tidak mungkin bisa dilakukan begitu saja, sehingga diperlukan \textit{pruning} pada sumber kode yang ada untuk memangkas waktu eksekusi program.
