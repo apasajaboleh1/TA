@@ -1,0 +1,2 @@
+permasalahan untuk mendapatkan plaintext sebanyaknya dari ciphertext dan batas atas panjang kunci yang telah diketahui. Metode enkripsi yang digunakan merupakan teknik Vigenere Cipher. Dalam permasalahan ini diberikan plaintext dan ciphertext, akan tetapi terdapat informasi yang hilang pada keduanya dan batas atas panjang kunci. Panjang kunci dapat dicari dengan cara memodifikasi Kasiski Examination dan Intersection.
+
